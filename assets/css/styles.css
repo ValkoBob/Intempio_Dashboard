@@ -1,0 +1,368 @@
+body {
+  height: 100%;
+  width: 100%; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+@media screen and (max-width: 1980px) {
+  .container {
+    width: 100%;
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center; } }
+.wrapper {
+  width: 1720px;
+  display: flex;
+  flex-direction: column; }
+
+nav {
+  width: 200px;
+  height: auto;
+  background: #74BD43; }
+
+.nav-header {
+  margin: 18px 50px; }
+
+nav > hr {
+  height: 2px; }
+
+.menu-title {
+  margin: 54px 31px 25px 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #C8E3B7;
+  cursor: default; }
+
+.menu-item {
+  padding: 10px 30px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  width: 200px;
+  height: 44px;
+  background: transparent;
+  color: #F4FFED;
+  display: flex;
+  align-items: baseline; }
+  .menu-item span {
+    margin-left: 14px; }
+  .menu-item:hover {
+    color: #74BD43;
+    background: #FFFFFF;
+    border-radius: 4px; }
+    .menu-item:hover svg path {
+      fill: #74BD43; }
+
+header {
+  display: flex;
+  height: 100px;
+  justify-content: flex-end; }
+  header button {
+    padding: 10px 25px;
+    margin: 32px 0;
+    width: 150px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #74BD43;
+    white-space: nowrap;
+    border-radius: 2px;
+    border: none;
+    text-shadow: none;
+    box-shadow: #FFFFFF;
+    cursor: pointer; }
+  header .notification {
+    margin: 38px 0; }
+  header .vertical-line {
+    margin: 34px 20px 40px;
+    width: 1px;
+    height: 32px;
+    background: #DFE0EB; }
+  header .user-name {
+    margin: 39px 0 42px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+    color: #A6A6A6; }
+  header .user-avatar {
+    margin: 28px 30px 28px 23px; }
+  header hr {
+    height: 2px; }
+
+main {
+  padding: 32px;
+  display: flex;
+  flex-direction: column; }
+  main .events {
+    background-image: url(./../img/events-icons/virtual-events.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 2px; }
+    main .events h3 {
+      margin-top: 50px;
+      margin-left: 140px;
+      white-space: nowrap;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.35vw;
+      line-height: 23px;
+      letter-spacing: 1.5px;
+      color: #FFFFFF; }
+    main .events h1 {
+      margin-top: 35px;
+      margin-left: 140px;
+      white-space: nowrap;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 6.76vw;
+      line-height: 117px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 1.9px;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    main .events-footer {
+      margin: 60px 0 60px 140px;
+      display: flex; }
+      main .events-footer button {
+        margin-left: 58px;
+        padding: 22px 35px 24px;
+        width: 260px;
+        height: 66px;
+        background: #74BD43;
+        white-space: nowrap;
+        border-radius: 2px;
+        border: none;
+        text-shadow: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer; }
+  main .sessions {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column; }
+    main .sessions .sessions-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      main .sessions .sessions-header h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        color: #353535; }
+    main .sessions .sessions-selector {
+      width: 330px;
+      height: 42px;
+      background: #FFFFFF;
+      border: 1px solid #CFCFCF;
+      box-sizing: border-box;
+      border-radius: 2px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      color: #A6A6A6;
+      cursor: pointer; }
+      main .sessions .sessions-selector .filter {
+        margin: 15px 14px 13.3px 24px; }
+      main .sessions .sessions-selector .arrow {
+        margin: 18.4px 20px 18.4px 120px; }
+    main .sessions .sessions-item {
+      margin-bottom: 20px;
+      background: #FFFFFF;
+      border: 1px solid #CFCFCF;
+      box-sizing: border-box;
+      border-radius: 2px;
+      display: flex;
+      cursor: default; }
+      main .sessions .sessions-item:hover {
+        border: 1px solid #74BD43;
+        box-sizing: border-box;
+        box-shadow: 0 7px 25px rgba(82, 154, 34, 0.2);
+        border-radius: 2px; }
+        main .sessions .sessions-item:hover button {
+          background: #74BD43;
+          border: 1px solid #74BD43;
+          color: #FFFFFF; }
+        main .sessions .sessions-item:hover .sessions-time {
+          background: #74BD43;
+          border-radius: 2px; }
+          main .sessions .sessions-item:hover .sessions-time .time {
+            color: #FFFFFF; }
+          main .sessions .sessions-item:hover .sessions-time .date {
+            color: #FFFFFF; }
+          main .sessions .sessions-item:hover .sessions-time svg path {
+            fill: #F4FFED; }
+      main .sessions .sessions-item button {
+        padding: 17px 35px;
+        margin: 46px 40px 44px 0;
+        width: 210px;
+        height: 56px;
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #74BD43;
+        background: #FFFFFF;
+        border: 1px solid #CFCFCF;
+        box-sizing: border-box;
+        border-radius: 2px;
+        text-shadow: none;
+        cursor: pointer; }
+    main .sessions .sessions-time {
+      min-width: 260px;
+      min-height: 146px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1px solid #CFCFCF;
+      box-sizing: border-box;
+      border-radius: 2px; }
+      main .sessions .sessions-time svg {
+        margin: 0 110px 6px; }
+      main .sessions .sessions-time .time {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: #353535; }
+      main .sessions .sessions-time .date {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.4px;
+        color: #5E5E5E; }
+    main .sessions .sessions-information {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 68px 27px 40px; }
+      main .sessions .sessions-information h3 {
+        margin-bottom: 6px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: #5E5E5E; }
+      main .sessions .sessions-information p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.7px;
+        color: #353535; }
+  main .video h3 {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #353535; }
+  main .video-content {
+    display: flex; }
+  main .video-last {
+    width: 695.44px;
+    height: 500.37px;
+    background-image: url(./../img/video-icons/video-icon.jpg);
+    background-repeat: no-repeat; }
+  main .video .posts {
+    width: 540px;
+    height: 66px;
+    margin-left: 19px;
+    display: flex;
+    flex-direction: column; }
+    main .video .posts-creator {
+      padding: 15px;
+      background: #FFFFFF;
+      border: 1px solid #D1D0D0;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: flex; }
+      main .video .posts-creator img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%; }
+      main .video .posts-creator label {
+        position: relative; }
+      main .video .posts-creator label:before {
+        content: "";
+        position: absolute;
+        right: 5%;
+        top: 28%;
+        bottom: 0;
+        width: 16px;
+        height: 16px;
+        background: url("./../img/video-icons/image-icon.svg") center/contain no-repeat; }
+      main .video .posts-creator input {
+        width: 327px;
+        height: 36px;
+        margin-left: 13px;
+        padding: 10px 15px;
+        opacity: 0.5;
+        border: 1px solid #D1D0D0;
+        box-sizing: border-box;
+        border-radius: 2px; }
+      main .video .posts-creator button {
+        padding: 10px 20px;
+        margin-left: 15px;
+        width: 126px;
+        height: 36px;
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #74BD43;
+        border: none;
+        border-radius: 2px;
+        text-shadow: none;
+        cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
