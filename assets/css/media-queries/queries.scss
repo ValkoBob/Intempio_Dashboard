@@ -1,0 +1,169 @@
+@media screen and (max-width: 1920px) {
+  main {
+    & .video-last {
+      width: 1100px;
+      height: 619px;
+    }
+
+    & .tables-container .table {
+      width: 260px;
+      height: 238px;
+    }
+
+    & .presenters-container {
+      & .presenter {
+        width: 390px;
+        height: 487px;
+
+        & img {
+          width: 300px;
+        }
+
+        & .socials {
+          top: 36px;
+        }
+      }
+    }
+
+    & .fun-stuff-container {
+      & .stuff {
+        width: 530px;
+        height: 440px;
+
+        &-info {
+          width: 470px;
+          height: 111px;
+          top: 190px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  main {
+    & .video-last {
+      width: 680px;
+      height: 400px;
+    }
+
+    & .tables-container {
+      & .table {
+        width: 260px;
+        height: 238px;
+      }
+    }
+
+    & .presenters-container {
+      & .presenter {
+        width: 250px;
+        height: 347px;
+
+        & img {
+          margin-top: 10px;
+          width: 225px;
+        }
+
+        & .socials {
+          padding: 10px;
+          top: 20px;
+        }
+      }
+    }
+
+    & .fun-stuff-container {
+      & .stuff {
+        width: 390px;
+        height: 400px;
+
+        &-info {
+          width: 325px;
+          height: 90px;
+          top: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  main {
+    & .video-last {
+      width: 500px;
+      height: 300px;
+    }
+
+    & .tables-container .table {
+      width: 240px;
+      height: 238px;
+    }
+
+    & .presenters-container {
+      & .presenter {
+        width: 250px;
+        height: 357px;
+
+        & img {
+          margin-top: 10px;
+          width: 225px;
+        }
+
+        & .socials {
+          top: 25px;
+        }
+      }
+    }
+
+    & .fun-stuff-container {
+      & .stuff {
+        width: 340px;
+        height: 350px;
+
+        &-info {
+          width: 300px;
+          height: 100px;
+          top: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  main {
+    & .video-last {
+      width: 400px;
+      height: 250px;
+    }
+
+    & .presenters-container {
+      & .presenter {
+        margin-left: 10px;
+        width: 240px;
+        height: 357px;
+
+        & img {
+          margin-top: 10px;
+          width: 225px;
+        }
+
+        & .socials {
+          top: 25px;
+        }
+      }
+    }
+
+    & .fun-stuff-container {
+      & .stuff {
+        width: 310px;
+        height: 330px;
+
+        &-info {
+          width: 300px;
+          height: 100px;
+          top: 100px;
+        }
+      }
+    }
+  }
+}

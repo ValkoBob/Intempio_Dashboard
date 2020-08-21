@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  height: 100px;
+  justify-content: flex-end;
+
+  & button {
+    padding: 10px 25px;
+    margin: 32px 0;
+    width: 150px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #74BD43;
+    white-space: nowrap;
+    border-radius: 2px;
+    border: none;
+    text-shadow: none;
+    box-shadow:#FFFFFF;
+    cursor: pointer;
+  }
+
+  & .notification {
+    cursor: pointer;
+    margin: 38px 0;
+  }
+
+  & .vertical-line {
+    margin: 34px 20px 40px;
+    width: 1px;
+    height: 32px;
+    background: #DFE0EB;
+  }
+
+  & .user-name {
+    margin: 39px 0 42px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+    color: #A6A6A6;
+    cursor: default;
+  }
+
+  & .user-avatar {
+    margin: 28px 30px 28px 23px;
+    cursor: pointer;
+  }
+
+  & hr {
+    height: 2px;
+  }
+}

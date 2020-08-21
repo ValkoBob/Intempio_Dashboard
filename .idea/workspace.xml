@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="602b1657-a5b4-4a19-8d0e-07d2ca1c5b38" name="Default Changelist" comment="" />
+    <list default="true" id="602b1657-a5b4-4a19-8d0e-07d2ca1c5b38" name="Default Changelist" comment="Add .gitignore file.">
+      <change afterPath="$PROJECT_DIR$/assets/css/base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/header/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/main/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/media-queries/queries.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/navbar/navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/wrapper/wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/4d6c4c68e31fa64bfaed47db558a74a84f4b16c9/styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/4d6c4c68e31fa64bfaed47db558a74a84f4b16c9/styles.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/events-icons/text_in_circle_01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/events-icons/text_in_circle_02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/events-icons/text_in_circle_03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/events-icons/text_in_circle_04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/facebook-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +51,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,6 +74,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css/wrapper" />
+      <recent name="$PROJECT_DIR$/assets/css/navbar" />
+      <recent name="$PROJECT_DIR$/assets/css/header" />
       <recent name="$PROJECT_DIR$/assets/img/menu-icons" />
       <recent name="$PROJECT_DIR$/assets/css" />
     </key>
@@ -47,22 +89,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597903979986</updated>
-      <workItem from="1597903981066" duration="27484000" />
+      <workItem from="1597903981066" duration="27706000" />
+      <workItem from="1597989783990" duration="27618000" />
     </task>
+    <task id="LOCAL-00001" summary="Made first commit for project.">
+      <created>1597934623821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597934623821</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add .gitignore file.">
+      <created>1597934723480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597934723480</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made first commit for project." />
+    <MESSAGE value="Add .gitignore file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore file." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="772" y="326" width="429" height="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598007258016">
+      <screen x="72" y="34" width="1848" height="1046" />
+    </state>
+    <state x="772" y="326" width="429" height="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.34.1848.1046/1920.0.1920.1080@72.34.1848.1046" timestamp="1598007258016" />
     <state x="562" y="286" width="857" height="595" key="EditFileWatcherDialog" timestamp="1597913885292">
       <screen x="72" y="34" width="1848" height="1046" />
     </state>
     <state x="562" y="286" width="857" height="595" key="EditFileWatcherDialog/72.34.1848.1046/1920.0.1920.1080@72.34.1848.1046" timestamp="1597913885292" />
+    <state x="775" y="434" width="442" height="253" key="Github.ShareDialog" timestamp="1597934740685">
+      <screen x="72" y="34" width="1848" height="1046" />
+    </state>
+    <state x="775" y="434" width="442" height="253" key="Github.ShareDialog/72.34.1848.1046/1920.0.1920.1080@72.34.1848.1046" timestamp="1597934740685" />
     <state x="360" y="104" width="1271" height="912" key="SettingsEditor" timestamp="1597914082635">
       <screen x="72" y="34" width="1848" height="1046" />
     </state>
     <state x="360" y="104" width="1271" height="912" key="SettingsEditor/72.34.1848.1046/1920.0.1920.1080@72.34.1848.1046" timestamp="1597914082635" />
+    <state x="491" y="213" width="1000" height="695" key="Vcs.Push.Dialog.v2" timestamp="1597934632478">
+      <screen x="72" y="34" width="1848" height="1046" />
+    </state>
+    <state x="491" y="213" width="1000" height="695" key="Vcs.Push.Dialog.v2/72.34.1848.1046/1920.0.1920.1080@72.34.1848.1046" timestamp="1597934632478" />
     <state x="576" y="250" key="run.anything.popup" timestamp="1597932031458">
       <screen x="72" y="34" width="1848" height="1046" />
     </state>
