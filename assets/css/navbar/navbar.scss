@@ -43,6 +43,10 @@ nav>hr {
     margin-left: 14px;
   }
 
+  & .hide {
+    display: none;
+  }
+
   &:hover {
     color: #74BD43;
     background: #FFFFFF;
@@ -54,8 +58,12 @@ nav>hr {
 }
 
 .nav-arrow {
-  position: absolute;
+  position: relative;
   left: 145px;
+  & svg g {
+    cursor: pointer;
+  }
+
   & svg path {
     cursor: pointer;
   }

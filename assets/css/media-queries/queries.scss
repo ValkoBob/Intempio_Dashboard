@@ -1,8 +1,8 @@
 @media screen and (max-width: 1920px) {
   main {
     & .video-last {
-      width: 1100px;
-      height: 619px;
+      width: 100%;
+      height: auto;
     }
 
     & .tables-container .table {
@@ -12,7 +12,7 @@
 
     & .presenters-container {
       & .presenter {
-        width: 390px;
+        width: 399px;
         height: 487px;
 
         & img {
@@ -86,11 +86,21 @@
   }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1500px) {
   main {
     & .video-last {
-      width: 500px;
-      height: 300px;
+      width: 670px;
+      height: 390px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  main {
+    & .video-last {
+      width: 570px;
+      height: 350px;
     }
 
     & .tables-container .table {
