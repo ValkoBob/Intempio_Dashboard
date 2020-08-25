@@ -26,12 +26,13 @@ const menuFunction = () => {
         const menuItems = document.getElementsByClassName('menu-item');
         if (element.classList.contains('hide')) {
             setTimeout(() => element.classList.remove('hide'), 150);
-
             navbar.style.width = '200px';
             menuTitle.style.margin = '54px 31px 25px 30px';
             navArrow.style.left = '145px'
-            logo.style.width = '100px'
-            logo.style.height = '60px'
+            setTimeout(() => {
+                logo.style.width = '100px';
+                logo.style.height = '60px';
+            }, 250);
             navHeader.style.padding = '18px 50px';
             arrowIcon.style.transform = 'rotate(0)';
             wrapper.style.marginLeft = '200px';
