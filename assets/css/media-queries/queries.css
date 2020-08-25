@@ -1,19 +1,19 @@
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1900px) {
   main .video-last {
     width: 100%;
     height: auto; }
   main .tables-container .table {
-    width: 260px;
+    width: 254px;
     height: 238px; }
   main .presenters-container .presenter {
-    width: 399px;
+    width: 390px;
     height: 487px; }
     main .presenters-container .presenter img {
       width: 300px; }
     main .presenters-container .presenter .socials {
       top: 36px; }
   main .fun-stuff-container .stuff {
-    width: 530px;
+    width: 520px;
     height: 440px; }
     main .fun-stuff-container .stuff-info {
       width: 470px;

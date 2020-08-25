@@ -444,7 +444,8 @@ main {
         main .tables-container .table:hover {
           border: 1px solid #67B1E2;
           box-sizing: border-box;
-          border-radius: 2px; }
+          border-radius: 2px;
+          filter: drop-shadow(0px 9px 25px rgba(205, 205, 205, 0.4)); }
         main .tables-container .table .circle {
           background: #EAEAEA;
           border-radius: 50%; }

@@ -25,7 +25,8 @@ const menuFunction = () => {
         const element = elements.item(i);
         const menuItems = document.getElementsByClassName('menu-item');
         if (element.classList.contains('hide')) {
-            element.classList.remove('hide');
+            setTimeout(() => element.classList.remove('hide'), 150);
+
             navbar.style.width = '200px';
             menuTitle.style.margin = '54px 31px 25px 30px';
             navArrow.style.left = '145px'
