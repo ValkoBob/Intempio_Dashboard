@@ -42,6 +42,14 @@
 
 @media screen and (max-width: 1600px) {
   main {
+    & .events-time .date {
+      margin-left: 16px;
+    }
+
+    & .date:first-child {
+      margin: 0;
+    }
+
     & .video-last {
       width: 680px;
       height: 400px;
@@ -77,9 +85,17 @@
         height: 400px;
 
         &-info {
-          width: 325px;
-          height: 90px;
+          width: 345px;
+          height: 120px;
           top: 100px;
+
+          & h4 {
+            font-size: 18px;
+          }
+
+          & p {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -130,9 +146,13 @@
         height: 350px;
 
         &-info {
-          width: 300px;
+          width: 320px;
           height: 100px;
           top: 100px;
+
+          & h4 {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -170,7 +190,7 @@
 
         &-info {
           width: 300px;
-          height: 100px;
+          height: 120px;
           top: 100px;
         }
       }

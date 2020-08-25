@@ -1,11 +1,16 @@
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 200px;
-  height: auto;
+  height: 100%;
   background: #74BD43;
+  transition: width 0.5s;
 }
 
 .nav-header {
-  margin: 18px 50px;
+  padding: 18px 50px;
+  border-bottom: 2px solid #6BB639;
 }
 
 nav>hr {
@@ -37,7 +42,7 @@ nav>hr {
   background: transparent;
   color: #F4FFED;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   & span {
     margin-left: 14px;
@@ -50,7 +55,7 @@ nav>hr {
   &:hover {
     color: #74BD43;
     background: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 2px;
     & svg path {
       fill: #74BD43;
     }
@@ -60,6 +65,7 @@ nav>hr {
 .nav-arrow {
   position: relative;
   left: 145px;
+  transition: left 0.5s;
   & svg g {
     cursor: pointer;
   }

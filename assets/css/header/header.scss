@@ -2,12 +2,17 @@ header {
   display: flex;
   height: 100px;
   justify-content: flex-end;
+  box-shadow: 0 0 10px #DFE0EB;
 
   & button {
     padding: 10px 25px;
-    margin: 32px 0;
+    margin: 32px 30px;
     width: 150px;
     height: 36px;
+    background: #FFFFFF;
+    border: 1.5px solid #74BD43;
+    box-sizing: border-box;
+    border-radius: 2px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -15,14 +20,7 @@ header {
     text-align: center;
     letter-spacing: 1.25px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    background: #74BD43;
-    white-space: nowrap;
-    border-radius: 2px;
-    border: none;
-    text-shadow: none;
-    box-shadow:#FFFFFF;
-    cursor: pointer;
+    color: #74BD43;
   }
 
   & .notification {
@@ -31,7 +29,7 @@ header {
   }
 
   & .vertical-line {
-    margin: 34px 20px 40px;
+    margin: 34px 40px 40px;
     width: 1px;
     height: 32px;
     background: #DFE0EB;
