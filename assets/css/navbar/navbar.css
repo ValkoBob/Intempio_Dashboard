@@ -5,14 +5,12 @@ nav {
   width: 200px;
   height: 100%;
   background: #74BD43;
-  transition: width 0.5s; }
+  transition: width 0.5s;
+  z-index: 1; }
 
 .nav-header {
   padding: 18px 50px;
   border-bottom: 2px solid #6BB639; }
-
-nav > hr {
-  height: 2px; }
 
 .menu-title {
   margin: 54px 31px 25px 30px;

@@ -5,6 +5,7 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>Intempio Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -149,6 +150,20 @@
             <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
           </filter>
+        </defs>
+      </svg>
+    </div>
+    <div class="overlay-menu">
+      <svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+          <line x1="34" y1="21" x2="1" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="34" y1="11" x2="10" y2="11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="34" y1="1" x2="1" y2="0.999997" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="35" height="22" fill="white" transform="translate(35 22) rotate(-180)"/>
+          </clipPath>
         </defs>
       </svg>
     </div>
@@ -501,24 +516,26 @@
             </form>
             <div class="posts-item">
               <div class="header">
-                <div class="header-avatar">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z"
-                      fill="black" fill-opacity="0.24"/>
-                  </svg>
-                </div>
-                <div class="header-info">
-                  <div class="user-name">
-                    John Doe
-                  </div>
-                  <div class="date">
-                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="header-content">
+                  <div class="header-avatar">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M10.6667 1.74992H10.0833V0.583252H8.91666V1.74992H3.08332V0.583252H1.91666V1.74992H1.33332C0.691657 1.74992 0.166656 2.27492 0.166656 2.91659V12.2499C0.166656 12.8916 0.691657 13.4166 1.33332 13.4166H10.6667C11.3083 13.4166 11.8333 12.8916 11.8333 12.2499V2.91659C11.8333 2.27492 11.3083 1.74992 10.6667 1.74992ZM10.6667 12.2499H1.33332V4.66658H10.6667V12.2499Z"
-                        fill="#C2C2C2"/>
+                        d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z"
+                        fill="black" fill-opacity="0.24"/>
                     </svg>
-                    <span>Nov 19th, 2019, at 14:00</span>
+                  </div>
+                  <div class="header-info">
+                    <div class="user-name">
+                      John Doe
+                    </div>
+                    <div class="date">
+                      <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.6667 1.74992H10.0833V0.583252H8.91666V1.74992H3.08332V0.583252H1.91666V1.74992H1.33332C0.691657 1.74992 0.166656 2.27492 0.166656 2.91659V12.2499C0.166656 12.8916 0.691657 13.4166 1.33332 13.4166H10.6667C11.3083 13.4166 11.8333 12.8916 11.8333 12.2499V2.91659C11.8333 2.27492 11.3083 1.74992 10.6667 1.74992ZM10.6667 12.2499H1.33332V4.66658H10.6667V12.2499Z"
+                          fill="#C2C2C2"/>
+                      </svg>
+                      <span>Nov 19th, 2019, at 14:00</span>
+                    </div>
                   </div>
                 </div>
                 <div class="header-more">
@@ -538,7 +555,9 @@
               <p class="information">
                 Here is one of previously written comments.
               </p>
-              <img src="./assets/img/video-icons/posts-photo.jpg" alt="posts-photo" class="photo">
+              <div class="posts-item-image">
+                <img src="./assets/img/video-icons/posts-photo.jpg" alt="posts-photo" class="photo">
+              </div>
               <div class="popularity">
                 <div class="popularity-item">
                   <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -656,7 +675,7 @@
               </svg>
             </div>
             <div class="title">
-              Agency<br/> Tools
+              Agency Tools
             </div>
           </div>
           <div class="table">
@@ -704,7 +723,7 @@
               </svg>
             </div>
             <div class="title">
-              Market<br/> Access
+              Market Access
             </div>
           </div>
           <div class="table">
@@ -735,7 +754,7 @@
               </svg>
             </div>
             <div class="title">
-              CRM<br/> Review
+              CRM Review
             </div>
           </div>
           <div class="table">
@@ -763,7 +782,7 @@
               </svg>
             </div>
             <div class="title">
-              Brand<br/> Workshop
+              Brand Workshop
             </div>
           </div>
           <div class="table">
@@ -782,7 +801,7 @@
               </svg>
             </div>
             <div class="title">
-              Product<br/> Lab
+              Product Lab
             </div>
           </div>
           <div class="table">
@@ -833,7 +852,7 @@
               </svg>
             </div>
             <div class="title">
-              HCP<br/> Conversation
+              HCP Conversation
             </div>
           </div>
           <div class="table">
@@ -861,7 +880,7 @@
               </svg>
             </div>
             <div class="title">
-              Tech<br/> Tools
+              Tech Tools
             </div>
           </div>
           <div class="table">
@@ -897,7 +916,7 @@
               </svg>
             </div>
             <div class="title">
-              HR<br/> Review
+              HR Review
             </div>
           </div>
           <div class="table">
@@ -910,7 +929,7 @@
               </svg>
             </div>
             <div class="title">
-              Digital<br/> Assets
+              Digital Assets
             </div>
           </div>
           <div class="table">
@@ -935,7 +954,7 @@
               </svg>
             </div>
             <div class="title">
-              Clinical<br/> Research
+              Clinical Research
             </div>
           </div>
         </div>
@@ -947,7 +966,9 @@
         <h3>Presenters</h3>
         <div class="presenters-container">
           <div class="presenter">
-            <img src="./assets/img/presenters-icons/man-icon.png" alt="man-icon">
+            <div class="presenter-image">
+              <img src="./assets/img/presenters-icons/man-icon.png" alt="man-icon">
+            </div>
             <div class="position">SVP of Marketing Stance</div>
             <div class="name">Nicole Bates</div>
             <div class="socials">
@@ -960,10 +981,10 @@
               </a>
               <a class="twitter" href="https://twitter.com/">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
-                  fill="#67B1E2"/>
-              </svg>
+                  <path
+                    d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
+                    fill="#67B1E2"/>
+                </svg>
               </a>
               <a href="https://www.linkedin.com/">
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -979,7 +1000,9 @@
             </div>
           </div>
           <div class="presenter">
-            <img src="./assets/img/presenters-icons/woman-icon.png" alt="woman-icon">
+            <div class="presenter-image">
+              <img src="./assets/img/presenters-icons/woman-icon.png" alt="woman-icon">
+            </div>
             <div class="position">SVP of Marketing Stance</div>
             <div class="name">Nicole Bates</div>
             <div class="socials">
@@ -992,10 +1015,10 @@
               </a>
               <a class="twitter" href="https://twitter.com/">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
-                  fill="#67B1E2"/>
-              </svg>
+                  <path
+                    d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
+                    fill="#67B1E2"/>
+                </svg>
               </a>
               <a href="https://www.linkedin.com/">
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1011,7 +1034,9 @@
             </div>
           </div>
           <div class="presenter">
-            <img src="./assets/img/presenters-icons/man-icon.png" alt="man-icon">
+            <div class="presenter-image">
+              <img src="./assets/img/presenters-icons/man-icon.png" alt="man-icon">
+            </div>
             <div class="position">SVP of Marketing Stance</div>
             <div class="name">Nicole Bates</div>
             <div class="socials">
@@ -1024,10 +1049,10 @@
               </a>
               <a class="twitter" href="https://twitter.com/">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
-                  fill="#67B1E2"/>
-              </svg>
+                  <path
+                    d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
+                    fill="#67B1E2"/>
+                </svg>
               </a>
               <a href="https://www.linkedin.com/">
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1043,7 +1068,9 @@
             </div>
           </div>
           <div class="presenter">
-            <img src="./assets/img/presenters-icons/woman-icon.png" alt="woman-icon">
+            <div class="presenter-image">
+              <img src="./assets/img/presenters-icons/woman-icon.png" alt="woman-icon">
+            </div>
             <div class="position">SVP of Marketing Stance</div>
             <div class="name">Nicole Bates</div>
             <div class="socials">
@@ -1056,10 +1083,10 @@
               </a>
               <a class="twitter" href="https://twitter.com/">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
-                  fill="#67B1E2"/>
-              </svg>
+                  <path
+                    d="M18.9422 1.73554C18.2785 2.02924 17.569 2.22759 16.8214 2.31914C17.5843 1.86141 18.1717 1.13668 18.4463 0.274634C17.733 0.698029 16.9435 1.00699 16.1005 1.17101C15.4254 0.450095 14.4641 0 13.4037 0C11.3631 0 9.71143 1.65544 9.71143 3.69612C9.71143 3.98601 9.74195 4.26828 9.80679 4.5391C6.73622 4.38652 4.01277 2.91418 2.19331 0.675143C1.87672 1.2206 1.69363 1.8576 1.69363 2.53274C1.69363 3.81437 2.34589 4.94724 3.33762 5.61093C2.73114 5.59568 2.15898 5.42785 1.66312 5.1494C1.66312 5.16465 1.66312 5.17991 1.66312 5.19517C1.66312 6.98792 2.93711 8.47934 4.62688 8.81882C4.31791 8.90273 3.98988 8.94851 3.65422 8.94851C3.41772 8.94851 3.18505 8.92562 2.96 8.87985C3.42917 10.3484 4.79471 11.4164 6.412 11.4469C5.14945 12.4387 3.55504 13.0299 1.82332 13.0299C1.5258 13.0299 1.23209 13.0108 0.9422 12.9765C2.57475 14.0369 4.51626 14.6472 6.59891 14.6472C13.3961 14.6472 17.1113 9.01335 17.1113 4.12715C17.1113 3.96694 17.1075 3.80674 17.0999 3.65035C17.8208 3.12778 18.4463 2.47552 18.9422 1.73554Z"
+                    fill="#67B1E2"/>
+                </svg>
               </a>
               <a href="https://www.linkedin.com/">
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1078,25 +1105,51 @@
       </div>
       <div class="fun-stuff">
         <h3>Fun Stuff</h3>
-        <div class="fun-stuff-container">
-          <div class="stuff" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-1.jpg);">
-            <div class="stuff-info">
-              <h4>Tuesday: Dani Strong!</h4>
-              <p>Join Dani Strong on Tuesday for an intimate virtual desktop concert. Not to be missed!</p>
+        <div class="fun-stuff-container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="stuff swiper-slide" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-1.jpg);">
+              <div class="stuff-info">
+                <h4>Tuesday: Dani Strong!</h4>
+                <p>Join Dani Strong on Tuesday for an intimate virtual desktop concert. Not to be missed!</p>
+              </div>
+            </div>
+            <div class="stuff swiper-slide" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-2.jpg);">
+              <div class="stuff-info">
+                <h4>Wednesday: Power up Yoga</h4>
+                <p>On Wednesday, get your energy flowing with a virtual yoga studio, broadcast live from East Hanover</p>
+              </div>
+            </div>
+            <div class="stuff swiper-slide" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-3.jpg);">
+              <div class="stuff-info">
+                <h4>We all need a break sometimes. Join online!</h4>
+                <p>Your mocktail is your choice, just join for fun with friends. Your mocktail is your choice, just</p>
+              </div>
             </div>
           </div>
-          <div class="stuff" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-2.jpg);">
-            <div class="stuff-info">
-              <h4>Wednesday: Power up Yoga</h4>
-              <p>On Wednesday, get your energy flowing with a virtual yoga studio, broadcast live from East Hanover</p>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-container" style="display:none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-1.jpg);">
+              <div class="stuff-info">
+                <h4>Tuesday: Dani Strong!</h4>
+                <p>Join Dani Strong on Tuesday for an intimate virtual desktop concert. Not to be missed!</p>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-2.jpg);">
+              <div class="stuff-info">
+                <h4>Wednesday: Power up Yoga</h4>
+                <p>On Wednesday, get your energy flowing with a virtual yoga studio, broadcast live from East Hanover</p>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-3.jpg);">
+              <div class="stuff-info">
+                <h4>We all need a break sometimes. Join online!</h4>
+                <p>Your mocktail is your choice, just join for fun with friends. Your mocktail is your choice, just</p>
+              </div>
             </div>
           </div>
-          <div class="stuff" style="background-image: url(assets/img/fun-stuff-icons/fun-stuff-icon-3.jpg);">
-            <div class="stuff-info">
-              <h4>We all need a break sometimes. Join online!</h4>
-              <p>Your mocktail is your choice, just join for fun with friends. Your mocktail is your choice, just</p>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="stream">
@@ -1106,6 +1159,7 @@
     </main>
   </div>
 </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

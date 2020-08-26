@@ -60,8 +60,8 @@ main {
       main .events-time .date:first-child {
         margin: 0; }
   main .sessions {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column; }
     main .sessions .sessions-header {
@@ -105,7 +105,7 @@ main {
         box-sizing: border-box;
         border-radius: 2px;
         position: absolute;
-        top: 680px;
+        top: 665px;
         display: flex;
         flex-direction: column; }
         main .sessions .sessions-selector .dropdown.hide {
@@ -164,7 +164,8 @@ main {
         box-sizing: border-box;
         border-radius: 2px;
         text-shadow: none;
-        cursor: pointer; }
+        cursor: pointer;
+        align-self: center; }
     main .sessions .sessions-time {
       margin: -1px;
       max-width: 260px;
@@ -278,6 +279,15 @@ main {
           border: 1px solid #D1D0D0;
           box-sizing: border-box;
           border-radius: 2px; }
+          main .video .posts .posts-creator input::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.15px;
+            color: #9E9E9E; }
         main .video .posts .posts-creator button {
           padding: 10px 20px;
           margin: 0 15px;
@@ -306,8 +316,19 @@ main {
         border: 1px solid #D1D0D0;
         box-sizing: border-box;
         border-radius: 2px; }
+        main .video .posts .posts-item-image {
+          padding: 15px 10px;
+          flex-shrink: 1;
+          flex-grow: 0; }
+          main .video .posts .posts-item-image img {
+            display: block;
+            max-width: 100%;
+            height: auto; }
         main .video .posts .posts-item .header {
-          display: flex; }
+          display: flex;
+          justify-content: space-between; }
+          main .video .posts .posts-item .header-content {
+            display: flex; }
           main .video .posts .posts-item .header-avatar svg {
             margin: 20px 15px 10px; }
           main .video .posts .posts-item .header-info {
@@ -334,8 +355,7 @@ main {
                 color: #C2C2C2; }
           main .video .posts .posts-item .header-more {
             margin-top: 32px;
-            margin-right: 15px;
-            margin-left: 286px; }
+            margin-right: 15px; }
         main .video .posts .posts-item .information {
           margin-left: 15px;
           font-style: normal;
@@ -372,14 +392,15 @@ main {
               line-height: 13px;
               color: #B8B8B8; }
         main .video .posts .posts-item .footer {
-          padding: 15px;
+          padding: 10px 15px;
           display: flex; }
           main .video .posts .posts-item .footer > img {
             width: 32px;
             height: 32px;
             border-radius: 50%; }
           main .video .posts .posts-item .footer label {
-            position: relative; }
+            position: relative;
+            z-index: 0; }
           main .video .posts .posts-item .footer label:before {
             cursor: pointer;
             content: "";
@@ -387,6 +408,7 @@ main {
             right: 10px;
             top: 28%;
             bottom: 0;
+            z-index: 0;
             width: 16px;
             height: 16px;
             background: url("./../../img/video-icons/image-icon.svg") center/contain no-repeat; }
@@ -400,9 +422,18 @@ main {
             border: 1px solid #D1D0D0;
             box-sizing: border-box;
             border-radius: 2px; }
+            main .video .posts .posts-item .footer input::placeholder {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 24px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0.15px;
+              color: #9E9E9E; }
           main .video .posts .posts-item .footer button {
             padding: 10px 20px;
-            margin: 0 15px;
+            margin-left: 10px;
             width: 126px;
             height: 36px;
             white-space: nowrap;
@@ -420,7 +451,7 @@ main {
             text-shadow: none;
             cursor: pointer; }
   main .tables {
-    margin-top: 70px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column; }
     main .tables h3 {
@@ -431,17 +462,12 @@ main {
       color: #353535; }
     main .tables-container {
       padding: 30px 0 40px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center; }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 16px; }
       main .tables-container .table {
+        padding: 30px 20px;
         cursor: pointer;
-        margin-left: 16px;
-        margin-bottom: 16px;
-        max-width: 230px;
-        width: 100%;
-        height: auto;
         border: 1px solid #CFCFCF;
         box-sizing: border-box;
         border-radius: 2px;
@@ -455,11 +481,10 @@ main {
           border-radius: 2px;
           box-shadow: 0 9px 25px rgba(205, 205, 205, 0.4); }
         main .tables-container .table .circle {
-          margin: 30px 75px 0;
+          margin-bottom: 30px;
           background: #EAEAEA;
           border-radius: 50%; }
         main .tables-container .table .title {
-          margin: 20px 50px;
           font-style: normal;
           font-weight: bold;
           font-size: 19px;
@@ -469,7 +494,8 @@ main {
           text-align: center;
           letter-spacing: 0.5px;
           text-transform: uppercase;
-          color: #67B1E2; }
+          color: #67B1E2;
+          word-wrap: break-word; }
     main .tables .see-all {
       width: 100%;
       display: flex;
@@ -493,7 +519,7 @@ main {
         white-space: nowrap;
         cursor: pointer; }
   main .presenters {
-    margin-top: 70px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column; }
     main .presenters h3 {
@@ -519,12 +545,15 @@ main {
         align-items: center; }
         main .presenters-container .presenter:first-child {
           margin: 0; }
-        main .presenters-container .presenter img {
-          margin: 40px 30px 0 30px;
-          max-width: 225px;
-          width: 100%;
-          height: auto;
-          border-radius: 800px; }
+        main .presenters-container .presenter-image {
+          flex-shrink: 1;
+          flex-grow: 0;
+          margin: 40px 30px 0 30px; }
+          main .presenters-container .presenter-image img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 800px; }
         main .presenters-container .presenter .position {
           margin-top: 15px;
           font-style: normal;
@@ -548,6 +577,7 @@ main {
           text-transform: uppercase;
           color: #353535; }
         main .presenters-container .presenter .socials {
+          padding: 16px;
           max-width: 200px;
           width: 100%;
           height: auto;
@@ -556,14 +586,12 @@ main {
           box-sizing: border-box;
           border-radius: 2px;
           display: flex;
-          justify-content: center;
           align-items: center;
+          justify-content: space-evenly;
           position: relative;
           top: 23px; }
-          main .presenters-container .presenter .socials .twitter {
-            margin: 0 35px; }
   main .fun-stuff {
-    margin-top: 70px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column; }
     main .fun-stuff h3 {
@@ -622,7 +650,7 @@ main {
             main .fun-stuff-container .stuff-info:hover h4 {
               color: #67B1E2; }
   main .stream {
-    margin: 70px 0 36px;
+    margin: 40px 0 36px;
     width: 100%;
     display: flex;
     flex-direction: column; }
