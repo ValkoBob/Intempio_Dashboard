@@ -167,7 +167,8 @@ main {
         cursor: pointer; }
     main .sessions .sessions-time {
       margin: -1px;
-      min-width: 260px;
+      max-width: 260px;
+      width: 100%;
       min-height: 146px;
       display: flex;
       flex-direction: column;
@@ -229,13 +230,16 @@ main {
       color: #353535; }
     main .video-content {
       display: flex; }
+    main .video-last-wrapper {
+      flex-shrink: 1;
+      flex-grow: 0; }
     main .video-last {
-      width: 100%;
-      max-width: 1216px;
-      height: auto;
-      max-height: 685px; }
+      display: block;
+      max-width: 100%;
+      height: auto; }
     main .video .posts {
-      width: 540px;
+      max-width: 540px;
+      width: 100%;
       height: auto;
       margin-left: 19px;
       display: flex;
@@ -265,7 +269,8 @@ main {
           height: 16px;
           background: url("./../../img/video-icons/image-icon.svg") center/contain no-repeat; }
         main .video .posts .posts-creator input {
-          width: 327px;
+          max-width: 327px;
+          width: 100%;
           height: 36px;
           margin-left: 13px;
           padding: 10px 15px;
@@ -294,7 +299,8 @@ main {
           cursor: pointer; }
       main .video .posts .posts-item {
         margin-top: 16px;
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
         height: auto;
         background: #FFFFFF;
         border: 1px solid #D1D0D0;
@@ -385,7 +391,8 @@ main {
             height: 16px;
             background: url("./../../img/video-icons/image-icon.svg") center/contain no-repeat; }
           main .video .posts .posts-item .footer input {
-            width: 347px;
+            max-width: 347px;
+            width: 100%;
             height: 36px;
             margin-left: 13px;
             padding: 10px 15px;
@@ -432,8 +439,9 @@ main {
         cursor: pointer;
         margin-left: 16px;
         margin-bottom: 16px;
-        width: 230px;
-        height: 225px;
+        max-width: 230px;
+        width: 100%;
+        height: auto;
         border: 1px solid #CFCFCF;
         box-sizing: border-box;
         border-radius: 2px;
@@ -447,10 +455,11 @@ main {
           border-radius: 2px;
           box-shadow: 0 9px 25px rgba(205, 205, 205, 0.4); }
         main .tables-container .table .circle {
+          margin: 30px 75px 0;
           background: #EAEAEA;
           border-radius: 50%; }
         main .tables-container .table .title {
-          margin: 30px 50px 0 50px;
+          margin: 20px 50px;
           font-style: normal;
           font-weight: bold;
           font-size: 19px;
@@ -496,7 +505,6 @@ main {
     main .presenters-container {
       padding-top: 30px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       align-items: center; }
       main .presenters-container .presenter {
@@ -513,7 +521,8 @@ main {
           margin: 0; }
         main .presenters-container .presenter img {
           margin: 40px 30px 0 30px;
-          width: 225px;
+          max-width: 225px;
+          width: 100%;
           height: auto;
           border-radius: 800px; }
         main .presenters-container .presenter .position {
@@ -539,8 +548,9 @@ main {
           text-transform: uppercase;
           color: #353535; }
         main .presenters-container .presenter .socials {
-          width: 200px;
-          height: 46px;
+          max-width: 200px;
+          width: 100%;
+          height: auto;
           background: #FFFFFF;
           border: 1px solid #67B1E2;
           box-sizing: border-box;
@@ -565,12 +575,12 @@ main {
     main .fun-stuff-container {
       margin-top: 18px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center; }
       main .fun-stuff-container .stuff {
         margin-left: 20px;
-        width: 390px;
-        height: 320px;
+        max-width: 390px;
+        width: 100%;
+        height: auto;
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
@@ -578,8 +588,9 @@ main {
         align-items: center; }
         main .fun-stuff-container .stuff-info {
           padding: 10px 20px 25px;
-          width: 325px;
-          height: 90px;
+          max-width: 325px;
+          width: 100%;
+          height: auto;
           background: #FFFFFF;
           border: 1px solid #CFCFCF;
           box-sizing: border-box;

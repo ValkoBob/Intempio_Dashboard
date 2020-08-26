@@ -1,102 +1,94 @@
 @media screen and (max-width: 1920px) {
-  main .video-last {
-    width: 100%;
-    height: auto; }
   main .tables-container .table {
-    width: 254px;
-    height: 238px; }
+    max-width: 254px;
+    width: 100%; }
   main .presenters-container .presenter {
-    width: 390px;
-    height: 487px; }
+    max-width: 390px;
+    width: 100%; }
     main .presenters-container .presenter img {
-      width: 300px; }
+      max-width: 300px;
+      width: 100%; }
     main .presenters-container .presenter .socials {
       top: 36px; }
   main .fun-stuff-container .stuff {
-    width: 520px;
-    height: 440px; }
+    max-width: 540px;
+    width: 100%;
+    height: 450px; }
     main .fun-stuff-container .stuff-info {
-      width: 470px;
-      height: 111px;
+      max-width: 450px;
+      width: 100%;
       top: 190px; } }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
   main .events-time .date {
     margin-left: 16px; }
   main .date:first-child {
     margin: 0; }
-  main .video-last {
-    width: 680px;
-    height: 400px; }
   main .tables-container .table {
-    width: 260px;
-    height: 238px; }
+    max-width: 260px;
+    width: 100%; }
   main .presenters-container .presenter {
-    width: 250px;
-    height: 347px; }
+    max-width: 250px;
+    width: 100%; }
     main .presenters-container .presenter img {
       margin-top: 10px;
-      width: 225px; }
+      max-width: 225px;
+      width: 100%; }
     main .presenters-container .presenter .socials {
       padding: 10px;
       top: 20px; }
   main .fun-stuff-container .stuff {
-    width: 390px;
-    height: 400px; }
+    max-width: 390px;
+    width: 100%; }
     main .fun-stuff-container .stuff-info {
-      width: 345px;
-      height: 120px;
+      max-width: 345px;
+      width: 100%;
       top: 100px; }
       main .fun-stuff-container .stuff-info h4 {
         font-size: 18px; }
       main .fun-stuff-container .stuff-info p {
         font-size: 12px; } }
-@media screen and (max-width: 1500px) {
-  main .video-last {
-    width: 670px;
-    height: 390px; } }
 @media screen and (max-width: 1400px) {
-  main .video-last {
-    width: 570px;
-    height: 350px; }
   main .tables-container .table {
-    width: 240px;
-    height: 238px; }
+    max-width: 240px;
+    width: 100%;
+    height: auto; }
   main .presenters-container .presenter {
-    width: 250px;
-    height: 357px; }
+    max-width: 250px;
+    width: 100%;
+    height: auto; }
     main .presenters-container .presenter img {
       margin-top: 10px;
-      width: 225px; }
+      max-width: 225px;
+      width: 100%; }
     main .presenters-container .presenter .socials {
       top: 25px; }
   main .fun-stuff-container .stuff {
-    width: 340px;
-    height: 350px; }
+    max-width: 340px;
+    width: 100%; }
     main .fun-stuff-container .stuff-info {
-      width: 320px;
-      height: 100px;
-      top: 100px; }
+      max-width: 320px;
+      width: 100%;
+      top: 60px; }
       main .fun-stuff-container .stuff-info h4 {
         font-size: 16px; } }
 @media screen and (max-width: 1360px) {
-  main .video-last {
-    width: 400px;
-    height: 250px; }
   main .presenters-container .presenter {
     margin-left: 10px;
-    width: 240px;
-    height: 357px; }
+    max-width: 240px;
+    width: 100%;
+    height: auto; }
     main .presenters-container .presenter img {
       margin-top: 10px;
-      width: 225px; }
+      max-width: 225px;
+      width: 100%; }
     main .presenters-container .presenter .socials {
       top: 25px; }
   main .fun-stuff-container .stuff {
-    width: 310px;
-    height: 330px; }
+    max-width: 310px;
+    width: 100%; }
     main .fun-stuff-container .stuff-info {
-      width: 300px;
-      height: 120px;
-      top: 100px; } }
+      max-width: 300px;
+      width: 100%;
+      top: 10px; } }
 
 /*# sourceMappingURL=queries.css.map */
