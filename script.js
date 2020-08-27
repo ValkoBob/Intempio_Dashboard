@@ -68,12 +68,74 @@ const menuTile = document.getElementById('menu-tile')
 menu.addEventListener('click', menuFunction);
 menuTile.addEventListener('click', menuFunction);
 
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+const swiperStuff = new Swiper('.swiper-container', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 20,
     centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+
+    breakpoints: {
+        320: {
+           width: 300,
+        },
+        375: {
+            width: 285,
+        },
+        420: {
+            width: 275,
+        },
+        721: {
+            width: 500,
+        }
+    }
 });
+
+swiperStuff.slideTo(1, false,false);
+
+const popOverMenuFunction = () => {
+    if (popOverMenu.classList.contains('hide')) {
+        popOverMenu.classList.remove('hide');
+    } else {
+        popOverMenu.classList.add('hide');
+    }
+}
+
+const overlayMenu = document.getElementById('overlay-menu');
+const popOverMenu = document.getElementById('popover-menu');
+const close = document.getElementById('close');
+
+overlayMenu.addEventListener('click', popOverMenuFunction);
+close.addEventListener('click', popOverMenuFunction);
+
+const swiperPresenters = new Swiper('.presenters-container-swiper', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 16,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    breakpoints: {
+        320: {
+            width: 200,
+        },
+        365: {
+            width: 211,
+        },
+        375: {
+            width: 220,
+        },
+        420: {
+            width: 250,
+        },
+    }
+});
+
+
+
