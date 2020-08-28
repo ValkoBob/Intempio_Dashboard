@@ -99,6 +99,9 @@
   main .stream {
     margin: -50px 0 36px; } }
 @media screen and (max-width: 1180px) {
+  .submenu {
+    display: none; }
+
   .wrapper {
     overflow: hidden;
     margin-left: 0;

@@ -200,6 +200,11 @@
 }
 
 @media screen and (max-width: 1180px) {
+
+  .submenu {
+    display: none;
+  }
+
   .wrapper {
     overflow: hidden;
     margin-left: 0;

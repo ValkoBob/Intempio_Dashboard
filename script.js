@@ -28,7 +28,6 @@ const menuFunction = () => {
         const element = elements.item(i);
         if (element.classList.contains('hide')) {
             menuOverlayed = false;
-            subMenu.style.left = '200px';
             setTimeout(() => element.classList.remove('hide'), 150);
             navbar.style.width = '200px';
             menuTitle.style.margin = '54px 31px 25px 30px';
@@ -41,14 +40,13 @@ const menuFunction = () => {
             arrowIcon.style.transform = 'rotate(0)';
             wrapper.style.marginLeft = '200px';
             for(let i = 0; i < menuItems.length; i++) {
-                menuItems[i].style.width = '220px';
-                menuItems[i].style.padding = '10px 30px';
+                menuItems[i].style.width = '200px';
+                menuItems[i].style.padding = '10px 0 10px 30px';
                 menuItems[i].style.margin = '0';
-                menuItems[i].style.justifyContent = 'flex-start';
+                menuItems[i].style.justifyContent = 'space-between';
             }
         } else {
             menuOverlayed = true;
-            subMenu.style.left = '84px';
             element.classList.add('hide');
             navbar.style.width = '84px';
             menuTitle.style.margin = '54px 18px 25px 18px';
@@ -157,17 +155,20 @@ document.querySelectorAll('.menu-item').forEach(item => {
         const currentPosition = item.getBoundingClientRect().top;
         subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
             ? currentPosition : (currentPosition - (220 -(window.innerHeight - currentPosition)))}px`;
-        if (subMenu.classList.contains('hide')) {
-            subMenu.classList.remove('hide');
+
+        if(subMenu.style.marginLeft === '-300px' && !menuOverlayed) {
+            subMenu.style.marginLeft = '200px';
             if(!menuOverlayed) {
                 item.appendChild(node);
             }
+            navArrow.classList.add('hide');
         } else {
-            subMenu.classList.add('hide');
+            subMenu.style.marginLeft = '-300px';
             const elements = document.getElementsByClassName("menu-item-arrow");
             if(!menuOverlayed) {
                 while (elements.length > 0) elements[0].remove();
             }
+            navArrow.classList.remove('hide');
         }
     })
 })
