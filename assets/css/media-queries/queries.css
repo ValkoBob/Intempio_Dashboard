@@ -291,7 +291,7 @@
       padding-bottom: 50px;
       opacity: 1;
       width: 318px;
-      height: 100%;
+      height: fit-content;
       background: #74BD43;
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
