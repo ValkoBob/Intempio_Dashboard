@@ -80,10 +80,10 @@ const swiperStuff = new Swiper('.swiper-container', {
 
     breakpoints: {
         280: {
-            width: '100%',
+            width: 300,
         },
         320: {
-           width: '100%',
+           width: 300,
         },
         375: {
             width: 285,
