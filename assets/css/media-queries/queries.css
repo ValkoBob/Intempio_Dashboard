@@ -1,10 +1,17 @@
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .overlay-menu {
+    display: none; }
+
+  .popover-menu {
     display: none; }
 
   main .tables-container .table {
     max-width: 260px;
     width: 100%; }
+  main .tables-container-mobile {
+    display: none; }
+  main .presenters-container-swiper {
+    display: none; }
   main .presenters-container .presenter {
     max-width: 390px;
     width: 100%; }
@@ -45,7 +52,9 @@
       main .fun-stuff-container .stuff-info h4 {
         font-size: 18px; }
       main .fun-stuff-container .stuff-info p {
-        font-size: 12px; } }
+        font-size: 12px; }
+  main .stream {
+    margin: 0 0 36px; } }
 @media screen and (max-width: 1400px) {
   main .tables-container .table {
     max-width: 240px;
@@ -80,12 +89,15 @@
       top: 25px; }
   main .fun-stuff-container .stuff {
     max-width: 310px;
-    width: 100%;
-    height: 250px; }
+    width: 100%; }
     main .fun-stuff-container .stuff-info {
       max-width: 300px;
       width: 100%;
-      top: 100px; } }
+      top: 30px; }
+  main .tables-container-mobile {
+    display: none; }
+  main .stream {
+    margin: -50px 0 36px; } }
 @media screen and (max-width: 1180px) {
   .wrapper {
     overflow: hidden;
@@ -172,71 +184,87 @@
     .wrapper main .presenters .presenters-container .presenter .socials {
       max-width: 134px;
       padding: 6px; }
-    .wrapper .fun-stuff-container-swiper {
-      display: flex;
-      margin-top: 18px;
-      justify-content: center; }
-      .wrapper .fun-stuff-container-swiper .swiper-wrapper {
-        margin: 0 50%; }
-      .wrapper .fun-stuff-container-swiper .stuff {
-        max-width: 517px;
-        width: 100%;
-        height: 430px;
-        background-repeat: no-repeat;
-        background-size: contain;
+    .wrapper .fun-stuff {
+      margin-top: 80px; }
+      .wrapper .fun-stuff-container-swiper {
         display: flex;
-        justify-content: center;
-        align-items: center; }
-        .wrapper .fun-stuff-container-swiper .stuff-info {
-          max-width: 450px;
+        margin-top: 18px;
+        justify-content: center; }
+        .wrapper .fun-stuff-container-swiper .swiper-wrapper {
+          margin: 0 50%; }
+        .wrapper .fun-stuff-container-swiper .stuff {
+          max-width: 517px;
           width: 100%;
-          top: 190px;
-          padding: 10px 20px 25px;
-          height: auto;
-          background: #FFFFFF;
-          border: 1px solid #CFCFCF;
-          box-sizing: border-box;
-          border-radius: 2px;
-          cursor: pointer;
-          position: relative; }
-          .wrapper .fun-stuff-container-swiper .stuff-info h4 {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 22px;
-            line-height: 30px;
-            text-align: center;
-            letter-spacing: -1px;
-            color: #353535; }
-          .wrapper .fun-stuff-container-swiper .stuff-info p {
-            margin-top: 7px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 16px;
-            text-align: center;
-            color: #5E5E5E; }
-          .wrapper .fun-stuff-container-swiper .stuff-info:hover {
+          height: 430px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .wrapper .fun-stuff-container-swiper .stuff-info {
+            max-width: 450px;
+            width: 100%;
+            top: 190px;
+            padding: 10px 20px 25px;
+            height: auto;
             background: #FFFFFF;
-            border: 1px solid #67B1E2;
+            border: 1px solid #CFCFCF;
             box-sizing: border-box;
-            border-radius: 2px; }
-            .wrapper .fun-stuff-container-swiper .stuff-info:hover h4 {
-              color: #67B1E2; }
-    .wrapper .fun-stuff .swiper-container {
-      overflow: inherit;
-      z-index: 0; }
-      .wrapper .fun-stuff .swiper-container-horizontal > .swiper-pagination-bullets,
-      .wrapper .fun-stuff .swiper-container .swiper-pagination-custom,
-      .wrapper .fun-stuff .swiper-container .swiper-pagination-fraction {
-        bottom: -80px;
-        left: 0;
-        width: 100%; }
-      .wrapper .fun-stuff .swiper-container .swiper-wrapper .swiper-slide {
-        width: inherit !important; }
-    .wrapper .fun-stuff .fun-stuff-container {
-      display: none; }
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative; }
+            .wrapper .fun-stuff-container-swiper .stuff-info h4 {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 22px;
+              line-height: 30px;
+              text-align: center;
+              letter-spacing: -1px;
+              color: #353535; }
+            .wrapper .fun-stuff-container-swiper .stuff-info p {
+              margin-top: 7px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+              color: #5E5E5E; }
+            .wrapper .fun-stuff-container-swiper .stuff-info:hover {
+              background: #FFFFFF;
+              border: 1px solid #67B1E2;
+              box-sizing: border-box;
+              border-radius: 2px; }
+              .wrapper .fun-stuff-container-swiper .stuff-info:hover h4 {
+                color: #67B1E2; }
+      .wrapper .fun-stuff .swiper-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: inherit;
+        z-index: 0; }
+        .wrapper .fun-stuff .swiper-container-horizontal > .swiper-pagination-bullets,
+        .wrapper .fun-stuff .swiper-container .swiper-pagination-custom,
+        .wrapper .fun-stuff .swiper-container .swiper-pagination-fraction {
+          bottom: -80px;
+          left: 0;
+          width: 100%; }
+        .wrapper .fun-stuff .swiper-container .swiper-wrapper .swiper-slide {
+          width: inherit !important; }
+      .wrapper .fun-stuff .fun-stuff-container {
+        display: none; }
     .wrapper .stream {
-      margin-top: 100px; }
+      margin-top: 120px; }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 7px;
+    border-radius: 4px;
+    background: url(./../../img/1.svg); }
+
+  .swiper-pagination-bullet-active {
+    width: 40px;
+    height: 7px;
+    border-radius: 4px;
+    background: url(./../../img/2.svg); }
 
   nav {
     max-width: 1180px;
@@ -263,7 +291,7 @@
       padding-bottom: 50px;
       opacity: 1;
       width: 318px;
-      height: fit-content;
+      height: 100%;
       background: #74BD43;
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
@@ -483,8 +511,6 @@
           word-wrap: break-word; }
     .wrapper main .presenters h3 {
       font-size: 32px; }
-    .wrapper main .presenters-container-swiper {
-      display: none; }
     .wrapper main .fun-stuff h3 {
       font-size: 32px; }
     .wrapper main .stream h3 {
@@ -580,19 +606,28 @@
             text-transform: uppercase;
             color: #353535; }
           .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials {
-            padding: 16px;
-            max-width: 200px;
+            padding: 6px 36px;
+            max-width: 137px;
             width: 100%;
-            height: auto;
+            height: 24px;
             background: #FFFFFF;
             border: 1px solid #67B1E2;
             box-sizing: border-box;
             border-radius: 2px;
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             position: relative;
             top: 23px; }
+            .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg:nth-child(1) {
+              width: 5.4px;
+              height: 10.4px; }
+            .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg:nth-child(2) {
+              width: 9.4px;
+              height: 7.6px; }
+            .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg:nth-child(3) {
+              width: 10px;
+              height: 10.4px; }
       .wrapper main .presenters-container-swiper > .swiper-pagination {
         z-index: 0;
         position: relative;
@@ -603,5 +638,26 @@
 @media screen and (max-width: 360px) {
   .wrapper main .presenters-container-swiper > .swiper-wrapper {
     margin: 0 5%; } }
+@media screen and (max-width: 340px) {
+  .wrapper main .presenters-container-swiper > .swiper-wrapper {
+    margin: 0; }
+
+  .wrapper .fun-stuff .swiper-container {
+    margin-left: 5px;
+    margin-right: 0; }
+
+  .wrapper main .events h1 {
+    margin-left: 0; }
+  .wrapper main .events-footer {
+    margin-left: 0;
+    align-items: center; }
+    .wrapper main .events-footer button {
+      margin-right: 0; }
+  .wrapper main .events-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .wrapper main .events-time .date {
+      margin-left: 4px; } }
 
 /*# sourceMappingURL=queries.css.map */

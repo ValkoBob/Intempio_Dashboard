@@ -79,8 +79,11 @@ const swiperStuff = new Swiper('.swiper-container', {
     },
 
     breakpoints: {
+        280: {
+            width: '100%',
+        },
         320: {
-           width: 300,
+           width: '100%',
         },
         375: {
             width: 285,
@@ -114,7 +117,6 @@ close.addEventListener('click', popOverMenuFunction);
 const swiperPresenters = new Swiper('.presenters-container-swiper', {
     loop: false,
     slidesPerView: 1,
-    spaceBetween: 16,
     centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
