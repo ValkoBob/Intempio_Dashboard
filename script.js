@@ -1,5 +1,7 @@
 const dropdown = document.getElementById('dropdown');
 const selector = document.getElementById('selector');
+const menuItems = document.getElementsByClassName('menu-item');
+const navArrow = document.getElementById('nav-arrow');
 
 selector.addEventListener('click', () => {
     const selectorArrow = document.getElementById('selector-arrow');
@@ -12,19 +14,21 @@ selector.addEventListener('click', () => {
     }
 });
 
+let menuOverlayed = false;
+
 const menuFunction = () => {
     const elements = document.getElementsByClassName('menu-button');
     const navbar = document.getElementById('navbar');
     const logo = document.getElementById('logo');
     const navHeader = document.getElementById('nav-header');
     const menuTitle = document.getElementById('menu-title');
-    const navArrow = document.getElementById('nav-arrow');
     const arrowIcon = document.getElementById('arrow-icon');
     const wrapper = document.getElementById('wrapper');
     for(let i = 0; i < elements.length; i++){
         const element = elements.item(i);
-        const menuItems = document.getElementsByClassName('menu-item');
         if (element.classList.contains('hide')) {
+            menuOverlayed = false;
+            subMenu.style.left = '200px';
             setTimeout(() => element.classList.remove('hide'), 150);
             navbar.style.width = '200px';
             menuTitle.style.margin = '54px 31px 25px 30px';
@@ -43,6 +47,8 @@ const menuFunction = () => {
                 menuItems[i].style.justifyContent = 'flex-start';
             }
         } else {
+            menuOverlayed = true;
+            subMenu.style.left = '84px';
             element.classList.add('hide');
             navbar.style.width = '84px';
             menuTitle.style.margin = '54px 18px 25px 18px';
@@ -139,5 +145,31 @@ const swiperPresenters = new Swiper('.presenters-container-swiper', {
     }
 });
 
+//getBoundingClientRect()
+
+const subMenu = document.getElementById('submenu');
+const subMenuList = document.getElementById('submenu-list');
+
+document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', event => {
+        const node = document.createElement('div');
+        node.classList.add('menu-item-arrow');
+        const currentPosition = item.getBoundingClientRect().top;
+        subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
+            ? currentPosition : (currentPosition - (220 -(window.innerHeight - currentPosition)))}px`;
+        if (subMenu.classList.contains('hide')) {
+            subMenu.classList.remove('hide');
+            if(!menuOverlayed) {
+                item.appendChild(node);
+            }
+        } else {
+            subMenu.classList.add('hide');
+            const elements = document.getElementsByClassName("menu-item-arrow");
+            if(!menuOverlayed) {
+                while (elements.length > 0) elements[0].remove();
+            }
+        }
+    })
+})
 
 
