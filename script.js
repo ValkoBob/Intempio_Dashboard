@@ -24,7 +24,8 @@ const menuFunction = () => {
     const menuTitle = document.getElementById('menu-title');
     const arrowIcon = document.getElementById('arrow-icon');
     const wrapper = document.getElementById('wrapper');
-    for(let i = 0; i < elements.length; i++){
+    const footer = document.getElementById('footer');
+    for (let i = 0; i < elements.length; i++) {
         const element = elements.item(i);
         if (element.classList.contains('hide')) {
             menuOverlayed = false;
@@ -32,14 +33,13 @@ const menuFunction = () => {
             navbar.style.width = '200px';
             menuTitle.style.margin = '54px 31px 25px 30px';
             navArrow.style.left = '145px'
-            setTimeout(() => {
-                logo.style.width = '100px';
-                logo.style.height = '60px';
-            }, 250);
+            logo.style.width = '100px';
+            logo.style.height = '60px';
             navHeader.style.padding = '18px 50px';
             arrowIcon.style.transform = 'rotate(0)';
             wrapper.style.marginLeft = '200px';
-            for(let i = 0; i < menuItems.length; i++) {
+            footer.style.marginLeft = '200px';
+            for (let i = 0; i < menuItems.length; i++) {
                 menuItems[i].style.width = '200px';
                 menuItems[i].style.padding = '10px 0 10px 30px';
                 menuItems[i].style.margin = '0';
@@ -56,7 +56,8 @@ const menuFunction = () => {
             navHeader.style.padding = '30px 9px 26px';
             arrowIcon.style.transform = 'rotate(180deg)';
             wrapper.style.marginLeft = '84px';
-            for(let i = 0; i < menuItems.length; i++) {
+            footer.style.marginLeft = '84px';
+            for (let i = 0; i < menuItems.length; i++) {
                 menuItems[i].style.width = '64px';
                 menuItems[i].style.padding = '0';
                 menuItems[i].style.margin = '0 10px';
@@ -73,35 +74,20 @@ menu.addEventListener('click', menuFunction);
 menuTile.addEventListener('click', menuFunction);
 
 const swiperStuff = new Swiper('.swiper-container', {
-    loop: false,
-    slidesPerView: 1,
+    direction: 'horizontal',
+    slidesPerView: 'auto',
     spaceBetween: 20,
     centeredSlides: true,
+    loop: true,
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-
-    breakpoints: {
-        280: {
-            width: 300,
-        },
-        320: {
-           width: 300,
-        },
-        375: {
-            width: 285,
-        },
-        420: {
-            width: 275,
-        },
-        721: {
-            width: 500,
-        }
-    }
 });
 
-swiperStuff.slideTo(1, false,false);
+swiperStuff.slideTo(1, false, false);
+
 
 const popOverMenuFunction = () => {
     if (popOverMenu.classList.contains('hide')) {
@@ -119,34 +105,25 @@ overlayMenu.addEventListener('click', popOverMenuFunction);
 close.addEventListener('click', popOverMenuFunction);
 
 const swiperPresenters = new Swiper('.presenters-container-swiper', {
-    loop: false,
-    slidesPerView: 1,
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 16,
     centeredSlides: true,
+    loop: true,
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-
-    breakpoints: {
-        320: {
-            width: 200,
-        },
-        365: {
-            width: 211,
-        },
-        375: {
-            width: 220,
-        },
-        420: {
-            width: 250,
-        },
-    }
 });
+
+swiperPresenters.slideTo(2, false, false);
 
 //getBoundingClientRect()
 
 const subMenu = document.getElementById('submenu');
 const subMenuList = document.getElementById('submenu-list');
+const subMenuWrapper = document.getElementById('submenu-wrapper');
 
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener('click', event => {
@@ -154,18 +131,20 @@ document.querySelectorAll('.menu-item').forEach(item => {
         node.classList.add('menu-item-arrow');
         const currentPosition = item.getBoundingClientRect().top;
         subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
-            ? currentPosition : (currentPosition - (220 -(window.innerHeight - currentPosition)))}px`;
+            ? currentPosition : (currentPosition - (220 - (window.innerHeight - currentPosition)))}px`;
 
-        if(subMenu.style.marginLeft === '-300px' && !menuOverlayed) {
+        if (subMenu.style.marginLeft === '-300px' && !menuOverlayed) {
             subMenu.style.marginLeft = '200px';
-            if(!menuOverlayed) {
+            subMenuWrapper.classList.remove('hide');
+            if (!menuOverlayed) {
                 item.appendChild(node);
             }
             navArrow.classList.add('hide');
         } else {
             subMenu.style.marginLeft = '-300px';
+            subMenuWrapper.classList.add('hide');
             const elements = document.getElementsByClassName("menu-item-arrow");
-            if(!menuOverlayed) {
+            if (!menuOverlayed) {
                 while (elements.length > 0) elements[0].remove();
             }
             navArrow.classList.remove('hide');

@@ -45,9 +45,20 @@ nav {
       .submenu-list > div svg {
         margin: 0 10px 0 20px; }
 
+.submenu-wrapper {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  background: rgba(53, 53, 53, 0.8); }
+
 .nav-header {
   padding: 18px 50px;
   border-bottom: 2px solid #6BB639; }
+  .nav-header svg {
+    transition: width 0.5s; }
 
 .menu-title {
   margin: 54px 31px 25px 30px;
@@ -102,5 +113,14 @@ nav {
     cursor: pointer; }
   .nav-arrow svg path {
     cursor: pointer; }
+
+.overlay-menu {
+  display: none; }
+
+.popover-menu {
+  display: none; }
+
+.hide {
+  display: none; }
 
 /*# sourceMappingURL=navbar.css.map */

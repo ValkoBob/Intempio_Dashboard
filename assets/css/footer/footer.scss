@@ -1,0 +1,25 @@
+footer {
+  margin-left: 200px;
+  padding: 32px;
+  transition: margin-left 0.5s;
+  .stream {
+    margin: 8px 0 36px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      color: #353535;
+    }
+
+    & img {
+      margin-top: 20px;
+      width: inherit;
+      height: auto;
+    }
+  }
+}

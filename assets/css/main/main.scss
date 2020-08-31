@@ -618,6 +618,8 @@ main {
       grid-gap: 16px;
 
       & .table {
+        max-width: 260px;
+        width: 100%;
         padding: 30px 20px;
         cursor: pointer;
         border: 1px solid #CFCFCF;
@@ -655,6 +657,10 @@ main {
           word-wrap: break-word;
         }
       }
+    }
+
+    &-container-mobile {
+      display: none;
     }
 
     & .see-all {
@@ -703,7 +709,13 @@ main {
       justify-content: center;
       align-items: center;
 
+      &-swiper {
+        display: none;
+      }
+
       & .presenter {
+        max-width: 390px;
+        width: 100%;
         margin-left: 20px;
         background: #FFFFFF;
         border: 1px solid #67B1E2;
@@ -716,6 +728,11 @@ main {
 
         &:first-child {
           margin: 0;
+        }
+
+        & img {
+          max-width: 300px;
+          width: 100%;
         }
 
         &-image {
@@ -772,7 +789,7 @@ main {
           align-items: center;
           justify-content: space-evenly;
           position: relative;
-          top: 23px;
+          top: 36px;
         }
       }
     }
@@ -782,6 +799,10 @@ main {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+
+    &-container-swiper {
+      display: none;
+    }
 
     & h3 {
       font-style: normal;
@@ -797,20 +818,25 @@ main {
       justify-content: center;
 
       & .stuff {
-        margin-left: 20px;
-        max-width: 390px;
+        max-width: 540px;
         width: 100%;
-        height: auto;
+        height: 450px;
+        margin-left: 20px;
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        &:first-child {
+        margin-left: 0;
+      }
+
         &-info {
-          padding: 10px 20px 25px;
-          max-width: 325px;
+          max-width: 450px;
           width: 100%;
+          top: 190px;
+          padding: 10px 20px 25px;
           height: auto;
           background: #FFFFFF;
           border: 1px solid #CFCFCF;
@@ -818,7 +844,6 @@ main {
           border-radius: 2px;
           cursor: pointer;
           position: relative;
-          top: 130px;
 
           & h4 {
             font-style: normal;
@@ -852,27 +877,6 @@ main {
           }
         }
       }
-    }
-  }
-
-  & .stream {
-    margin: 40px 0 36px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    & h3 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 47px;
-      color: #353535;
-    }
-
-    & img {
-      margin-top: 20px;
-      width: inherit;
-      height: auto;
     }
   }
 }

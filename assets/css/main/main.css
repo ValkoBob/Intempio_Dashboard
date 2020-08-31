@@ -466,6 +466,8 @@ main {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-gap: 16px; }
       main .tables-container .table {
+        max-width: 260px;
+        width: 100%;
         padding: 30px 20px;
         cursor: pointer;
         border: 1px solid #CFCFCF;
@@ -496,6 +498,8 @@ main {
           text-transform: uppercase;
           color: #67B1E2;
           word-wrap: break-word; }
+    main .tables-container-mobile {
+      display: none; }
     main .tables .see-all {
       width: 100%;
       display: flex;
@@ -533,7 +537,11 @@ main {
       display: flex;
       justify-content: center;
       align-items: center; }
+      main .presenters-container-swiper {
+        display: none; }
       main .presenters-container .presenter {
+        max-width: 390px;
+        width: 100%;
         margin-left: 20px;
         background: #FFFFFF;
         border: 1px solid #67B1E2;
@@ -545,6 +553,9 @@ main {
         align-items: center; }
         main .presenters-container .presenter:first-child {
           margin: 0; }
+        main .presenters-container .presenter img {
+          max-width: 300px;
+          width: 100%; }
         main .presenters-container .presenter-image {
           flex-shrink: 1;
           flex-grow: 0;
@@ -589,11 +600,13 @@ main {
           align-items: center;
           justify-content: space-evenly;
           position: relative;
-          top: 23px; }
+          top: 36px; }
   main .fun-stuff {
     margin-top: 40px;
     display: flex;
     flex-direction: column; }
+    main .fun-stuff-container-swiper {
+      display: none; }
     main .fun-stuff h3 {
       font-style: normal;
       font-weight: 500;
@@ -605,27 +618,29 @@ main {
       display: flex;
       justify-content: center; }
       main .fun-stuff-container .stuff {
-        margin-left: 20px;
-        max-width: 390px;
+        max-width: 540px;
         width: 100%;
-        height: auto;
+        height: 450px;
+        margin-left: 20px;
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
         justify-content: center;
         align-items: center; }
+        main .fun-stuff-container .stuff:first-child {
+          margin-left: 0; }
         main .fun-stuff-container .stuff-info {
-          padding: 10px 20px 25px;
-          max-width: 325px;
+          max-width: 450px;
           width: 100%;
+          top: 190px;
+          padding: 10px 20px 25px;
           height: auto;
           background: #FFFFFF;
           border: 1px solid #CFCFCF;
           box-sizing: border-box;
           border-radius: 2px;
           cursor: pointer;
-          position: relative;
-          top: 130px; }
+          position: relative; }
           main .fun-stuff-container .stuff-info h4 {
             font-style: normal;
             font-weight: normal;
@@ -649,20 +664,5 @@ main {
             border-radius: 2px; }
             main .fun-stuff-container .stuff-info:hover h4 {
               color: #67B1E2; }
-  main .stream {
-    margin: 40px 0 36px;
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    main .stream h3 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 47px;
-      color: #353535; }
-    main .stream img {
-      margin-top: 20px;
-      width: inherit;
-      height: auto; }
 
 /*# sourceMappingURL=main.css.map */
