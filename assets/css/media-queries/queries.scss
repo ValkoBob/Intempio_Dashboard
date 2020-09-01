@@ -219,6 +219,10 @@
 
   main {
     margin-bottom: 50px;
+
+    .sessions-item {
+      pointer-events: none;
+    }
   }
 
   .submenu {
@@ -489,9 +493,9 @@
       display: flex;
       justify-content: flex-end;
       left: 0;
-      overflow-y: auto;
       position: fixed;
       top: 0;
+      overflow-y: scroll;
       background: rgba(53, 53, 53, 0.8);
     }
 
@@ -590,7 +594,7 @@
                 margin-left: 15px;
               }
 
-              &:hover {
+              &:hover, &:active {
                 color: #74BD43;
                 background: #FFFFFF;
                 border-radius: 2px;
@@ -747,7 +751,13 @@
 }
 
 @media screen and (max-width: 720px) {
+  header {
+    height: 69px;
+  }
+
   nav {
+    height: 69px;
+
     .popover-menu-window {
       max-width: 297px;
       height: fit-content;
@@ -813,11 +823,21 @@
     }
 
     .nav-header {
-      margin: 44px 0 16px 16px;
+      margin: 13px 0 16px 16px;
+
+      & svg {
+        width: 66px !important;
+        height: 40px !important;
+      }
     }
 
     .overlay-menu {
-      margin: 50px 16px 30px 0;
+      margin: 19px 16px 28px 0;
+
+      & svg {
+        width: 35px;
+        height: 22px;
+      }
     }
 
     .hide {

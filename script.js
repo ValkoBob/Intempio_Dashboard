@@ -92,11 +92,14 @@ swiperStuff.slideTo(1, false, false);
 const popOverMenuFunction = () => {
     if (popOverMenu.classList.contains('hide')) {
         popOverMenu.classList.remove('hide');
+        body.style.overflowY = 'hidden';
     } else {
         popOverMenu.classList.add('hide');
+        body.style.overflowY = 'auto';
     }
 }
 
+const body = document.getElementById('body');
 const overlayMenu = document.getElementById('overlay-menu');
 const popOverMenu = document.getElementById('popover-menu');
 const close = document.getElementById('close');
