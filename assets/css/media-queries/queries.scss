@@ -496,6 +496,7 @@
       position: fixed;
       top: 0;
       overflow-y: scroll;
+      overflow-x: hidden;
       background: rgba(53, 53, 53, 0.8);
     }
 
@@ -520,9 +521,15 @@
       }
 
       & .close {
-        position: absolute;
-        top: 37px;
-        right: 31px;
+        display: flex;
+        justify-content: flex-end;
+        max-width: 297px;
+        width: 100%;
+        background: inherit;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 28px 22px 28px 0;
       }
 
       .popover-header {
