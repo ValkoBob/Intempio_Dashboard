@@ -125,7 +125,35 @@ const subMenu = document.getElementById('submenu');
 const subMenuList = document.getElementById('submenu-list');
 const subMenuWrapper = document.getElementById('submenu-wrapper');
 
-document.querySelectorAll('.menu-item').forEach(item => {
+const resourcesButtonDesktop = document.getElementById('resources-desktop');
+
+resourcesButtonDesktop.addEventListener('click', () => {
+    const node = document.createElement('div');
+    node.classList.add('menu-item-arrow');
+    const currentPosition = resourcesButtonDesktop.getBoundingClientRect().top;
+
+    subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
+        ? currentPosition : (currentPosition - (220 - (window.innerHeight - currentPosition)))}px`;
+
+    if (subMenu.style.marginLeft === '-300px' && !menuOverlayed) {
+        subMenu.style.marginLeft = '200px';
+        subMenuWrapper.classList.remove('hide');
+        if (!menuOverlayed) {
+            resourcesButtonDesktop.appendChild(node);
+        }
+        navArrow.classList.add('hide');
+    } else {
+        subMenu.style.marginLeft = '-300px';
+        subMenuWrapper.classList.add('hide');
+        const elements = document.getElementsByClassName("menu-item-arrow");
+        if (!menuOverlayed) {
+            while (elements.length > 0) elements[0].remove();
+        }
+        navArrow.classList.remove('hide');
+    }
+});
+
+/*document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener('click', event => {
         const node = document.createElement('div');
         node.classList.add('menu-item-arrow');
@@ -150,6 +178,48 @@ document.querySelectorAll('.menu-item').forEach(item => {
             navArrow.classList.remove('hide');
         }
     })
-})
+})*/
+
+const resourcesButtonTablet = document.getElementById('resources-tablet');
+const popOverSubMenu = document.getElementById('popover-submenu');
+const popOverSubMenuList = document.getElementById('popover-submenu-list');
+const popOverMenuWindow = document.getElementById('popover-menu-window');
+const subMenuMobile = document.getElementById('submenu-mobile');
+
+resourcesButtonTablet.addEventListener('click', () => {
+    const node = document.createElement('div');
+    node.classList.add('menu-item-arrow');
+    const currentPositionTop = resourcesButtonTablet.getBoundingClientRect().top;
+    const currentPositionLeft = resourcesButtonTablet.getBoundingClientRect().left;
+
+    popOverSubMenuList.style.top = `${(window.innerHeight - currentPositionTop) > 220
+        ? currentPositionTop : (currentPositionTop - (220 - (window.innerHeight - currentPositionTop)))}px`;
+    const elements = document.getElementsByClassName("menu-item-arrow");
+    console.log(window.innerWidth);
+    if (window.innerWidth > 720) {
+        if (popOverSubMenu.style.marginLeft === '800px') {
+            popOverSubMenu.style.marginLeft = `${currentPositionLeft - 220}px`;
+            resourcesButtonTablet.appendChild(node);
+            popOverMenuWindow.style.boxShadow = 'none';
+        } else {
+            popOverSubMenu.style.marginLeft = '800px';
+            while (elements.length > 0) elements[0].remove();
+            popOverMenuWindow.style.boxShadow = '-30px 0px 44px rgba(0, 0, 0, 0.4)';
+        }
+    } else {
+        if (subMenuMobile.classList.contains('hide')) {
+            subMenuMobile.classList.remove('hide');
+            node.style.transform = 'rotate(90deg)';
+            resourcesButtonTablet.appendChild(node);
+        } else {
+            subMenuMobile.classList.add('hide');
+            while (elements.length > 0) elements[0].remove();
+        }
+    }
+});
+
+
+
+
 
 

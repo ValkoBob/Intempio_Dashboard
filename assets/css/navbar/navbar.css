@@ -9,10 +9,14 @@ nav {
   z-index: 1212; }
   nav .hide {
     display: none; }
+  nav .item-submenu {
+    display: none; }
+  nav .popover-submenu {
+    display: none; }
 
 .submenu {
   width: 210px;
-  height: 120%;
+  height: 100%;
   background: #FFFFFF;
   position: absolute;
   z-index: 1;

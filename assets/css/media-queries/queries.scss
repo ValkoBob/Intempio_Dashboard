@@ -55,7 +55,6 @@
 
 @media screen and (max-width: 1280px) {
   main {
-
     & .events {
       & h3 {
         margin-top: 40px;
@@ -504,8 +503,9 @@
     .popover-menu-window {
       padding-bottom: 50px;
       opacity: 1;
-      width: 318px;
-      height: fit-content;
+      max-width: 318px;
+      width: 100%;
+      height: 100%;
       background: #74BD43;
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
@@ -640,10 +640,59 @@
         color: #74BD43;
       }
     }
+
+    & .popover-submenu {
+      display: block;
+      width: 527px;
+      height: 100%;
+      background: #FFFFFF;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      margin-left: 800px;
+      transition: margin-left 0.5s;
+
+      &-list {
+        position: relative;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div {
+          display: flex;
+          align-items: center;
+          align-self: baseline;
+          padding: 15px 0;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #A6A6A6;
+          cursor: pointer;
+
+          &:hover {
+            & > span {
+              color: #74BD43;
+            }
+
+            & svg rect {
+              fill: #74BD43;
+              stroke: #74BD43;
+            }
+          }
+
+          & svg {
+            margin: 0 10px 0 20px;
+          }
+        }
+      }
+    }
   }
 
   .nav-header {
-    padding: 0;
+    padding: 0 !important;
     margin: 20px 0 20px 50px;
     border-bottom: none;
 
@@ -665,6 +714,10 @@
 
   .menu {
     display: none;
+  }
+
+  .menu-item-arrow {
+    margin: 0 0 0 40px;
   }
 
   .nav-arrow {
@@ -696,7 +749,59 @@
 @media screen and (max-width: 720px) {
   nav {
     .popover-menu-window {
-      width: 297px;
+      max-width: 297px;
+      height: fit-content;
+    }
+
+    & .popover-submenu {
+      display: none;
+    }
+
+    .item-submenu {
+      background: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &>div {
+        display: flex;
+        align-items: center;
+        align-self: baseline;
+        padding: 16px 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #A6A6A6;
+        cursor: pointer;
+
+        &:hover {
+          &>span {
+            color: #74BD43;
+          }
+
+          & svg rect {
+            fill: #74BD43;
+            stroke: #74BD43;
+          }
+        }
+
+        & svg {
+          margin: 0 10px 0 20px;
+        }
+      }
+    }
+
+    .nav-header {
+      margin: 44px 0 16px 16px;
+    }
+
+    .overlay-menu {
+      margin: 50px 16px 30px 0;
+    }
+
+    .hide {
+      display: none;
     }
   }
 
