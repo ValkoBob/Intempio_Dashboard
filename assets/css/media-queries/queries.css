@@ -463,6 +463,18 @@
   nav .popover-menu-window {
     max-width: 297px;
     height: fit-content; }
+    nav .popover-menu-window .popover-header {
+      margin-top: 80px;
+      margin-left: 40px;
+      margin-bottom: 20px; }
+      nav .popover-menu-window .popover-header-auth {
+        margin-top: 80px;
+        margin-left: 40px;
+        margin-bottom: 20px; }
+    nav .popover-menu-window > svg {
+      margin: 0 30px 20px 40px; }
+    nav .popover-menu-window .popover-window-menu {
+      margin-bottom: 20px; }
   nav .popover-submenu {
     display: none; }
   nav .item-submenu {

@@ -751,6 +751,26 @@
     .popover-menu-window {
       max-width: 297px;
       height: fit-content;
+
+      .popover-header {
+         margin-top: 80px;
+         margin-left: 40px;
+         margin-bottom: 20px;
+
+         &-auth {
+           margin-top: 80px;
+           margin-left: 40px;
+           margin-bottom: 20px;
+         }
+       }
+
+      &>svg {
+        margin: 0 30px 20px 40px;
+      }
+
+      & .popover-window-menu {
+        margin-bottom: 20px;
+      }
     }
 
     & .popover-submenu {
