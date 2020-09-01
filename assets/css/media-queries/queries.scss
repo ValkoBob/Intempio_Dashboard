@@ -506,7 +506,7 @@
     }
 
     .popover-menu-window {
-      padding-bottom: 50px;
+      padding-bottom: 86px;
       opacity: 1;
       max-width: 318px;
       width: 100%;
@@ -530,6 +530,7 @@
         top: 0;
         right: 0;
         padding: 28px 22px 28px 0;
+        border-top-left-radius: 24px;
       }
 
       .popover-header {
@@ -1111,19 +1112,9 @@
               position: relative;
               top: 8px;
 
-              & svg:nth-child(1) {
-                width: 5.4px;
-                height: 10.4px;
-              }
-
-              & svg:nth-child(2) {
-                width: 9.4px;
-                height: 7.6px;
-              }
-
-              & svg:nth-child(3) {
-                width: 10px;
-                height: 10.4px;
+              & svg {
+                width: 12.52px;
+                height: 12.52px;
               }
             }
           }

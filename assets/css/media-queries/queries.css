@@ -287,7 +287,7 @@
       display: none;
       height: 0; }
     nav .popover-menu-window {
-      padding-bottom: 50px;
+      padding-bottom: 86px;
       opacity: 1;
       max-width: 318px;
       width: 100%;
@@ -307,7 +307,8 @@
         position: fixed;
         top: 0;
         right: 0;
-        padding: 28px 22px 28px 0; }
+        padding: 28px 22px 28px 0;
+        border-top-left-radius: 24px; }
       nav .popover-menu-window .popover-header {
         margin-top: 88px;
         margin-left: 40px;
@@ -694,15 +695,9 @@
               justify-content: space-between;
               position: relative;
               top: 8px; }
-              .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg:nth-child(1) {
-                width: 5.4px;
-                height: 10.4px; }
-              .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg:nth-child(2) {
-                width: 9.4px;
-                height: 7.6px; }
-              .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg:nth-child(3) {
-                width: 10px;
-                height: 10.4px; }
+              .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg {
+                width: 12.52px;
+                height: 12.52px; }
         .wrapper main .presenters-container-swiper > .swiper-pagination {
           z-index: 0;
           position: relative;
