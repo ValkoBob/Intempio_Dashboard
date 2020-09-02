@@ -2,6 +2,7 @@ const dropdown = document.getElementById('dropdown');
 const selector = document.getElementById('selector');
 const menuItems = document.getElementsByClassName('menu-item');
 const navArrow = document.getElementById('nav-arrow');
+const menuItemArrow = document.getElementById('menu-item-arrow');
 
 selector.addEventListener('click', () => {
     const selectorArrow = document.getElementById('selector-arrow');
@@ -13,8 +14,6 @@ selector.addEventListener('click', () => {
         selectorArrow.style.transform = 'rotate(180deg)';
     }
 });
-
-let menuOverlayed = false;
 
 const menuFunction = () => {
     const elements = document.getElementsByClassName('menu-button');
@@ -39,6 +38,7 @@ const menuFunction = () => {
             arrowIcon.style.transform = 'rotate(0)';
             wrapper.style.marginLeft = '200px';
             footer.style.marginLeft = '200px';
+            setTimeout(() =>menuItemArrow.style.display = 'block', 500);
             for (let i = 0; i < menuItems.length; i++) {
                 menuItems[i].style.width = '200px';
                 menuItems[i].style.padding = '10px 0 10px 30px';
@@ -57,6 +57,7 @@ const menuFunction = () => {
             arrowIcon.style.transform = 'rotate(180deg)';
             wrapper.style.marginLeft = '84px';
             footer.style.marginLeft = '84px';
+            menuItemArrow.style.display = 'none';
             for (let i = 0; i < menuItems.length; i++) {
                 menuItems[i].style.width = '64px';
                 menuItems[i].style.padding = '0';
@@ -130,22 +131,31 @@ const subMenuWrapper = document.getElementById('submenu-wrapper');
 
 const resourcesButtonDesktop = document.getElementById('resources-desktop');
 
+let submenuDisabled = false;
+
 resourcesButtonDesktop.addEventListener('click', () => {
     const currentPosition = resourcesButtonDesktop.getBoundingClientRect().top;
 
     subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
         ? currentPosition : (currentPosition - (220 - (window.innerHeight - currentPosition)))}px`;
-
-    if (subMenu.style.marginLeft === '-300px' && !menuOverlayed) {
+    if (!submenuDisabled && !menuOverlayed) {
         subMenu.style.marginLeft = '200px';
         subMenuWrapper.classList.remove('hide');
         navArrow.classList.add('hide');
+        submenuDisabled = true;
+        body.style.overflowY = 'hidden';
     } else {
         subMenu.style.marginLeft = '-300px';
         subMenuWrapper.classList.add('hide');
         navArrow.classList.remove('hide');
+        submenuDisabled = false;
+        body.style.overflowY = 'auto';
     }
 });
+
+let menuOverlayed = false;
+
+let submenuTabletDisabled = false;
 
 const resourcesButtonTablet = document.getElementById('resources-tablet');
 const popOverSubMenu = document.getElementById('popover-submenu');
@@ -160,19 +170,32 @@ resourcesButtonTablet.addEventListener('click', () => {
     popOverSubMenuList.style.top = `${(window.innerHeight - currentPositionTop) > 220
         ? currentPositionTop : (currentPositionTop - (220 - (window.innerHeight - currentPositionTop)))}px`;
     if (window.innerWidth > 720) {
-        if (popOverSubMenu.style.marginLeft === '800px') {
+        if (!submenuTabletDisabled) {
             popOverSubMenu.style.marginLeft = `${currentPositionLeft - 220}px`;
             popOverMenuWindow.style.boxShadow = 'none';
+            resourcesButtonTablet.style.background = '#FFFFFF';
+            resourcesButtonTablet.style.color = '#74BD43';
+            resourcesButtonTablet.children[0].children[0].style.fill = '#74BD43';
+            submenuTabletDisabled = true;
         } else {
             popOverSubMenu.style.marginLeft = '800px';
             popOverMenuWindow.style.boxShadow = '-30px 0px 44px rgba(0, 0, 0, 0.4)';
+            resourcesButtonTablet.style.background = 'transparent';
+            resourcesButtonTablet.style.color = '#F4FFED';
+            resourcesButtonTablet.children[0].children[0].style.fill = '#F4FFED';
+            submenuTabletDisabled = false;
         }
     } else {
         if (subMenuMobile.classList.contains('hide')) {
             subMenuMobile.classList.remove('hide');
-            resourcesButtonTablet.appendChild(node);
+            resourcesButtonTablet.style.background = '#FFFFFF';
+            resourcesButtonTablet.style.color = '#74BD43';
+            resourcesButtonTablet.children[0].children[0].style.fill = '#74BD43';
         } else {
             subMenuMobile.classList.add('hide');
+            resourcesButtonTablet.style.background = 'transparent';
+            resourcesButtonTablet.style.color = '#F4FFED';
+            resourcesButtonTablet.children[0].children[0].style.fill = '#F4FFED';
         }
     }
 });

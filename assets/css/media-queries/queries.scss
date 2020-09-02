@@ -502,7 +502,7 @@
     }
 
     .popover-menu-window {
-      padding-bottom: 86px;
+      padding-bottom: 28px;
       opacity: 1;
       max-width: 318px;
       width: 100%;
@@ -598,13 +598,13 @@
                 margin-left: 15px;
               }
 
-              &:hover, &:active {
-                color: #74BD43;
-                background: #FFFFFF;
+              &:hover{
+                color: #F4FFED;
+                background: transparent;
                 border-radius: 2px;
 
                 & svg path {
-                  fill: #74BD43;
+                  fill: #F4FFED;
                 }
               }
             }
@@ -989,11 +989,11 @@
           justify-content: center;
           align-items: center;
 
-          &:hover, &:active {
-            border: 1px solid #67B1E2;
+          &:hover{
+            border: 1px solid #CFCFCF;
             box-sizing: border-box;
             border-radius: 2px;
-            box-shadow: 0 9px 25px rgba(205, 205, 205, 0.4);
+            box-shadow: none;
           }
 
           & .circle {
@@ -1154,14 +1154,14 @@
               font-size: 12px;
             }
 
-            &:hover, &:active {
+            &:hover{
               background: #FFFFFF;
-              border: 1px solid #67B1E2;
+              border: 1px solid #CFCFCF;
               box-sizing: border-box;
               border-radius: 2px;
 
               & h4 {
-                color: #67B1E2;
+                color: inherit;
               }
             }
           }
@@ -1246,63 +1246,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media(hover: hover) and (pointer: fine) {
-  main {
-    .sessions-item:hover {
-      border: 1px solid #74BD43;
-      box-sizing: border-box;
-      box-shadow: 0 7px 25px rgba(82, 154, 34, 0.2);
-      border-radius: 2px;
-
-      & button {
-        background: #74BD43;
-        border: 1px solid #74BD43;
-        color: #FFFFFF;
-      }
-
-      & .sessions-time {
-        background: #74BD43;
-        border-radius: 2px;
-
-        & .time {
-          color: #FFFFFF;
-        }
-
-        & .date {
-          color: #FFFFFF;
-        }
-
-        & svg path {
-          fill: #F4FFED;
-        }
-      }
-    }
-
-    .dropdown-item:hover {
-      background: #F4FFED;
-      border-radius: 2px;
-    }
-
-    .stuff-info:hover {
-      background: #FFFFFF;
-      border: 1px solid #67B1E2;
-      box-sizing: border-box;
-      border-radius: 2px;
-
-      & h4 {
-        color: #67B1E2;
-      }
-    }
-
-    .table:hover {
-      border: 1px solid #67B1E2;
-      box-sizing: border-box;
-      border-radius: 2px;
-      box-shadow: 0 9px 25px rgba(205, 205, 205, 0.4);
     }
   }
 }
