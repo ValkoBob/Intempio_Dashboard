@@ -145,6 +145,8 @@
     .wrapper main .video .posts {
       max-width: 700px; }
       .wrapper main .video .posts-creator {
+        max-width: 700px;
+        width: 100%;
         padding: 17px 0; }
         .wrapper main .video .posts-creator img {
           margin-left: 10px; }
@@ -595,11 +597,13 @@
     .wrapper main .video-content .posts-creator label {
       display: none; }
     .wrapper main .video-content .posts-creator input {
-      padding: 6px; }
+      padding: 6px;
+      min-width: 0; }
     .wrapper main .video-content .posts-item .footer label {
       display: none; }
     .wrapper main .video-content .posts-item .footer input {
-      padding: 6px; }
+      padding: 6px;
+      min-width: 0; }
     .wrapper main .tables h3 {
       font-size: 32px; }
     .wrapper main .tables-container {
@@ -647,7 +651,8 @@
       .wrapper main .presenters-container {
         display: none; }
       .wrapper main .presenters-container-swiper {
-        display: block; }
+        display: block;
+        position: relative; }
         .wrapper main .presenters-container-swiper > .swiper-wrapper {
           z-index: 0; }
           .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter {
@@ -712,10 +717,12 @@
               .wrapper main .presenters-container-swiper > .swiper-wrapper .presenter .socials svg {
                 width: 18px;
                 height: 20px; }
-        .wrapper main .presenters-container-swiper > .swiper-pagination {
-          z-index: 0;
-          position: relative;
-          bottom: -30px; }
+        .wrapper main .presenters-container-swiper .swiper-pagination-bullets,
+        .wrapper main .presenters-container-swiper .swiper-pagination-custom,
+        .wrapper main .presenters-container-swiper .swiper-pagination-fraction {
+          bottom: -60px;
+          left: 0;
+          width: 100%; }
     .wrapper main .fun-stuff {
       margin-top: 40px; }
       .wrapper main .fun-stuff h3 {
