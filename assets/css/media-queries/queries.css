@@ -476,7 +476,8 @@
     height: 69px; }
 
   nav {
-    height: 69px; }
+    height: 69px;
+    padding: 0 16px; }
     nav .popover-menu-window {
       padding: 50px 0;
       position: fixed;
@@ -536,12 +537,12 @@
         nav .item-submenu > div svg {
           margin: 0 10px 0 20px; }
     nav .nav-header {
-      margin: 13px 0 16px 16px; }
+      margin: 0; }
       nav .nav-header svg {
         width: 66px !important;
         height: 40px !important; }
     nav .overlay-menu {
-      margin: 19px 16px 28px 0; }
+      margin: 0; }
       nav .overlay-menu svg {
         width: 35px;
         height: 22px; }
@@ -549,10 +550,10 @@
       display: none; }
 
   .wrapper main {
-    padding: 10px;
+    padding: 10px 16px;
     margin-bottom: 70px; }
     .wrapper main .events {
-      margin: -10px -10px 0 -10px; }
+      margin: -10px -16px 0 -16px; }
       .wrapper main .events h3 {
         margin-left: 16px;
         font-size: 18px; }
@@ -581,12 +582,15 @@
       .wrapper main .sessions-item button {
         max-width: 311px;
         width: 100%;
-        margin: 46px 0 44px 0; }
+        margin: 24px 0 24px 0; }
     .wrapper main .sessions-time {
       margin: 0;
       max-width: 100%;
+      min-height: 126px;
       border: none;
       border-bottom: 1px solid #CFCFCF; }
+      .wrapper main .sessions-time svg {
+        margin-bottom: 9.67px; }
     .wrapper main .sessions-information {
       padding: 30px 8px 27px 8px;
       max-width: 100%;

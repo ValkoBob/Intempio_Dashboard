@@ -770,6 +770,7 @@
 
   nav {
     height: 69px;
+    padding: 0 16px;
 
     .popover-menu-window {
       padding: 50px 0;
@@ -862,7 +863,7 @@
     }
 
     .nav-header {
-      margin: 13px 0 16px 16px;
+      margin: 0;
 
       & svg {
         width: 66px !important;
@@ -871,7 +872,7 @@
     }
 
     .overlay-menu {
-      margin: 19px 16px 28px 0;
+      margin: 0;
 
       & svg {
         width: 35px;
@@ -885,11 +886,11 @@
   }
 
   .wrapper main {
-    padding: 10px;
+    padding: 10px 16px;
     margin-bottom: 70px;
 
     .events {
-      margin: -10px -10px 0 -10px;
+      margin: -10px -16px 0 -16px;
 
       & h3 {
         margin-left: 16px;
@@ -938,15 +939,20 @@
         & button {
           max-width: 311px;
           width: 100%;
-          margin: 46px 0 44px 0;
+          margin: 24px 0 24px 0;
         }
       }
 
       &-time {
         margin: 0;
         max-width: 100%;
+        min-height: 126px;
         border: none;
         border-bottom: 1px solid #CFCFCF;
+
+        & svg {
+          margin-bottom: 9.67px;
+        }
       }
 
       &-information {
