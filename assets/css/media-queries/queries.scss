@@ -502,7 +502,12 @@
     }
 
     .popover-menu-window {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
       padding-bottom: 28px;
+      padding-top: 28px;
       opacity: 1;
       max-width: 318px;
       width: 100%;
@@ -517,16 +522,10 @@
       }
 
       & .close {
-        display: flex;
-        justify-content: flex-end;
-        max-width: 297px;
-        width: 100%;
+        position: relative;
+        top: 20px;
+        left: 250px;
         background: inherit;
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 28px 22px 28px 0;
-        border-top-left-radius: 24px;
       }
 
       .popover-header {
@@ -536,7 +535,7 @@
       }
 
       .popover-header-auth {
-        margin-top: 100px;
+        margin-top: 60px;
         margin-left: 40px;
         margin-bottom: 40px;
         display: flex;
@@ -613,7 +612,7 @@
       }
 
       .buy-tickets {
-        margin: 10px 20px;
+        margin: 10px 30px;
         width: 258px;
         height: 36px;
         background: #74BD43;
@@ -763,8 +762,26 @@
     height: 69px;
 
     .popover-menu-window {
+      padding: 50px 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
       max-width: 297px;
-      height: fit-content;
+      height: 100vh;
+
+      &-wrapper {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      & .close {
+        position: relative;
+        top: -20px;
+        left: 250px;
+        background: inherit;
+      }
 
       .popover-header {
          margin-top: 80px;
@@ -772,11 +789,15 @@
          margin-bottom: 20px;
 
          &-auth {
-           margin-top: 80px;
+           margin-top: 30px;
            margin-left: 40px;
            margin-bottom: 20px;
          }
        }
+
+      .buy-tickets {
+        margin: 10px 20px;
+      }
 
       &>svg {
         margin: 0 30px 20px 40px;
