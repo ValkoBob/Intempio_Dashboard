@@ -271,6 +271,7 @@ main {
           background: url("./../../img/video-icons/image-icon.svg") center/contain no-repeat; }
         main .video .posts .posts-creator input {
           max-width: 327px;
+          min-width: 0;
           width: 100%;
           height: 36px;
           margin-left: 13px;
@@ -414,6 +415,7 @@ main {
             background: url("./../../img/video-icons/image-icon.svg") center/contain no-repeat; }
           main .video .posts .posts-item .footer input {
             max-width: 347px;
+            min-width: 0;
             width: 100%;
             height: 36px;
             margin-left: 13px;
