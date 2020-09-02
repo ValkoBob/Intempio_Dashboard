@@ -301,13 +301,15 @@
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
       box-shadow: -30px 0px 44px rgba(0, 0, 0, 0.4); }
-      nav .popover-menu-window > svg {
-        margin: 0 30px 40px 40px; }
+      nav .popover-menu-window-wrapper > svg {
+        margin: 0 30px 20px 20px; }
       nav .popover-menu-window .close {
         position: relative;
         top: 20px;
         left: 250px;
         background: inherit; }
+        nav .popover-menu-window .close .close svg {
+          cursor: pointer; }
       nav .popover-menu-window .popover-header {
         margin-top: 88px;
         margin-left: 40px;
@@ -491,6 +493,8 @@
         top: -20px;
         left: 250px;
         background: inherit; }
+        nav .popover-menu-window .close .close svg {
+          cursor: pointer; }
       nav .popover-menu-window .popover-header {
         margin-top: 80px;
         margin-left: 40px;
