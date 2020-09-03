@@ -531,7 +531,8 @@ main {
         letter-spacing: 0.2px;
         color: #353535; }
       main .recent-item:hover {
-        border: 1px solid #67B1E2; }
+        border: 1px solid #67B1E2;
+        box-shadow: 0 9px 25px rgba(205, 205, 205, 0.3); }
         main .recent-item:hover h4 {
           color: #67B1E2; }
       main .recent-item:first-child {
