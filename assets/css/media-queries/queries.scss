@@ -789,17 +789,6 @@
           color: #A6A6A6;
           cursor: pointer;
 
-          &:hover, &:active {
-            & > span {
-              color: #74BD43;
-            }
-
-            & svg rect {
-              fill: #74BD43;
-              stroke: #74BD43;
-            }
-          }
-
           & svg {
             margin: 0 10px 0 20px;
           }
@@ -948,17 +937,6 @@
         line-height: 19px;
         color: #A6A6A6;
         cursor: pointer;
-
-        &:hover, &:active {
-          & > span {
-            color: #74BD43;
-          }
-
-          & svg rect {
-            fill: #74BD43;
-            stroke: #74BD43;
-          }
-        }
 
         & svg {
           margin: 0 10px 0 20px;

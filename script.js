@@ -167,6 +167,17 @@ resourcesButtonDesktop.addEventListener('click', () => {
     }
 });
 
+subMenuWrapper.addEventListener('click', (e) => {
+    console.log(e.target.id);
+    if(e.target.id === 'submenu-wrapper') {
+        subMenu.style.marginLeft = '-300px';
+        subMenuWrapper.classList.add('hide');
+        navArrow.classList.remove('hide');
+        submenuDisabled = false;
+        body.style.overflowY = 'auto';
+    }
+});
+
 let menuOverlayed = false;
 
 let submenuTabletDisabled = false;
@@ -183,6 +194,21 @@ resourcesButtonTablet.addEventListener('click', () => {
 
     popOverSubMenuList.style.top = `${(window.innerHeight - currentPositionTop) > 220
         ? currentPositionTop : (currentPositionTop - (220 - (window.innerHeight - currentPositionTop)))}px`;
+    hideSubMenu(currentPositionLeft);
+});
+
+popOverMenu.addEventListener('click', (e) => {
+    if(e.target.id === 'popover-menu') {
+        const currentPositionLeft = resourcesButtonTablet.getBoundingClientRect().left;
+        if (submenuTabletDisabled || !subMenuMobile.classList.contains('hide')) {
+            hideSubMenu(currentPositionLeft);
+        } else {
+            return null;
+        }
+    }
+})
+
+const hideSubMenu = (currentPositionLeft) => {
     if (window.innerWidth > 720) {
         if (!submenuTabletDisabled) {
             popOverSubMenu.style.marginLeft = `${currentPositionLeft - 220}px`;
@@ -212,7 +238,7 @@ resourcesButtonTablet.addEventListener('click', () => {
             resourcesButtonTablet.children[0].children[0].style.fill = '#F4FFED';
         }
     }
-});
+}
 
 
 

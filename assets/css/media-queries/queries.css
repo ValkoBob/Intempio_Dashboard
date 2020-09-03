@@ -499,11 +499,6 @@
           line-height: 19px;
           color: #A6A6A6;
           cursor: pointer; }
-          nav .popover-submenu-list > div:hover > span, nav .popover-submenu-list > div:active > span {
-            color: #74BD43; }
-          nav .popover-submenu-list > div:hover svg rect, nav .popover-submenu-list > div:active svg rect {
-            fill: #74BD43;
-            stroke: #74BD43; }
           nav .popover-submenu-list > div svg {
             margin: 0 10px 0 20px; }
         nav .popover-submenu-list > svg {
@@ -602,11 +597,6 @@
         line-height: 19px;
         color: #A6A6A6;
         cursor: pointer; }
-        nav .item-submenu > div:hover > span, nav .item-submenu > div:active > span {
-          color: #74BD43; }
-        nav .item-submenu > div:hover svg rect, nav .item-submenu > div:active svg rect {
-          fill: #74BD43;
-          stroke: #74BD43; }
         nav .item-submenu > div svg {
           margin: 0 10px 0 20px; }
     nav .nav-header {
