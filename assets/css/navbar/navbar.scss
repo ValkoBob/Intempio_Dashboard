@@ -8,6 +8,14 @@ nav {
   transition: width 0.5s;
   z-index:1212;
 
+  & .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
   & .hide {
     display: none;
   }
