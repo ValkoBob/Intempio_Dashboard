@@ -185,7 +185,7 @@
           z-index: 0; }
           .wrapper main .recent-container-swiper > .swiper-wrapper .recent-item {
             padding: 30px;
-            margin-left: 20px;
+            margin-left: 0;
             max-width: 517px;
             width: 100%;
             background: #FFFFFF;
