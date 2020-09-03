@@ -645,6 +645,10 @@
           font-size: 8.53257px;
           line-height: 10px;
           letter-spacing: 0.213314px; }
+    .wrapper main .sessions-header h3 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px; }
     .wrapper main .sessions-item {
       padding: 0 16px;
       flex-direction: column;
@@ -672,6 +676,10 @@
         font-size: 18px; }
       .wrapper main .sessions-information p {
         text-align: center; }
+    .wrapper main .video h3 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px; }
     .wrapper main .video-content .posts-creator {
       padding: 17px 15px; }
     .wrapper main .video-content .posts-creator label {
@@ -684,8 +692,14 @@
     .wrapper main .video-content .posts-item .footer input {
       padding: 0 6px;
       min-width: 0; }
+    .wrapper main .recent h3 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px; }
     .wrapper main .tables h3 {
-      font-size: 32px; }
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px; }
     .wrapper main .tables-container {
       display: none; }
     .wrapper main .tables-container-mobile {
@@ -727,7 +741,9 @@
     .wrapper main .presenters {
       margin-bottom: 50px; }
       .wrapper main .presenters h3 {
-        font-size: 32px; }
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px; }
       .wrapper main .presenters-container {
         display: none; }
       .wrapper main .presenters-container-swiper {
@@ -806,7 +822,9 @@
     .wrapper main .fun-stuff {
       margin-top: 40px; }
       .wrapper main .fun-stuff h3 {
-        font-size: 32px; }
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px; }
       .wrapper main .fun-stuff-container-swiper .stuff {
         max-width: 311px;
         width: 100%;
@@ -845,7 +863,9 @@
   footer {
     padding: 16px; }
     footer .stream h3 {
-      font-size: 32px; }
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px; }
 
   .menu-item-arrow {
     transform: rotate(90deg); } }

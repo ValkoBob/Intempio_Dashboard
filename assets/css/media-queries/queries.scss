@@ -1038,6 +1038,14 @@
     }
 
     .sessions {
+      &-header {
+        & h3 {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 37px;
+        }
+      }
+
       &-item {
         padding: 0 16px;
         flex-direction: column;
@@ -1081,6 +1089,12 @@
     }
 
     .video {
+      & h3 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+      }
+
       &-content {
         & .posts {
 
@@ -1114,9 +1128,19 @@
       }
     }
 
+    .recent {
+      & h3 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+      }
+    }
+
     .tables {
       & h3 {
+        font-weight: 500;
         font-size: 32px;
+        line-height: 37px;
       }
 
       &-container {
@@ -1174,7 +1198,9 @@
       margin-bottom: 50px;
 
       & h3 {
+        font-weight: 500;
         font-size: 32px;
+        line-height: 37px;
       }
 
       &-container {
@@ -1284,7 +1310,9 @@
       margin-top: 40px;
 
       & h3 {
+        font-weight: 500;
         font-size: 32px;
+        line-height: 37px;
       }
 
       &-container-swiper {
@@ -1351,7 +1379,9 @@
 
     & .stream {
       & h3 {
+        font-weight: 500;
         font-size: 32px;
+        line-height: 37px;
       }
     }
   }
