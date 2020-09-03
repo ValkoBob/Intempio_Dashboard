@@ -56,6 +56,7 @@ nav {
   overflow-y: auto;
   position: fixed;
   top: 0;
+  z-index: 1;
   background: rgba(53, 53, 53, 0.8); }
 
 .nav-header {
@@ -97,7 +98,8 @@ nav {
     margin-right: 10px;
     width: 6px;
     height: 10px;
-    background: url(./../../img/menu-item-arrow.svg); }
+    background: url(./../../img/menu-item-arrow.svg);
+    color: #F4FFED; }
   .menu-item span {
     margin-left: 15px; }
   .menu-item .hide {

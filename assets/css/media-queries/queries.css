@@ -120,6 +120,15 @@
   .wrapper {
     overflow: hidden;
     margin-left: 0 !important; }
+    .wrapper main .events-time .date .time .number {
+      font-weight: 900;
+      font-size: 22.7168px;
+      line-height: 27px;
+      letter-spacing: -0.668141px; }
+    .wrapper main .events-time .date .time text {
+      font-size: 10.6903px;
+      line-height: 13px;
+      letter-spacing: 0.267256px; }
     .wrapper main .sessions-header h3 {
       font-weight: 500;
       font-size: 32px;
@@ -163,6 +172,59 @@
             margin: 20px 10px 10px; }
       .wrapper main .video .posts .footer input {
         max-width: 527px; }
+    .wrapper main .recent {
+      margin-bottom: 40px; }
+      .wrapper main .recent-container {
+        display: none; }
+      .wrapper main .recent h3 {
+        font-size: 32px; }
+      .wrapper main .recent-container-swiper {
+        display: block;
+        position: relative; }
+        .wrapper main .recent-container-swiper > .swiper-wrapper {
+          z-index: 0; }
+          .wrapper main .recent-container-swiper > .swiper-wrapper .recent-item {
+            padding: 30px;
+            margin-left: 20px;
+            max-width: 517px;
+            width: 100%;
+            background: #FFFFFF;
+            border: 1px solid #CFCFCF;
+            box-sizing: border-box;
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            .wrapper main .recent-container-swiper > .swiper-wrapper .recent-item p {
+              margin-top: 18px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: center;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+              color: #5E5E5E; }
+            .wrapper main .recent-container-swiper > .swiper-wrapper .recent-item h4 {
+              margin-top: 5px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 22px;
+              line-height: 24px;
+              text-align: center;
+              letter-spacing: 0.2px;
+              color: #353535; }
+            .wrapper main .recent-container-swiper > .swiper-wrapper .recent-item:first-child {
+              margin-left: 0; }
+            .wrapper main .recent-container-swiper > .swiper-wrapper .recent-item .image-wrapper {
+              flex-shrink: 1;
+              flex-grow: 0; }
+        .wrapper main .recent-container-swiper .swiper-pagination-bullets,
+        .wrapper main .recent-container-swiper .swiper-pagination-custom,
+        .wrapper main .recent-container-swiper .swiper-pagination-fraction {
+          bottom: -40px;
+          left: 0;
+          width: 100%; }
     .wrapper main .tables h3 {
       font-size: 32px; }
     .wrapper main .tables-container .table {
@@ -574,6 +636,15 @@
         .wrapper main .events-time .date svg {
           width: 66px;
           height: 66px; }
+        .wrapper main .events-time .date .time .number {
+          font-weight: 900;
+          font-size: 18.1317px;
+          line-height: 21px;
+          letter-spacing: -0.533286px; }
+        .wrapper main .events-time .date .time text {
+          font-size: 8.53257px;
+          line-height: 10px;
+          letter-spacing: 0.213314px; }
     .wrapper main .sessions-item {
       padding: 0 16px;
       flex-direction: column;

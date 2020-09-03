@@ -121,7 +121,21 @@ const swiperPresenters = new Swiper('.presenters-container-swiper', {
     },
 });
 
+const swiperRecent = new Swiper('.recent-container-swiper', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
 swiperPresenters.slideTo(2, false, false);
+swiperRecent.slideTo(1, false, false);
 
 //getBoundingClientRect()
 
