@@ -708,6 +708,11 @@
               display: flex;
               align-items: center;
 
+              & svg:first-child {
+                width: 24px;
+                height: 20px;
+              }
+
               & span {
                 margin-left: 15px;
               }

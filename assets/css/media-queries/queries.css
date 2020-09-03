@@ -434,6 +434,9 @@
           color: #F4FFED;
           display: flex;
           align-items: center; }
+          nav .popover-menu-window .popover-window-menu-item svg:first-child {
+            width: 24px;
+            height: 20px; }
           nav .popover-menu-window .popover-window-menu-item span {
             margin-left: 15px; }
           nav .popover-menu-window .popover-window-menu-item:hover {
