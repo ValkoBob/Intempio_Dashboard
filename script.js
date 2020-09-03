@@ -208,6 +208,8 @@ popOverMenu.addEventListener('click', (e) => {
     }
 })
 
+const menuArrowMobile = document.getElementById('menu-arrow-mobile');
+
 const hideSubMenu = (currentPositionLeft) => {
     if (window.innerWidth > 720) {
         if (!submenuTabletDisabled) {
@@ -231,11 +233,13 @@ const hideSubMenu = (currentPositionLeft) => {
             resourcesButtonTablet.style.background = '#FFFFFF';
             resourcesButtonTablet.style.color = '#74BD43';
             resourcesButtonTablet.children[0].children[0].style.fill = '#74BD43';
+            menuArrowMobile.style.transform = 'rotate(-90deg)';
         } else {
             subMenuMobile.classList.add('hide');
             resourcesButtonTablet.style.background = 'transparent';
             resourcesButtonTablet.style.color = '#F4FFED';
             resourcesButtonTablet.children[0].children[0].style.fill = '#F4FFED';
+            menuArrowMobile.style.transform = 'rotate(90deg)';
         }
     }
 }
