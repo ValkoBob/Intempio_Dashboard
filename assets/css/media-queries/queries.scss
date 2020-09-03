@@ -1134,6 +1134,12 @@
         font-size: 32px;
         line-height: 37px;
       }
+
+      &-container-swiper {
+        .swiper-wrapper .recent-item {
+          padding: 16px;
+        }
+      }
     }
 
     .tables {

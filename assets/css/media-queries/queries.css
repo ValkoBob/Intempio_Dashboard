@@ -696,6 +696,8 @@
       font-weight: 500;
       font-size: 32px;
       line-height: 37px; }
+    .wrapper main .recent-container-swiper .swiper-wrapper .recent-item {
+      padding: 16px; }
     .wrapper main .tables h3 {
       font-weight: 500;
       font-size: 32px;
