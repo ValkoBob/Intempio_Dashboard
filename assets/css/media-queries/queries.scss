@@ -270,22 +270,33 @@
         }
 
         & .time {
+          font-weight: normal;
           font-size: 18px;
+          line-height: 30px;
+          letter-spacing: -1px;
         }
 
         & .date {
+          font-weight: normal;
           font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.4px;
         }
       }
 
       &-information {
         & h3 {
+          font-weight: 500;
           font-size: 21px;
+          line-height: 25px;
+          letter-spacing: 1.3px;
         }
 
         & p {
           font-weight: 300;
           font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.7px;
         }
       }
     }
@@ -1069,6 +1080,20 @@
         & svg {
           margin-bottom: 9.67px;
         }
+
+        & .time {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: -1px;
+        }
+
+        & .date {
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.4px;
+        }
       }
 
       &-information {
@@ -1079,11 +1104,19 @@
         align-items: center;
 
         & h3 {
+          font-weight: 500;
           font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 1px;
         }
 
         & p {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
           text-align: center;
+          letter-spacing: 0.7px;
         }
       }
     }

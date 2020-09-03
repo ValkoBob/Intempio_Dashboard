@@ -141,14 +141,25 @@
         width: 35px;
         height: 35px; }
       .wrapper main .sessions-time .time {
-        font-size: 18px; }
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -1px; }
       .wrapper main .sessions-time .date {
-        font-size: 14px; }
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.4px; }
     .wrapper main .sessions-information h3 {
-      font-size: 21px; }
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+      letter-spacing: 1.3px; }
     .wrapper main .sessions-information p {
       font-weight: 300;
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.7px; }
     .wrapper main .video h3 {
       font-size: 32px; }
     .wrapper main .video .posts {
@@ -666,6 +677,16 @@
       border-bottom: 1px solid #CFCFCF; }
       .wrapper main .sessions-time svg {
         margin-bottom: 9.67px; }
+      .wrapper main .sessions-time .time {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -1px; }
+      .wrapper main .sessions-time .date {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.4px; }
     .wrapper main .sessions-information {
       padding: 30px 8px 27px 8px;
       max-width: 100%;
@@ -673,9 +694,17 @@
       display: flex;
       align-items: center; }
       .wrapper main .sessions-information h3 {
-        font-size: 18px; }
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 1px; }
       .wrapper main .sessions-information p {
-        text-align: center; }
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.7px; }
     .wrapper main .video h3 {
       font-weight: 500;
       font-size: 32px;
