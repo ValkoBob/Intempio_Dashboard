@@ -120,6 +120,11 @@ nav {
   &-wrapper {
     display: flex;
     align-items: center;
+
+    & svg {
+      width: 24px;
+      height: 20px;
+    }
   }
 
   &-arrow {

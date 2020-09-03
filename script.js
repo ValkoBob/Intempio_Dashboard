@@ -152,8 +152,12 @@ resourcesButtonDesktop.addEventListener('click', () => {
 
     subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
         ? currentPosition : (currentPosition - (220 - (window.innerHeight - currentPosition)))}px`;
-    if (!submenuDisabled && !menuOverlayed) {
-        subMenu.style.marginLeft = '200px';
+    if (!submenuDisabled) {
+        if(!menuOverlayed) {
+            subMenu.style.marginLeft = '200px';
+        } else {
+            subMenu.style.marginLeft = '84px';
+        }
         subMenuWrapper.classList.remove('hide');
         navArrow.classList.add('hide');
         submenuDisabled = true;
@@ -199,12 +203,7 @@ resourcesButtonTablet.addEventListener('click', () => {
 
 popOverMenu.addEventListener('click', (e) => {
     if(e.target.id === 'popover-menu') {
-        const currentPositionLeft = resourcesButtonTablet.getBoundingClientRect().left;
-        if (submenuTabletDisabled || !subMenuMobile.classList.contains('hide')) {
-            hideSubMenu(currentPositionLeft);
-        } else {
-            return null;
-        }
+        popOverMenuFunction();
     }
 })
 
