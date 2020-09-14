@@ -212,7 +212,7 @@ const menuArrowMobile = document.getElementById('menu-arrow-mobile');
 const hideSubMenu = (currentPositionLeft) => {
     if (window.innerWidth > 720) {
         if (!submenuTabletDisabled) {
-            popOverSubMenu.style.marginLeft = `${currentPositionLeft - 220}px`;
+            popOverSubMenu.style.marginLeft = `${currentPositionLeft - 240}px`;
             popOverMenuWindow.style.boxShadow = 'none';
             resourcesButtonTablet.style.background = '#FFFFFF';
             resourcesButtonTablet.style.color = '#74BD43';
@@ -242,6 +242,64 @@ const hideSubMenu = (currentPositionLeft) => {
         }
     }
 }
+
+
+const main = document.getElementById('main');
+const footer = document.getElementById('footer');
+const presentersPage = document.getElementById('presenters-page');
+const presenters = document.querySelectorAll('.presenter');
+
+presenters.forEach(presenter => {
+    presenter.addEventListener('click', () => {
+        presentersPage.style.display = 'flex';
+        main.style.display = 'none';
+        footer.style.display = 'none';
+    })
+});
+
+
+const subMenuListResources = document.getElementById('submenu-list-resources');
+const subMenuListSubMenu = document.getElementById('submenu-list-submenu');
+
+subMenuListResources.addEventListener('click', () => {
+    if(subMenuListSubMenu.classList.contains('hide')) {
+        subMenuListSubMenu.classList.remove('hide');
+        subMenuListResources.style.borderBottom = 'none';
+    } else {
+        subMenuListSubMenu.classList.add('hide');
+        subMenuListResources.style.borderBottom = '1px solid rgba(207, 207, 207, 0.3)';
+    }
+
+})
+
+const popOverSubMenuListResources = document.getElementById('popover-submenu-list-resources');
+const popOverListSubMenu = document.getElementById('popover-list-submenu');
+
+popOverSubMenuListResources.addEventListener('click', () => {
+    if(popOverListSubMenu.classList.contains('hide')) {
+        popOverListSubMenu.classList.remove('hide');
+        popOverSubMenuListResources.style.borderBottom = 'none';
+    } else {
+        popOverListSubMenu.classList.add('hide');
+        popOverSubMenuListResources.style.borderBottom = '1px solid rgba(207, 207, 207, 0.3)';
+    }
+})
+
+const itemSubMenuItemResources = document.getElementById('item-submenu-item-resources');
+const itemSubMenuSubmenu = document.getElementById('item-submenu-submenu');
+
+itemSubMenuItemResources.addEventListener('click', () => {
+    console.log('here!')
+    if(itemSubMenuSubmenu.classList.contains('hide')) {
+        itemSubMenuSubmenu.classList.remove('hide');
+        itemSubMenuItemResources.style.borderBottom = 'none';
+    } else {
+        itemSubMenuSubmenu.classList.add('hide');
+        itemSubMenuItemResources.style.borderBottom = '1px solid rgba(207, 207, 207, 0.3)';
+    }
+})
+
+
 
 
 

@@ -4,9 +4,38 @@ header {
   justify-content: flex-end;
   box-shadow: 0 0 10px #DFE0EB;
 
-  & button {
+  & .buy-tickets {
+    width: 150px;
+    height: 36px;
+    background: #74BD43;
+    border-radius: 2px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
     padding: 10px 25px;
-    margin: 32px 30px;
+    margin: 32px 0;
+    border: 1.5px solid #74BD43;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 9px 25px rgba(82, 154, 34, 0.3);
+    }
+  }
+
+  & .login {
+    padding: 10px 25px;
+    margin: 32px 30px 30px 20px;
     width: 150px;
     height: 36px;
     background: #FFFFFF;
@@ -21,6 +50,14 @@ header {
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: #74BD43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 9px 25px rgba(82, 154, 34, 0.3);
+    }
   }
 
   & .notification {

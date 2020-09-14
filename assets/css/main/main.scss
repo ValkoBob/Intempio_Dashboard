@@ -851,10 +851,6 @@ main {
         align-items: center;
         cursor: pointer;
 
-        &:hover {
-          box-shadow: 0 9px 25px rgba(205, 205, 205, 0.3);
-          border: 1px solid #67B1E2;
-        }
 
         &:first-child {
           margin: 0;
@@ -908,11 +904,11 @@ main {
 
         & .socials {
           padding: 16px;
-          max-width: 200px;
+          max-width: 260px;
           width: 100%;
           height: auto;
           background: #FFFFFF;
-          border: 1px solid #67B1E2;
+          border: 1px solid #CFCFCF;
           box-sizing: border-box;
           border-radius: 2px;
           display: flex;
@@ -921,6 +917,34 @@ main {
           position: relative;
           top: 36px;
           cursor: default;
+
+          & a {
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #5E5E5E;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 9px 25px rgba(205, 205, 205, 0.3);
+          border: 1px solid #67B1E2;
+
+          & .socials {
+            border: 1px solid #67B1E2;
+
+            &>svg>path{
+              fill: #67B1E2;
+            }
+
+            &>a {
+              color: #67B1E2;
+            }
+          }
         }
       }
     }
