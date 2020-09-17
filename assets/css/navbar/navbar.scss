@@ -100,6 +100,7 @@ nav {
       width: 203px;
       display: flex;
       flex-direction: column;
+      overflow-y: auto;
       &-item {
         display: flex;
         align-items: center;
@@ -120,6 +121,16 @@ nav {
         &:hover {
           border-left: 2px solid #74BD43;
         }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      & {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
       }
     }
   }
