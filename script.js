@@ -336,7 +336,7 @@ const chat = document.getElementById('chat');
 
 generalSession.addEventListener('click', () => {
     messagesContainer.classList.add('hide');
-    messagesIcon.style.fill = '#D7D7D7;';
+    messagesIcon.style.fill = '#D7D7D7';
     chat.classList.remove('hide');
 })
 
