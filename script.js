@@ -289,13 +289,72 @@ const itemSubMenuItemResources = document.getElementById('item-submenu-item-reso
 const itemSubMenuSubmenu = document.getElementById('item-submenu-submenu');
 
 itemSubMenuItemResources.addEventListener('click', () => {
-    console.log('here!')
     if(itemSubMenuSubmenu.classList.contains('hide')) {
         itemSubMenuSubmenu.classList.remove('hide');
         itemSubMenuItemResources.style.borderBottom = 'none';
     } else {
         itemSubMenuSubmenu.classList.add('hide');
         itemSubMenuItemResources.style.borderBottom = '1px solid rgba(207, 207, 207, 0.3)';
+    }
+})
+
+// Chat component
+
+const chatHelp = document.getElementById('chat-help');
+const helpDesktop = document.getElementById('help-desktop');
+
+helpDesktop.addEventListener('click', () => {
+    if(chatHelp.classList.contains('hide')) {
+        chatHelp.classList.remove('hide');
+    } else {
+        chatHelp.classList.add('hide');
+    }
+})
+
+const chatClose = document.getElementById('chat-close');
+
+chatClose.addEventListener('click', () => {
+    chatHelp.classList.add('hide');
+})
+
+const messages = document.getElementById('messages');
+const messagesContainer = document.getElementById('messages-container');
+const messagesIcon = document.getElementById('messages-icon');
+
+messages.addEventListener('click', event => {
+    if(messagesContainer.classList.contains('hide')) {
+        messagesContainer.classList.remove('hide');
+        messagesIcon.style.fill = '#5E5E5E';
+    } else {
+        messagesContainer.classList.add('hide');
+        messagesIcon.style.fill = '#D7D7D7;';
+    }
+});
+
+const generalSession = document.getElementById('general-session');
+const chat = document.getElementById('chat');
+
+generalSession.addEventListener('click', () => {
+    messagesContainer.classList.add('hide');
+    messagesIcon.style.fill = '#D7D7D7;';
+    chat.classList.remove('hide');
+})
+
+const chatGeneralClose = document.getElementById('chat-general-close');
+
+chatGeneralClose.addEventListener('click', () => {
+    chat.classList.add('hide');
+})
+
+
+
+const chatLike = document.getElementById('chat-like');
+
+chatLike.addEventListener('click', () => {
+    if(chatLike.style.fill === 'rgb(209, 208, 208)') {
+        chatLike.style.fill = '#74BD43';
+    } else {
+        chatLike.style.fill = 'rgb(209, 208, 208)';
     }
 })
 

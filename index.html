@@ -15,15 +15,72 @@
 <header>
   <!--<button class="buy-tickets">Buy tickets</button>
   <button class="login">Log in</button>-->
-  <div class="messages">
+  <div id="messages" class="messages">
     <div class="messages-number">
       5
     </div>
     <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd"
+      <path id="messages-icon" fill-rule="evenodd" clip-rule="evenodd"
             d="M16.6534 14.915H9.58143C9.16009 15.3843 8.65609 15.9256 8.18676 16.4563C7.12276 17.659 4.62943 18.6483 4.26676 18.7443C3.90409 18.8403 2.93609 18.7923 3.51743 18.1176C4.09876 17.443 4.67743 15.7096 4.67743 14.915H3.00809C1.46676 14.915 0.202759 13.659 0.202759 12.1203V3.16297C0.202759 1.62697 1.46676 0.370972 3.00809 0.370972H16.6534C18.1974 0.370972 19.4614 1.62697 19.4614 3.16297V12.1203C19.4614 13.659 18.1974 14.915 16.6534 14.915ZM14.5734 6.14964C13.8268 6.14964 13.2188 6.75231 13.2188 7.49897C13.2188 8.24297 13.8268 8.84564 14.5734 8.84564C15.3228 8.84564 15.9281 8.24297 15.9281 7.49897C15.9281 6.75231 15.3228 6.14964 14.5734 6.14964ZM9.92809 6.29364C9.18143 6.29364 8.57343 6.89897 8.57343 7.64297C8.57343 8.38697 9.18143 8.99231 9.92809 8.99231C10.6774 8.99231 11.2828 8.38697 11.2828 7.64297C11.2828 6.89897 10.6774 6.29364 9.92809 6.29364ZM5.28276 6.43764C4.53609 6.43764 3.92809 7.04297 3.92809 7.78697C3.92809 8.53097 4.53609 9.13631 5.28276 9.13631C6.03209 9.13631 6.63743 8.53097 6.63743 7.78697C6.63743 7.04297 6.03209 6.43764 5.28276 6.43764ZM21.5894 5.04297H21.1921C21.2081 5.15231 21.2161 5.26431 21.2161 5.37897V13.9043C21.2161 15.3336 20.0401 16.5043 18.6028 16.5043H10.3628C9.82676 17.0856 8.92809 18.059 8.92809 18.059C8.92809 18.059 9.21609 18.7683 10.1228 18.7683H17.3548C17.6294 19.643 18.3654 20.3763 18.8561 20.755C19.3894 21.163 20.3201 21.7283 21.0934 21.7656C21.8668 21.8003 21.9521 21.5496 21.8188 21.379C21.6854 21.211 21.2988 20.2963 21.1414 19.8856C21.0401 19.6216 21.0508 19.1016 21.0694 18.7683H21.5894C23.0268 18.7683 24.2028 17.5976 24.2028 16.1656V7.64297C24.2028 6.21097 23.0268 5.04297 21.5894 5.04297Z"
             fill="#D9D9D9"/>
     </svg>
+  </div>
+  <div id="messages-container" class="messages-container hide">
+    <h2 class="header">conversation</h2>
+    <label for="searchBar"></label>
+    <input type="text" id="searchBar" class="search-bar" placeholder="Search contact or group">
+    <div class="messages-wrapper">
+      <div class="conversation">
+        <div class="conversation-wrapper">
+          <img src="./assets/img/associated_photo1.png" alt="associated_photo">
+          <div class="conversation-name">
+            <span class="name">General</span>
+          </div>
+        </div>
+        <div class="conversation-number">1</div>
+      </div>
+      <div class="line"></div>
+      <div id="general-session" class="conversation">
+        <div class="conversation-wrapper">
+          <div class="images">
+            <img class="firstImg" src="./assets/img/associated_photo3.png" alt="associated_photo">
+            <img class="secondImg" src="./assets/img/associated_photo2.png" alt="associated_photo">
+          </div>
+          <div class="conversation-name">
+            <span class="name">General Session Presenters</span>
+            <span class="users-number">102 users</span>
+          </div>
+        </div>
+        <div class="conversation-number">2</div>
+      </div>
+      <div class="line"></div>
+      <div class="conversation">
+        <div class="conversation-wrapper">
+          <div class="images">
+            <img class="firstImg" src="./assets/img/associated_photo4.png" alt="associated_photo">
+            <img class="secondImg" src="./assets/img/associated_photo5.png" alt="associated_photo">
+          </div>
+          <div class="conversation-name">
+            <span class="name">Science Team Chat</span>
+            <span class="users-number">28 users</span>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="conversation">
+        <div class="conversation-wrapper">
+          <div class="images">
+            <img class="firstImg" src="./assets/img/associated_photo6.png" alt="associated_photo">
+            <img class="secondImg" src="./assets/img/associated_photo7.png" alt="associated_photo">
+          </div>
+          <div class="conversation-name">
+            <span class="name">Atlanta Sales Team</span>
+            <span class="users-number">8 users</span>
+          </div>
+        </div>
+        <div class="conversation-number">2</div>
+      </div>
+    </div>
   </div>
   <div class="vertical-line"></div>
   <div class="notification">
@@ -141,7 +198,7 @@
           <span class="menu-button">Favorites</span>
         </div>
       </a>
-      <a href="#" class="menu-item">
+      <a href="#" id="help-desktop" class="menu-item">
         <div class="menu-item-wrapper">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -575,7 +632,7 @@
       </div>
     </div>
   </div>
-  <div class="chat">
+  <div id="chat-help" class="chat hide">
     <div class="chat-header">
       <div class="chat-logo">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -606,7 +663,7 @@
         </svg>
         <span class="chat-name">Help</span>
       </div>
-      <div class="chat-close">
+      <div id="chat-close" class="chat-close">
         <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7846 2.373L8.20635 7.9365L13.7846 13.5C14.4871 14.2005 13.2886 15.4114 12.5783 14.7031L7.00001 9.13964L1.42174 14.7031C0.719402 15.4036 -0.494719 14.2084 0.21541 13.5L5.79368 7.9365L0.21541 2.373C-0.486931 1.67251 0.711618 0.461608 1.42174 1.16986L7.00001 6.73336L12.5783 1.16986C13.2886 0.461611 14.4871 1.67251 13.7846 2.373Z" fill="#98D370"/>
         </svg>
@@ -631,14 +688,14 @@
           illo inventore veritatis et quasi architecto
           beatae vitae dicta sunt explicabo.
         </div>
-        <svg width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
+        <svg class="appendix" width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
           <path d="M7.07703 4.17074L2.09042 6.44132C1.42826 6.74283 0.676025 6.2588 0.676025 5.53123V1.35411C0.676025 0.626537 1.42826 0.142509 2.09042 0.444013L7.07703 2.71459C7.70168 2.99901 7.70168 3.88632 7.07703 4.17074Z" fill="#FBFBFB"/>
         </svg>
         <img src="./assets/img/chat-avatar1.png" alt="avatar" class="avatar">
       </div>
       <div class="chat-message-guest">
         <img src="./assets/img/chat-avatar2.png" alt="avatar" class="avatar">
-        <svg width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
+        <svg class="appendix" width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
           <path d="M7.07703 4.17074L2.09042 6.44132C1.42826 6.74283 0.676025 6.2588 0.676025 5.53123V1.35411C0.676025 0.626537 1.42826 0.142509 2.09042 0.444013L7.07703 2.71459C7.70168 2.99901 7.70168 3.88632 7.07703 4.17074Z" fill="#FBFBFB"/>
         </svg>
         <div class="message-wrapper">
@@ -720,6 +777,172 @@
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.0001 10C19.9995 10.2015 19.9381 10.3981 19.8239 10.564C19.7097 10.7299 19.548 10.8575 19.3601 10.9301L1.36007 19.93C1.24598 19.9773 1.12355 20.0011 1.00007 20C0.808902 20.0001 0.621739 19.9453 0.460751 19.8422C0.299763 19.7391 0.171695 19.592 0.0917193 19.4184C0.0117437 19.2448 -0.0167881 19.0519 0.00950375 18.8625C0.0357956 18.6732 0.11581 18.4953 0.240066 18.3501L4.82007 11.0001H9.00007C9.26528 11.0001 9.51964 10.8947 9.70717 10.7072C9.89471 10.5196 10.0001 10.2653 10.0001 10C10.0001 9.73483 9.89471 9.48048 9.70717 9.29294C9.51964 9.10541 9.26528 9.00005 9.00007 9.00005H4.82007L0.240066 1.65005C0.0968816 1.4807 0.0140512 1.26856 0.00460306 1.047C-0.00484504 0.825433 0.0596253 0.607013 0.187874 0.426091C0.316122 0.245169 0.500872 0.11201 0.713067 0.0475585C0.925261 -0.0168932 1.15286 -0.00898083 1.36007 0.0700504L19.3601 9.07005C19.548 9.14257 19.7097 9.27015 19.8239 9.4361C19.9381 9.60204 19.9995 9.79861 20.0001 10Z" fill="white"/>
         </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="chat" class="chat">
+    <div class="chat-header">
+      <div class="chat-logo">
+        <div class="chat-numbers">
+          5
+        </div>
+        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0087 13.4607H8.64392C8.26472 13.8831 7.81112 14.3703 7.38872 14.8479C6.43112 15.9303 4.18712 16.8207 3.86072 16.9071C3.53432 16.9935 2.66312 16.9503 3.18632 16.3431C3.70952 15.7359 4.23032 14.1759 4.23032 13.4607H2.72792C1.34072 13.4607 0.203125 12.3303 0.203125 10.9455V2.88389C0.203125 1.50149 1.34072 0.371094 2.72792 0.371094H15.0087C16.3983 0.371094 17.5359 1.50149 17.5359 2.88389V10.9455C17.5359 12.3303 16.3983 13.4607 15.0087 13.4607ZM13.1367 5.57189C12.4647 5.57189 11.9175 6.11429 11.9175 6.78629C11.9175 7.45589 12.4647 7.99829 13.1367 7.99829C13.8111 7.99829 14.3559 7.45589 14.3559 6.78629C14.3559 6.11429 13.8111 5.57189 13.1367 5.57189ZM8.95592 5.70149C8.28392 5.70149 7.73672 6.24629 7.73672 6.91589C7.73672 7.58549 8.28392 8.13029 8.95592 8.13029C9.63032 8.13029 10.1751 7.58549 10.1751 6.91589C10.1751 6.24629 9.63032 5.70149 8.95592 5.70149ZM4.77512 5.83109C4.10312 5.83109 3.55592 6.37589 3.55592 7.04549C3.55592 7.71509 4.10312 8.25989 4.77512 8.25989C5.44952 8.25989 5.99432 7.71509 5.99432 7.04549C5.99432 6.37589 5.44952 5.83109 4.77512 5.83109ZM19.4511 4.57589H19.0935C19.1079 4.67429 19.1151 4.77509 19.1151 4.87829V12.5511C19.1151 13.8375 18.0567 14.8911 16.7631 14.8911H9.34712C8.86472 15.4143 8.05592 16.2903 8.05592 16.2903C8.05592 16.2903 8.31512 16.9287 9.13112 16.9287H15.6399C15.8871 17.7159 16.5495 18.3759 16.9911 18.7167C17.4711 19.0839 18.3087 19.5927 19.0047 19.6263C19.7007 19.6575 19.7775 19.4319 19.6575 19.2783C19.5375 19.1271 19.1895 18.3039 19.0479 17.9343C18.9567 17.6967 18.9663 17.2287 18.9831 16.9287H19.4511C20.7447 16.9287 21.8031 15.8751 21.8031 14.5863V6.91589C21.8031 5.62709 20.7447 4.57589 19.4511 4.57589Z" fill="#F4FFED"/>
+        </svg>
+        <span class="chat-name">General Session Presenters</span>
+      </div>
+      <div id="chat-general-close" class="chat-close">
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7846 2.373L8.20635 7.9365L13.7846 13.5C14.4871 14.2005 13.2886 15.4114 12.5783 14.7031L7.00001 9.13964L1.42174 14.7031C0.719402 15.4036 -0.494719 14.2084 0.21541 13.5L5.79368 7.9365L0.21541 2.373C-0.486931 1.67251 0.711618 0.461608 1.42174 1.16986L7.00001 6.73336L12.5783 1.16986C13.2886 0.461611 14.4871 1.67251 13.7846 2.373Z" fill="#98D370"/>
+        </svg>
+      </div>
+    </div>
+    <div class="chat-container">
+      <div class="chat-date">
+        <div class="line"></div>
+        <div class="date">
+          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.6667 1.75H10.0834V0.583336H8.91675V1.75H3.08342V0.583336H1.91675V1.75H1.33341C0.691748 1.75 0.166748 2.275 0.166748 2.91667V12.25C0.166748 12.8917 0.691748 13.4167 1.33341 13.4167H10.6667C11.3084 13.4167 11.8334 12.8917 11.8334 12.25V2.91667C11.8334 2.275 11.3084 1.75 10.6667 1.75ZM10.6667 12.25H1.33341V4.66667H10.6667V12.25Z" fill="#D1D0D0"/>
+          </svg>
+          <p class="date-text">Nov 19th, 2020, at 14:00</p>
+        </div>
+      </div>
+      <div class="chat-message-guest">
+        <img src="./assets/img/chat-avatar3.png" alt="avatar" class="avatar">
+        <svg class="appendix" width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.07703 4.17074L2.09042 6.44132C1.42826 6.74283 0.676025 6.2588 0.676025 5.53123V1.35411C0.676025 0.626537 1.42826 0.142509 2.09042 0.444013L7.07703 2.71459C7.70168 2.99901 7.70168 3.88632 7.07703 4.17074Z" fill="#FBFBFB"/>
+        </svg>
+        <div class="message-wrapper">
+          <span class="name">Aaron Young</span>
+          <div class="message">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </div>
+          <div class="buttons">
+            <div class="buttons-item">
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 12H2.4V4.8H0V12ZM13.2 5.4C13.2 4.74 12.66 4.2 12 4.2H8.214L8.784 1.458L8.802 1.266C8.802 1.02 8.7 0.792 8.538 0.63L7.902 0L3.954 3.954C3.732 4.17 3.6 4.47 3.6 4.8V10.8C3.6 11.46 4.14 12 4.8 12H10.2C10.698 12 11.124 11.7 11.304 11.268L13.116 7.038C13.17 6.9 13.2 6.756 13.2 6.6V5.4Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>45</span>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="buttons-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6 0H1.4C0.63 0 0.00699999 0.63 0.00699999 1.4L0 14L2.8 11.2H12.6C13.37 11.2 14 10.57 14 9.8V1.4C14 0.63 13.37 0 12.6 0ZM11.2 8.4H2.8V7H11.2V8.4ZM11.2 6.3H2.8V4.9H11.2V6.3ZM11.2 4.2H2.8V2.8H11.2V4.2Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>22</span>
+            </div>
+          </div>
+        </div>
+        <div class="acts">
+          <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="chat-like" d="M0 12.5635H2.4V5.36348H0V12.5635ZM13.2 5.96348C13.2 5.30348 12.66 4.76348 12 4.76348H8.214L8.784 2.02148L8.802 1.82948C8.802 1.58348 8.7 1.35548 8.538 1.19348L7.902 0.563477L3.954 4.51748C3.732 4.73348 3.6 5.03348 3.6 5.36348V11.3635C3.6 12.0235 4.14 12.5635 4.8 12.5635H10.2C10.698 12.5635 11.124 12.2635 11.304 11.8315L13.116 7.60148C13.17 7.46348 13.2 7.31948 13.2 7.16348V5.96348Z" fill="#D1D0D0"/>
+          </svg>
+          <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.89913 3.48496V1.17528C7.89913 0.667479 7.32581 0.389006 6.91629 0.683859L0.445906 5.46703C0.118292 5.71274 0.118292 6.20416 0.445906 6.44987L6.91629 11.233C7.32581 11.5279 7.89913 11.2494 7.89913 10.7416V8.39918C11.3063 8.72679 13.4358 9.98811 14.7463 12.2978C15.0411 12.8056 15.8438 12.5271 15.7619 11.9538C15.123 7.58014 13.0754 4.15657 7.89913 3.48496Z" fill="#D1D0D0"/>
+          </svg>
+        </div>
+      </div>
+      <div class="chat-message-owner">
+        <div class="message-wrapper">
+          <span class="name">Tom Sanderson</span>
+          <div class="message">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </div>
+          <div class="buttons">
+            <div class="buttons-item">
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 12H2.4V4.8H0V12ZM13.2 5.4C13.2 4.74 12.66 4.2 12 4.2H8.214L8.784 1.458L8.802 1.266C8.802 1.02 8.7 0.792 8.538 0.63L7.902 0L3.954 3.954C3.732 4.17 3.6 4.47 3.6 4.8V10.8C3.6 11.46 4.14 12 4.8 12H10.2C10.698 12 11.124 11.7 11.304 11.268L13.116 7.038C13.17 6.9 13.2 6.756 13.2 6.6V5.4Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>45</span>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="buttons-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6 0H1.4C0.63 0 0.00699999 0.63 0.00699999 1.4L0 14L2.8 11.2H12.6C13.37 11.2 14 10.57 14 9.8V1.4C14 0.63 13.37 0 12.6 0ZM11.2 8.4H2.8V7H11.2V8.4ZM11.2 6.3H2.8V4.9H11.2V6.3ZM11.2 4.2H2.8V2.8H11.2V4.2Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>22</span>
+            </div>
+          </div>
+        </div>
+        <svg class="appendix" width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.07703 4.17074L2.09042 6.44132C1.42826 6.74283 0.676025 6.2588 0.676025 5.53123V1.35411C0.676025 0.626537 1.42826 0.142509 2.09042 0.444013L7.07703 2.71459C7.70168 2.99901 7.70168 3.88632 7.07703 4.17074Z" fill="#FBFBFB"/>
+        </svg>
+        <img src="./assets/img/chat-avatar4.png" alt="avatar" class="avatar">
+      </div>
+      <div class="chat-message-guest">
+        <img src="./assets/img/chat-avatar5.png" alt="avatar" class="avatar">
+        <svg class="appendix" width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.07703 4.17074L2.09042 6.44132C1.42826 6.74283 0.676025 6.2588 0.676025 5.53123V1.35411C0.676025 0.626537 1.42826 0.142509 2.09042 0.444013L7.07703 2.71459C7.70168 2.99901 7.70168 3.88632 7.07703 4.17074Z" fill="#FBFBFB"/>
+        </svg>
+        <div class="message-wrapper">
+          <span class="name">Brandon StillGenrietta</span>
+          <div class="message">
+            <div class="message-forward">
+              <span class="name">Tom Sanderson</span>
+              <span class="text">Et harum quidem rerum facilis est et expedita distinctio...</span>
+            </div>
+            <span>
+              Itaque earum rerum hic tenetur
+              a sapiente delectus, ut aut reiciendis voluptatibus
+              maiores alias consequatur aut perfen
+            </span>
+          </div>
+          <div class="buttons">
+            <div class="buttons-item">
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 12H2.4V4.8H0V12ZM13.2 5.4C13.2 4.74 12.66 4.2 12 4.2H8.214L8.784 1.458L8.802 1.266C8.802 1.02 8.7 0.792 8.538 0.63L7.902 0L3.954 3.954C3.732 4.17 3.6 4.47 3.6 4.8V10.8C3.6 11.46 4.14 12 4.8 12H10.2C10.698 12 11.124 11.7 11.304 11.268L13.116 7.038C13.17 6.9 13.2 6.756 13.2 6.6V5.4Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>9</span>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="buttons-item">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6 0H1.4C0.63 0 0.00699999 0.63 0.00699999 1.4L0 14L2.8 11.2H12.6C13.37 11.2 14 10.57 14 9.8V1.4C14 0.63 13.37 0 12.6 0ZM11.2 8.4H2.8V7H11.2V8.4ZM11.2 6.3H2.8V4.9H11.2V6.3ZM11.2 4.2H2.8V2.8H11.2V4.2Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>3</span>
+            </div>
+          </div>
+        </div>
+        <div class="acts">
+          <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="chat-like" d="M0 12.5635H2.4V5.36348H0V12.5635ZM13.2 5.96348C13.2 5.30348 12.66 4.76348 12 4.76348H8.214L8.784 2.02148L8.802 1.82948C8.802 1.58348 8.7 1.35548 8.538 1.19348L7.902 0.563477L3.954 4.51748C3.732 4.73348 3.6 5.03348 3.6 5.36348V11.3635C3.6 12.0235 4.14 12.5635 4.8 12.5635H10.2C10.698 12.5635 11.124 12.2635 11.304 11.8315L13.116 7.60148C13.17 7.46348 13.2 7.31948 13.2 7.16348V5.96348Z" fill="#D1D0D0"/>
+          </svg>
+          <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.89913 3.48496V1.17528C7.89913 0.667479 7.32581 0.389006 6.91629 0.683859L0.445906 5.46703C0.118292 5.71274 0.118292 6.20416 0.445906 6.44987L6.91629 11.233C7.32581 11.5279 7.89913 11.2494 7.89913 10.7416V8.39918C11.3063 8.72679 13.4358 9.98811 14.7463 12.2978C15.0411 12.8056 15.8438 12.5271 15.7619 11.9538C15.123 7.58014 13.0754 4.15657 7.89913 3.48496Z" fill="#D1D0D0"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <label class="chatFile" for="chatGeneralFile">
+        <input style="display:none" type="file" id="chatGeneralFile" name="chatFile" multiple>
+      </label>
+      <label class="chatPicture" for="chatGeneralPicture">
+        <input style="display:none" type="file" id="chatGeneralPicture" name="chatPicture" multiple>
+      </label>
+      <form>
+        <input type="text" placeholder="Aa">
+        <button class="chatButton">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.0001 10C19.9995 10.2015 19.9381 10.3981 19.8239 10.564C19.7097 10.7299 19.548 10.8575 19.3601 10.9301L1.36007 19.93C1.24598 19.9773 1.12355 20.0011 1.00007 20C0.808902 20.0001 0.621739 19.9453 0.460751 19.8422C0.299763 19.7391 0.171695 19.592 0.0917193 19.4184C0.0117437 19.2448 -0.0167881 19.0519 0.00950375 18.8625C0.0357956 18.6732 0.11581 18.4953 0.240066 18.3501L4.82007 11.0001H9.00007C9.26528 11.0001 9.51964 10.8947 9.70717 10.7072C9.89471 10.5196 10.0001 10.2653 10.0001 10C10.0001 9.73483 9.89471 9.48048 9.70717 9.29294C9.51964 9.10541 9.26528 9.00005 9.00007 9.00005H4.82007L0.240066 1.65005C0.0968816 1.4807 0.0140512 1.26856 0.00460306 1.047C-0.00484504 0.825433 0.0596253 0.607013 0.187874 0.426091C0.316122 0.245169 0.500872 0.11201 0.713067 0.0475585C0.925261 -0.0168932 1.15286 -0.00898083 1.36007 0.0700504L19.3601 9.07005C19.548 9.14257 19.7097 9.27015 19.8239 9.4361C19.9381 9.60204 19.9995 9.79861 20.0001 10Z" fill="white"/>
+          </svg>
         </button>
       </form>
     </div>
