@@ -38,7 +38,7 @@ const menuFunction = () => {
             arrowIcon.style.transform = 'rotate(0)';
             wrapper.style.marginLeft = '200px';
             footer.style.marginLeft = '200px';
-            setTimeout(() =>menuItemArrow.style.display = 'block', 500);
+            setTimeout(() => menuItemArrow.style.display = 'block', 500);
             for (let i = 0; i < menuItems.length; i++) {
                 menuItems[i].style.width = '200px';
                 menuItems[i].style.padding = '10px 0 10px 30px';
@@ -153,7 +153,7 @@ resourcesButtonDesktop.addEventListener('click', () => {
     subMenuList.style.top = `${(window.innerHeight - currentPosition) > 220
         ? currentPosition : (currentPosition - (220 - (window.innerHeight - currentPosition)))}px`;
     if (!submenuDisabled) {
-        if(!menuOverlayed) {
+        if (!menuOverlayed) {
             subMenu.style.marginLeft = '200px';
         } else {
             subMenu.style.marginLeft = '84px';
@@ -173,7 +173,7 @@ resourcesButtonDesktop.addEventListener('click', () => {
 
 subMenuWrapper.addEventListener('click', (e) => {
     console.log(e.target.id);
-    if(e.target.id === 'submenu-wrapper') {
+    if (e.target.id === 'submenu-wrapper') {
         subMenu.style.marginLeft = '-300px';
         subMenuWrapper.classList.add('hide');
         navArrow.classList.remove('hide');
@@ -202,7 +202,7 @@ resourcesButtonTablet.addEventListener('click', () => {
 });
 
 popOverMenu.addEventListener('click', (e) => {
-    if(e.target.id === 'popover-menu') {
+    if (e.target.id === 'popover-menu') {
         popOverMenuFunction();
     }
 })
@@ -262,7 +262,7 @@ const subMenuListResources = document.getElementById('submenu-list-resources');
 const subMenuListSubMenu = document.getElementById('submenu-list-submenu');
 
 subMenuListResources.addEventListener('click', () => {
-    if(subMenuListSubMenu.classList.contains('hide')) {
+    if (subMenuListSubMenu.classList.contains('hide')) {
         subMenuListSubMenu.classList.remove('hide');
         subMenuListResources.style.borderBottom = 'none';
     } else {
@@ -276,7 +276,7 @@ const popOverSubMenuListResources = document.getElementById('popover-submenu-lis
 const popOverListSubMenu = document.getElementById('popover-list-submenu');
 
 popOverSubMenuListResources.addEventListener('click', () => {
-    if(popOverListSubMenu.classList.contains('hide')) {
+    if (popOverListSubMenu.classList.contains('hide')) {
         popOverListSubMenu.classList.remove('hide');
         popOverSubMenuListResources.style.borderBottom = 'none';
     } else {
@@ -289,7 +289,7 @@ const itemSubMenuItemResources = document.getElementById('item-submenu-item-reso
 const itemSubMenuSubmenu = document.getElementById('item-submenu-submenu');
 
 itemSubMenuItemResources.addEventListener('click', () => {
-    if(itemSubMenuSubmenu.classList.contains('hide')) {
+    if (itemSubMenuSubmenu.classList.contains('hide')) {
         itemSubMenuSubmenu.classList.remove('hide');
         itemSubMenuItemResources.style.borderBottom = 'none';
     } else {
@@ -302,13 +302,23 @@ itemSubMenuItemResources.addEventListener('click', () => {
 
 const chatHelp = document.getElementById('chat-help');
 const helpDesktop = document.getElementById('help-desktop');
+const helpMobile = document.getElementById('help-mobile');
 
 helpDesktop.addEventListener('click', () => {
-    if(chatHelp.classList.contains('hide')) {
+    if (chatHelp.classList.contains('hide')) {
         chatHelp.classList.remove('hide');
     } else {
         chatHelp.classList.add('hide');
     }
+})
+
+helpMobile.addEventListener('click', () => {
+    if (chatHelp.classList.contains('hide')) {
+        chatHelp.classList.remove('hide');
+    } else {
+        chatHelp.classList.add('hide');
+    }
+    popOverMenuFunction();
 })
 
 const chatClose = document.getElementById('chat-close');
@@ -318,11 +328,23 @@ chatClose.addEventListener('click', () => {
 })
 
 const messages = document.getElementById('messages');
+const messagesMobile = document.getElementById('messagesMobile')
 const messagesContainer = document.getElementById('messages-container');
 const messagesIcon = document.getElementById('messages-icon');
 
 messages.addEventListener('click', event => {
-    if(messagesContainer.classList.contains('hide')) {
+    if (messagesContainer.classList.contains('hide')) {
+        messagesContainer.classList.remove('hide');
+        messagesIcon.style.fill = '#5E5E5E';
+    } else {
+        messagesContainer.classList.add('hide');
+        messagesIcon.style.fill = '#D7D7D7;';
+    }
+});
+
+messagesMobile.addEventListener('click', event => {
+    console.log('here!')
+    if (messagesContainer.classList.contains('hide')) {
         messagesContainer.classList.remove('hide');
         messagesIcon.style.fill = '#5E5E5E';
     } else {
@@ -347,16 +369,40 @@ chatGeneralClose.addEventListener('click', () => {
 })
 
 
-
 const chatLike = document.getElementById('chat-like');
 
 chatLike.addEventListener('click', () => {
-    if(chatLike.style.fill === 'rgb(209, 208, 208)') {
+    if (chatLike.style.fill === 'rgb(209, 208, 208)') {
         chatLike.style.fill = '#74BD43';
     } else {
         chatLike.style.fill = 'rgb(209, 208, 208)';
     }
 })
+
+const buttonsItem = document.getElementById('buttons-item');
+const wholikes = document.getElementById('wholikes');
+const wholikesClose = document.getElementById('wholikes-close');
+
+buttonsItem.addEventListener('click', () => {
+    if (wholikes.classList.contains('hide')) {
+        wholikes.classList.remove('hide');
+        buttonsItem.style.background = '#74BD43'
+        buttonsItem.children[0].children[0].style.fill = '#F4FFED';
+        buttonsItem.children[1].style.color = '#F4FFED';
+    } else {
+        wholikes.classList.add('hide');
+        buttonsItem.style.background = 'inherit'
+        buttonsItem.children[0].children[0].style.fill = 'rgb(209, 208, 208)';
+        buttonsItem.children[1].style.color = '#B8B8B8';
+    }
+})
+
+wholikesClose.addEventListener('click', () => {
+    wholikes.classList.add('hide');
+    buttonsItem.style.background = 'inherit'
+    buttonsItem.children[0].children[0].style.fill = 'rgb(209, 208, 208)';
+    buttonsItem.children[1].style.color = '#B8B8B8';
+});
 
 
 
