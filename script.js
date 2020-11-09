@@ -338,7 +338,7 @@ messages.addEventListener('click', event => {
         messagesIcon.style.fill = '#5E5E5E';
     } else {
         messagesContainer.classList.add('hide');
-        messagesIcon.style.fill = '#D7D7D7;';
+        messagesIcon.style.fill = '#D7D7D7';
     }
 });
 

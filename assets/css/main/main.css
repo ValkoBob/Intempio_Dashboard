@@ -1,4 +1,5 @@
 main {
+  overflow: hidden;
   padding: 32px;
   display: flex;
   flex-direction: column; }
@@ -716,6 +717,7 @@ main {
             main .presenters-container .presenter:hover .socials > a {
               color: #67B1E2; }
   main .fun-stuff {
+    padding-bottom: 80px;
     margin-top: 40px;
     display: flex;
     flex-direction: column; }

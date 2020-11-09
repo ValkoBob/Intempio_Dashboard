@@ -1284,11 +1284,11 @@
     }
 
     & .chat-footer-wrapper .upload-buttons .chatFile {
-      left: 24px;
+      left: 27px;
     }
 
     & .chat-footer-wrapper .upload-buttons .chatPicture {
-      left: 50px;
+      left: 60px;
     }
   }
 
@@ -1437,6 +1437,10 @@
       }
     }
 
+    .overlay-menu .vertical-line {
+      margin: 34px 25px 40px;
+    }
+
     .hide {
       display: none;
     }
@@ -1444,7 +1448,7 @@
 
   .wrapper main {
     padding: 10px 16px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 
     .events {
       margin: -10px -16px 0 -16px;
@@ -1966,7 +1970,7 @@
     }
 
     & .chat-footer-wrapper .upload-buttons .chatPicture {
-      left: 63px;
+      left: 53px;
     }
   }
   .wrapper main {
@@ -2014,6 +2018,19 @@
   .login .login-wrapper {
     & label:before {
       right: 135px;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  header {
+
+    & .chat-footer-wrapper .upload-buttons .chatFile {
+      left: 24px;
+    }
+
+    & .chat-footer-wrapper .upload-buttons .chatPicture {
+      left: 50px;
     }
   }
 }
