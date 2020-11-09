@@ -682,6 +682,7 @@
         </svg>
       </div>
     </div>
+    <div class="chat-shadow"></div>
     <div class="chat-container">
       <div class="chat-date">
         <div class="line"></div>
@@ -802,7 +803,7 @@
           </label>
         </div>
         <form>
-          <label for="messageTextHelp"><textarea id="messageTextHelp" type="text" placeholder="Aa"></textarea></label>
+          <label for="messageTextHelp"><input id="messageTextHelp" type="text" placeholder="Aa"/></label>
           <button class="chatButton">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -835,6 +836,7 @@
         </svg>
       </div>
     </div>
+    <div class="chat-shadow"></div>
     <div class="chat-container">
       <div class="chat-date">
         <div class="line"></div>
@@ -934,11 +936,7 @@
               </div>
               <div id="wholikes" class="wholikes hide">
                 <div class="svg-wrapper">
-                  <svg class="appendix" width="8" height="7" viewBox="0 0 8 7" fill="#FBFBFB" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.07703 4.17074L2.09042 6.44132C1.42826 6.74283 0.676025 6.2588 0.676025 5.53123V1.35411C0.676025 0.626537 1.42826 0.142509 2.09042 0.444013L7.07703 2.71459C7.70168 2.99901 7.70168 3.88632 7.07703 4.17074Z"
-                      fill="#FBFBFB"/>
-                  </svg>
+                  <img src="./assets/img/appendix.png" alt="appendix">
                 </div>
                 <div class="wholikes-wrapper">
                   <div class="wholikes-header">
@@ -948,56 +946,56 @@
                   </div>
                   <div class="wholikes-container">
                     <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      <div class="avatar-wrapper">
+                        <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                        <div class="active-user"></div>
+                      </div>
                       <div class="user-info">
                         <span class="name">Aaron Young</span>
                         <span class="date">10 minutes ago</span>
                       </div>
                     </div>
                     <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      <div class="avatar-wrapper">
+                        <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      </div>
                       <div class="user-info">
                         <span class="name">Aaron Young</span>
                         <span class="date">10 minutes ago</span>
                       </div>
                     </div>
                     <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      <div class="avatar-wrapper">
+                        <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      </div>
                       <div class="user-info">
                         <span class="name">Aaron Young</span>
                         <span class="date">10 minutes ago</span>
                       </div>
                     </div>
                     <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      <div class="avatar-wrapper">
+                        <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                        <div class="active-user"></div>
+                      </div>
                       <div class="user-info">
                         <span class="name">Aaron Young</span>
                         <span class="date">10 minutes ago</span>
                       </div>
                     </div>
                     <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      <div class="avatar-wrapper">
+                        <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
+                      </div>
                       <div class="user-info">
                         <span class="name">Aaron Young</span>
                         <span class="date">10 minutes ago</span>
                       </div>
                     </div>
                     <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
-                      <div class="user-info">
-                        <span class="name">Aaron Young</span>
-                        <span class="date">10 minutes ago</span>
+                      <div class="avatar-wrapper">
+                        <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
                       </div>
-                    </div>
-                    <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
-                      <div class="user-info">
-                        <span class="name">Aaron Young</span>
-                        <span class="date">10 minutes ago</span>
-                      </div>
-                    </div>
-                    <div class="user-item">
-                      <img src="./assets/img/chat-avatar32x32.png" alt="avatar" class="avatar">
                       <div class="user-info">
                         <span class="name">Aaron Young</span>
                         <span class="date">10 minutes ago</span>
@@ -1086,7 +1084,7 @@
           </label>
         </div>
         <form>
-          <label for="messageText"><textarea id="messageText" type="text" placeholder="Aa"></textarea></label>
+          <label for="messageText"><input id="messageText" type="text" placeholder="Aa"/></label>
           <button class="chatButton">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
