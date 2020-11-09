@@ -87,7 +87,7 @@ header {
 
     &-container {
       z-index: 220;
-      padding: 15px 24px 24px 24px;
+      padding: 15px 0 24px;
       position: fixed;
       top: 120px;
       right: 30px;
@@ -98,6 +98,7 @@ header {
       border-radius: 4px;
 
       & > .header {
+        padding: 0 24px;
         font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -109,7 +110,7 @@ header {
       }
 
       & .search-bar {
-        margin-top: 10px;
+        margin: 10px 24px 0;
         padding-left: 31px;
         width: 352px;
         height: 26px;
@@ -142,8 +143,7 @@ header {
         cursor: pointer;
         content: "";
         position: absolute;
-        right: -27px;
-        top: 3.5px;
+        left: 33.5px;
         bottom: 0;
         z-index: 0;
         width: 16px;
@@ -165,7 +165,7 @@ header {
 
       & .conversation {
         cursor: pointer;
-        padding: 10px 0;
+        padding: 10px 24px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -289,6 +289,7 @@ header {
     bottom: 30px;
     right: 30px;
     max-width: 540px;
+    width: 100%;
     max-height: 600px;
     background: #FFFFFF;
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
@@ -378,7 +379,6 @@ header {
     }
 
     &-date {
-      padding: 0 20px;
       display: flex;
       align-items: center;
       position: relative;
@@ -392,7 +392,8 @@ header {
       & .date {
         padding: 0 10px;
         position: absolute;
-        left: 37%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 2;
         background: white;
         display: flex;
@@ -418,7 +419,7 @@ header {
 
         & > .message {
           padding: 10px 12px 15px 10px;
-          max-width: 378px;
+          max-width: 403px;
           background: #FBFBFB;
           box-sizing: border-box;
           border-radius: 2px;
@@ -453,7 +454,7 @@ header {
             color: #C2C2C2;
           }
 
-          &>.message {
+          & > .message {
             padding: 10px 0 0 15px;
             max-width: 400px;
             background: #F7F7F7;
@@ -468,7 +469,7 @@ header {
             align-items: flex-end;
             color: #979696;
 
-            &>span {
+            & > span {
               padding: 0 10px 12px 0;
             }
 
@@ -488,7 +489,7 @@ header {
               &-item {
                 border-bottom-left-radius: 2px;
                 border-top-left-radius: 2px;
-                padding: 3.9px;
+                padding: 4.2px;
                 flex-basis: 50%;
                 display: flex;
                 justify-content: center;
@@ -552,7 +553,8 @@ header {
 
               & .wholikes {
                 z-index: 22;
-                width: 284px;
+                max-width: 284px;
+                width: 75vw;
                 height: 319px;
                 position: absolute;
                 top: 32px;
@@ -565,14 +567,15 @@ header {
                   top: 1px;
                   left: 17px;
 
-                  &>img {
+                  & > img {
                     position: absolute;
-                    top: -5px;
+                    top: -4px;
                   }
                 }
 
                 &-wrapper {
-                  width: 284px;
+                  max-width: 284px;
+                  width: 75vw;
                   height: 300px;
                   box-sizing: border-box;
                   border-radius: 4px;
@@ -590,7 +593,7 @@ header {
                   display: flex;
                   justify-content: flex-end;
 
-                  &> svg {
+                  & > svg {
                     cursor: pointer;
                   }
                 }
@@ -673,8 +676,8 @@ header {
 
                 &-footer {
                   position: absolute;
-                  bottom: 13px;
-                  width: 99.3%;
+                  bottom: 11px;
+                  width: 99.7%;
                   height: 29px;
                   background: linear-gradient(188.35deg, #FFFFFF 6.4%, #FFFFFF 26.39%, rgba(255, 255, 255, 0.91) 47.74%, rgba(255, 255, 255, 0.71) 75%, rgba(255, 255, 255, 0) 93.63%);
                   border-radius: 2px;
@@ -706,6 +709,12 @@ header {
         margin-top: 20px;
         display: flex;
         align-items: flex-end;
+
+        &:hover {
+          .acts {
+            opacity: 1;
+          }
+        }
 
         & > .appendix {
           transform: rotate(180deg);
@@ -744,8 +753,8 @@ header {
           }
 
           & .message {
-            padding: 10px 0 0 15px;
-            max-width: 400px;
+            padding: 10px 15px 12px 10px;
+            max-width: 403px;
             background: #F7F7F7;
             box-sizing: border-box;
             border-radius: 2px;
@@ -758,10 +767,6 @@ header {
             flex-direction: column;
             align-items: flex-end;
             color: #979696;
-
-            &>span {
-              padding: 0 10px 12px 0;
-            }
 
             &-forward {
               padding: 2px 5px;
@@ -789,8 +794,10 @@ header {
               background: #FFFFFF;
               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
               border-radius: 2px;
-              position: relative;
-              top: 10px;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transform: translateY(50%);
               display: flex;
               justify-content: space-evenly;
               align-items: center;
@@ -798,7 +805,7 @@ header {
               &-item {
                 border-bottom-left-radius: 2px;
                 border-top-left-radius: 2px;
-                padding: 3.9px;
+                padding: 4.2px;
                 flex-basis: 50%;
                 display: flex;
                 justify-content: center;
@@ -854,10 +861,6 @@ header {
               fill: #74BD43;
             }
           }
-
-          &:hover {
-            opacity: 1;
-          }
         }
       }
     }
@@ -873,20 +876,17 @@ header {
         display: flex;
 
         & .upload-buttons {
-          flex-basis: 20%;
+          margin-right: 20px;
           padding-top: 7px;
+          display: flex;
 
           & .chatFile {
-            position: relative;
-            left: 34px;
+            margin-right: 20px;
 
             &:before {
               cursor: pointer;
               content: "";
-              position: absolute;
-              right: 10px;
-              top: 10%;
-              bottom: 0;
+              display: block;
               width: 20px;
               height: 20px;
               background: url("./../../img/upload-file.png") center/contain no-repeat;
@@ -894,16 +894,11 @@ header {
           }
 
           & .chatPicture {
-            position: relative;
-            left: 65px;
 
             &:before {
               cursor: pointer;
               content: "";
-              position: absolute;
-              right: 5px;
-              top: 10%;
-              bottom: 0;
+              display: block;
               width: 20px;
               height: 18px;
               background: url("./../../img/upload-picture.png") center/contain no-repeat;
@@ -932,7 +927,7 @@ header {
           color: #5E5E5E;
           resize: none;
           padding: 6px 15px;
-          width: 325px;
+          width: 100%;
           max-height: 45px;
           height: 36px;
           opacity: 0.5;

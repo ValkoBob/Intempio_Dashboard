@@ -840,12 +840,6 @@
         width: 302px; }
     header .chat {
       right: 16px; }
-    header .chat-footer-wrapper > form label input {
-      width: 280px; }
-    header .chat-footer-wrapper .upload-buttons .chatFile {
-      left: 27px; }
-    header .chat-footer-wrapper .upload-buttons .chatPicture {
-      left: 60px; }
 
   nav {
     height: 69px;
@@ -1282,6 +1276,7 @@
   header .chat-footer-wrapper > form > .chatButton {
     margin-left: 10px; }
   header .chat {
+    width: calc(100% - 32px);
     left: 16px; } }
 @media screen and (max-width: 502px) {
   header .chat-footer-wrapper > form label input {
@@ -1290,13 +1285,23 @@
     margin: 0 10px; } }
 @media screen and (max-width: 360px) {
   header .msgs-container {
-    padding: 15px; }
+    padding: 15px;
+    left: 16px;
+    right: 16px; }
+    header .msgs-container > .header {
+      padding: 0 15px; }
     header .msgs-container .search-bar {
+      margin-left: 0;
+      margin-right: 0;
       max-width: 260px; }
+    header .msgs-container label:before {
+      left: 8.5px; }
+  header .msgs-wrapper .conversation {
+    padding: 10px 15px; }
   header .chat-footer-wrapper .upload-buttons .chatFile {
-    left: 27px; }
-  header .chat-footer-wrapper .upload-buttons .chatPicture {
-    left: 53px; }
+    margin-right: 10px; }
+  header .chat-footer-wrapper .upload-buttons {
+    margin-right: 10px; }
 
   .wrapper main .events {
     display: flex;
@@ -1321,11 +1326,6 @@
 
   .login .login-wrapper label:before {
     right: 135px; } }
-@media screen and (max-width: 330px) {
-  header .chat-footer-wrapper .upload-buttons .chatFile {
-    left: 24px; }
-  header .chat-footer-wrapper .upload-buttons .chatPicture {
-    left: 50px; } }
 @media screen and (max-height: 720px) {
   header .chat {
     bottom: 10px;
@@ -1334,13 +1334,8 @@
       max-height: 390px; } }
 @media screen and (max-height: 630px) {
   header .chat {
-    max-height: 500px; }
+    max-height: 80vh; }
     header .chat-container {
       max-height: 350px; } }
-@media screen and (max-height: 590px) {
-  header .chat {
-    max-height: 400px; }
-    header .chat-container {
-      max-height: 250px; } }
 
 /*# sourceMappingURL=queries.css.map */

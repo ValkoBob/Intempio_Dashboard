@@ -1286,18 +1286,6 @@
     & .chat {
       right: 16px;
     }
-
-    & .chat-footer-wrapper > form label input {
-      width: 280px;
-    }
-
-    & .chat-footer-wrapper .upload-buttons .chatFile {
-      left: 27px;
-    }
-
-    & .chat-footer-wrapper .upload-buttons .chatPicture {
-      left: 60px;
-    }
   }
 
   nav {
@@ -1970,6 +1958,7 @@
     }
 
     & .chat {
+      width: calc(100% - 32px);
       left: 16px;
     }
   }
@@ -1991,18 +1980,38 @@
   header {
     .msgs-container {
       padding: 15px;
+      left: 16px;
+      right: 16px;
+
+      & > .header {
+        padding: 0 15px;
+      }
 
       & .search-bar {
+        margin-left: 0;
+        margin-right: 0;
         max-width: 260px;
+      }
+
+      & label:before {
+        left: 8.5px;
+      }
+
+
+    }
+
+    .msgs-wrapper {
+      & .conversation {
+        padding: 10px 15px;
       }
     }
 
     & .chat-footer-wrapper .upload-buttons .chatFile {
-      left: 27px;
+      margin-right: 10px;
     }
 
-    & .chat-footer-wrapper .upload-buttons .chatPicture {
-      left: 53px;
+    & .chat-footer-wrapper .upload-buttons{
+      margin-right: 10px;
     }
   }
   .wrapper main {
@@ -2054,20 +2063,6 @@
   }
 }
 
-@media screen and (max-width: 330px) {
-  header {
-
-    & .chat-footer-wrapper .upload-buttons .chatFile {
-      left: 24px;
-    }
-
-    & .chat-footer-wrapper .upload-buttons .chatPicture {
-      left: 50px;
-    }
-  }
-}
-
-
 //height
 
 @media screen and (max-height: 720px) {
@@ -2086,7 +2081,7 @@
 @media screen and (max-height: 630px) {
   header {
     .chat {
-      max-height: 500px;
+      max-height: 80vh;
 
       &-container {
         max-height: 350px;
@@ -2095,14 +2090,3 @@
   }
 }
 
-@media screen and (max-height: 590px) {
-  header {
-    .chat {
-      max-height: 400px;
-
-      &-container {
-        max-height: 250px;
-      }
-    }
-  }
-}
