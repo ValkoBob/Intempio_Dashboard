@@ -2073,10 +2073,35 @@
 @media screen and (max-height: 720px) {
   header {
     .chat {
+      bottom: 10px;
       max-height: 540px;
 
       &-container {
         max-height: 390px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 630px) {
+  header {
+    .chat {
+      max-height: 500px;
+
+      &-container {
+        max-height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 590px) {
+  header {
+    .chat {
+      max-height: 400px;
+
+      &-container {
+        max-height: 250px;
       }
     }
   }
