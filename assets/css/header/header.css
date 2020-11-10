@@ -127,7 +127,7 @@ header {
         z-index: 0;
         width: 16px;
         height: 16px;
-        background: url("./../../img/search-picure.png") center/contain no-repeat; }
+        background: url("./../../img/search-picture.svg") center/contain no-repeat; }
     header .msgs-wrapper {
       height: 200px;
       margin-top: 13px;
@@ -279,7 +279,7 @@ header {
       cursor: pointer; }
     header .chat-container {
       margin-right: 4px;
-      padding: 37px 13px 20px 29px;
+      padding: 37px 13px 20px 30px;
       overflow: auto;
       max-height: 450px;
       display: flex;
@@ -337,6 +337,7 @@ header {
         letter-spacing: 0.15px;
         color: #979696; }
       header .chat-message-owner > .message-wrapper {
+        margin-left: 45px;
         max-width: 400px;
         border-radius: 2px;
         display: flex;
@@ -528,10 +529,10 @@ header {
                 transform: matrix(1, 0, 0, -1, 0, 0); }
       header .chat-message-owner > .appendix {
         position: relative;
-        top: -20px;
+        top: -14px;
         left: -1px; }
         header .chat-message-owner > .appendix > path {
-          fill: #FBFBFB; }
+          fill: #F7F7F7; }
       header .chat-message-owner > .avatar {
         margin-left: 5px;
         margin-bottom: 5px; }
@@ -668,14 +669,14 @@ header {
               display: block;
               width: 20px;
               height: 20px;
-              background: url("./../../img/upload-file.png") center/contain no-repeat; }
+              background: url("./../../img/upload-file.svg") center/contain no-repeat; }
           header .chat-footer-wrapper .upload-buttons .chatPicture:before {
             cursor: pointer;
             content: "";
             display: block;
             width: 20px;
             height: 18px;
-            background: url("./../../img/upload-picture.png") center/contain no-repeat; }
+            background: url("./../../img/upload-picture.svg") center/contain no-repeat; }
         header .chat-footer-wrapper > form {
           flex-basis: 80%;
           display: flex; }

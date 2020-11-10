@@ -148,7 +148,7 @@ header {
         z-index: 0;
         width: 16px;
         height: 16px;
-        background: url("./../../img/search-picure.png") center/contain no-repeat;
+        background: url("./../../img/search-picture.svg") center/contain no-repeat;
       }
     }
 
@@ -357,7 +357,7 @@ header {
 
     &-container {
       margin-right: 4px;
-      padding: 37px 13px 20px 29px;
+      padding: 37px 13px 20px 30px;
       overflow: auto;
       max-height: 450px;
       display: flex;
@@ -435,6 +435,7 @@ header {
         }
 
         & > .message-wrapper {
+          margin-left: 45px;
           max-width: 400px;
           border-radius: 2px;
           display: flex;
@@ -691,11 +692,11 @@ header {
 
         & > .appendix {
           position: relative;
-          top: -20px;
+          top: -14px;
           left: -1px;
 
           & > path {
-            fill: #FBFBFB;
+            fill: #F7F7F7;
           }
         }
 
@@ -889,7 +890,7 @@ header {
               display: block;
               width: 20px;
               height: 20px;
-              background: url("./../../img/upload-file.png") center/contain no-repeat;
+              background: url("./../../img/upload-file.svg") center/contain no-repeat;
             }
           }
 
@@ -901,7 +902,7 @@ header {
               display: block;
               width: 20px;
               height: 18px;
-              background: url("./../../img/upload-picture.png") center/contain no-repeat;
+              background: url("./../../img/upload-picture.svg") center/contain no-repeat;
             }
           }
         }
