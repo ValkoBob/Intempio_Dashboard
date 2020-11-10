@@ -337,7 +337,7 @@ header {
         letter-spacing: 0.15px;
         color: #979696; }
       header .chat-message-owner > .message-wrapper {
-        margin-left: 45px;
+        margin-left: 60px;
         max-width: 400px;
         border-radius: 2px;
         display: flex;

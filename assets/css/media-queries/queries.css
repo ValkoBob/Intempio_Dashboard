@@ -703,7 +703,7 @@
           z-index: 0;
           width: 16px;
           height: 16px;
-          background: url("./../../img/search-picure.png") center/contain no-repeat; }
+          background: url("./../../img/search-picture.svg") center/contain no-repeat; }
       .overlay-menu .msgs-wrapper {
         height: 200px;
         margin-top: 13px;
@@ -1296,6 +1296,12 @@
       max-width: 260px; }
     header .msgs-container label:before {
       left: 8.5px; }
+  header .chat-message-owner > .message-wrapper {
+    margin-left: 50px; }
+  header .chat-message-guest > .acts {
+    margin-left: 10px; }
+    header .chat-message-guest > .acts svg:first-child {
+      margin-right: 10px; }
   header .msgs-wrapper .conversation {
     padding: 10px 15px; }
   header .chat-footer-wrapper .upload-buttons .chatFile {

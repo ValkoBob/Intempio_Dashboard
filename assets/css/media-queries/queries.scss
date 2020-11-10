@@ -1069,7 +1069,7 @@
           z-index: 0;
           width: 16px;
           height: 16px;
-          background: url("./../../img/search-picure.png") center/contain no-repeat;
+          background: url("./../../img/search-picture.svg") center/contain no-repeat;
         }
       }
 
@@ -1998,6 +1998,26 @@
       }
 
 
+    }
+
+    & .chat {
+      &-message {
+        &-owner {
+          & > .message-wrapper {
+            margin-left: 50px;
+          }
+        }
+
+        &-guest {
+          & > .acts {
+            margin-left: 10px;
+
+            & svg:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
     }
 
     .msgs-wrapper {
