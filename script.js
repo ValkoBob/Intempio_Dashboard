@@ -404,6 +404,38 @@ wholikesClose.addEventListener('click', () => {
     buttonsItem.children[1].style.color = '#B8B8B8';
 });
 
+const messageTextHelp = document.getElementById('messageTextHelp');
+const chatButtonHelp = document.getElementById('chatButtonHelp');
+
+const messageHelpFunc = (e) => {
+    if(e.target.value) {
+        chatButtonHelp.style.width = '36px';
+        chatButtonHelp.style.background = '#74BD43';
+    } else {
+        chatButtonHelp.style.width = '62px';
+        chatButtonHelp.style.background = '#C2C2C2';
+    }
+}
+
+messageTextHelp.addEventListener('change', messageHelpFunc)
+messageTextHelp.addEventListener('keydown', messageHelpFunc)
+
+const messageText = document.getElementById('messageText');
+const chatButton = document.getElementById('chatButton');
+
+const messageFunc = (e) => {
+    if(e.target.value) {
+        chatButton.style.width = '36px';
+        chatButton.style.background = '#74BD43';
+    } else {
+        chatButton.style.width = '62px';
+        chatButton.style.background = '#C2C2C2';
+    }
+}
+
+messageText.addEventListener('change', messageFunc);
+messageText.addEventListener('keydown', messageFunc);
+
 
 
 
