@@ -434,7 +434,7 @@ header {
             header .chat-message-owner > .message-wrapper > .message .buttons .wholikes {
               z-index: 22;
               max-width: 284px;
-              width: 70vw;
+              width: 68vw;
               height: 319px;
               position: absolute;
               top: 32px;
@@ -450,7 +450,7 @@ header {
                   top: -4px; }
               header .chat-message-owner > .message-wrapper > .message .buttons .wholikes-wrapper {
                 max-width: 284px;
-                width: 70vw;
+                width: 68vw;
                 height: 300px;
                 box-sizing: border-box;
                 border-radius: 4px;
