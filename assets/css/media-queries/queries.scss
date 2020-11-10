@@ -1976,7 +1976,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
   header {
     .msgs-container {
       padding: 15px;
@@ -2005,6 +2005,10 @@
         &-owner {
           & > .message-wrapper {
             margin-left: 50px;
+
+            & > .message {
+              padding: 10px;
+            }
           }
         }
 
@@ -2016,7 +2020,18 @@
               margin-right: 10px;
             }
           }
+
+          & > .message-wrapper {
+            & > .message {
+              padding: 10px;
+            }
+          }
         }
+      }
+
+      &-container {
+        margin-right: 0;
+        padding: 27px 10px 20px 10px;
       }
     }
 

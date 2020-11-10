@@ -1283,7 +1283,7 @@
     width: 100%; }
   header .chat-footer {
     margin: 0 10px; } }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
   header .msgs-container {
     padding: 15px;
     left: 16px;
@@ -1298,10 +1298,17 @@
       left: 8.5px; }
   header .chat-message-owner > .message-wrapper {
     margin-left: 50px; }
+    header .chat-message-owner > .message-wrapper > .message {
+      padding: 10px; }
   header .chat-message-guest > .acts {
     margin-left: 10px; }
     header .chat-message-guest > .acts svg:first-child {
       margin-right: 10px; }
+  header .chat-message-guest > .message-wrapper > .message {
+    padding: 10px; }
+  header .chat-container {
+    margin-right: 0;
+    padding: 27px 10px 20px 10px; }
   header .msgs-wrapper .conversation {
     padding: 10px 15px; }
   header .chat-footer-wrapper .upload-buttons .chatFile {
