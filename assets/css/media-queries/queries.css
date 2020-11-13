@@ -178,6 +178,8 @@
 @media screen and (max-width: 1024px) {
   main {
     margin-bottom: 50px; }
+    main .events {
+      background-image: linear-gradient(80.72deg, rgba(7, 59, 94, 0.55) 0%, rgba(18, 68, 102, 0.55) 30.1%, rgba(31, 80, 113, 0) 69.64%), url(./../../img/banner960px.jpg); }
 
   .submenu {
     display: none; }
@@ -1317,6 +1319,7 @@
     margin-right: 10px; }
 
   .wrapper main .events {
+    background-image: linear-gradient(80.72deg, rgba(7, 59, 94, 0.55) 0%, rgba(18, 68, 102, 0.55) 30.1%, rgba(31, 80, 113, 0) 69.64%), url(./../../img/banner375px.jpg);
     display: flex;
     flex-direction: column;
     align-items: center; }
