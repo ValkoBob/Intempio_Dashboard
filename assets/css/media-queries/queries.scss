@@ -323,8 +323,10 @@
     margin-bottom: 50px;
 
     & .events {
-      background-image: linear-gradient(80.72deg, rgba(7, 59, 94, 0.55) 0%,
-              rgba(18, 68, 102, 0.55) 30.1%, rgba(31, 80, 113, 0) 69.64%),
+      background-image: linear-gradient(80.72deg,
+              rgba(7, 59, 94, 0.65) 0%,
+              rgba(18, 68, 102, 0.65) 30.1%,
+              rgba(31, 80, 113, 0.1) 69.64%),
       url(./../../img/banner960px.jpg);
     }
   }
@@ -1456,22 +1458,26 @@
       margin: -10px -16px 0 -16px;
 
       & h3 {
+        margin-top: 20px;
         margin-left: 16px;
         font-size: 18px;
       }
 
       & h1 {
+        margin-top: 15px;
         margin-left: 16px;
         font-size: 38px;
       }
 
       &-footer {
+        margin-top: 15px;
         margin-left: 16px;
+        margin-bottom: 22px;
         flex-direction: column;
         align-items: flex-start;
 
         & button {
-          margin-top: 38px;
+          margin-top: 20px;
           margin-left: 0;
         }
       }
@@ -2057,8 +2063,10 @@
   }
   .wrapper main {
     .events {
-      background-image: linear-gradient(80.72deg, rgba(7, 59, 94, 0.55) 0%,
-              rgba(18, 68, 102, 0.55) 30.1%, rgba(31, 80, 113, 0) 69.64%),
+      background-image: linear-gradient(91.8deg,
+              rgba(7, 59, 94, 0.55) 3.05%,
+              rgba(18, 68, 102, 0.55) 76.66%,
+              rgba(31, 80, 113, 0) 147.26%),
       url(./../../img/banner375px.jpg);
       display: flex;
       flex-direction: column;

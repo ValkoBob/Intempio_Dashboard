@@ -6,7 +6,7 @@ main {
   main .events {
     background-image: linear-gradient(80.72deg, rgba(7, 59, 94, 0.55) 0%, rgba(18, 68, 102, 0.55) 30.1%, rgba(31, 80, 113, 0) 69.64%), url(./../../img/banner1920px.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     border-radius: 2px; }
     main .events h3 {
       margin-top: 50px;
