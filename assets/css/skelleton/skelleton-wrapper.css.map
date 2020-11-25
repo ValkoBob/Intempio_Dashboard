@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,WAAW,EAAE,KAAK;EAClB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,gBAAgB",
+"sources": ["skelleton-wrapper.scss"],
+"names": [],
+"file": "skelleton-wrapper.css"
+}
