@@ -210,7 +210,7 @@ popOverMenu.addEventListener('click', (e) => {
 const menuArrowMobile = document.getElementById('menu-arrow-mobile');
 
 const hideSubMenu = (currentPositionLeft) => {
-    if (window.innerWidth > 720) {
+    if (window.innerWidth >= 570) {
         if (!submenuTabletDisabled) {
             popOverSubMenu.style.marginLeft = `${currentPositionLeft - 240}px`;
             popOverMenuWindow.style.boxShadow = 'none';

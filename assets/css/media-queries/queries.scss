@@ -1351,10 +1351,6 @@
       }
     }
 
-    & .popover-submenu {
-      display: none;
-    }
-
     .item-submenu {
       background: #FFFFFF;
       display: flex;
@@ -2017,6 +2013,11 @@
 }
 
 @media screen and (max-width: 570px) {
+  nav {
+    & .popover-submenu {
+      display: none;
+    }
+  }
   .wrapper main {
     .sessions {
       &-header {
