@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>Intempio Dashboard</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!--<link rel="stylesheet" href="assets/css/style.css" type="text/css">-->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
   <!--Skelleton style-->
-  <link rel="stylesheet" href="assets/css/skelleton/style.css" type="text/css">
+  <!--<link rel="stylesheet" href="assets/css/skelleton/style.css" type="text/css">-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
 <body id="body">
-<div class="skelleton">
+<!--<div class="skelleton">
   <header>
-    <!--<button class="buy-tickets">Buy tickets</button>
-    <button class="login">Log in</button>-->
+    &lt;!&ndash;<button class="buy-tickets">Buy tickets</button>
+    <button class="login">Log in</button>&ndash;&gt;
     <div id="messages" class="msgs">
       <div class="msgs-number">
       </div>
@@ -566,7 +566,7 @@
     </div>
   </header>
 
-  <!--<div class="login">
+  &lt;!&ndash;<div class="login">
     <div class="login-wrapper">
       <h1>Log in at system </h1>
       <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
@@ -579,7 +579,7 @@
       <input id="lastName" type="text" placeholder="Enter Your LastName">
       <button>login</button>
     </div>
-  </div>-->
+  </div>&ndash;&gt;
 
   <div id="wrapper" class="wrapper">
     <main id="main">
@@ -917,10 +917,10 @@
       <div class="loading skel-img"></div>
     </div>
   </footer>
-</div>
-<!--<header>
-  &lt;!&ndash;<button class="buy-tickets">Buy tickets</button>
-  <button class="login">Log in</button>&ndash;&gt;
+</div>-->
+<header>
+  <!--<button class="buy-tickets">Buy tickets</button>
+  <button class="login">Log in</button>-->
   <div id="messages" class="msgs">
     <div class="msgs-number">
       5
@@ -2005,7 +2005,7 @@
   </div>
 </header>
 
-&lt;!&ndash;<div class="login">
+<!--<div class="login">
   <div class="login-wrapper">
     <h1>Log in at system </h1>
     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
@@ -2018,7 +2018,7 @@
     <input id="lastName" type="text" placeholder="Enter Your LastName">
     <button>login</button>
   </div>
-</div>&ndash;&gt;
+</div>-->
 
 <div id="wrapper" class="wrapper">
   <main id="main">
@@ -2152,13 +2152,15 @@
         <h3>Upcoming Events</h3>
         <div class="sessions-selector">
           <div id="selector" class="selector">
-            <svg class="filter"
-                 width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.8938 0.667367C15.7045 0.255786 15.3038 0 14.8486 0H1.15154C0.696153 0 0.295618 0.255786 0.106112 0.667367C-0.0818706 1.07552 -0.0169242 1.54138 0.275811 1.88344C0.276001 1.88364 0.276382 1.88402 0.276572 1.88421L5.71455 8.21105V13.1416C5.71455 13.3523 5.83053 13.546 6.01642 13.6456C6.1006 13.6907 6.19355 13.713 6.28592 13.713C6.39677 13.713 6.50723 13.6806 6.60284 13.617L10.0311 11.3315C10.1901 11.2254 10.2856 11.0472 10.2856 10.8561V8.21105L15.7243 1.88344C16.0168 1.54138 16.082 1.07552 15.8938 0.667367Z"
-                fill="#C2C2C2"/>
-            </svg>
-            <span>Select display order</span>
+            <div class="selector-wrapper">
+              <svg class="filter"
+                   width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.8938 0.667367C15.7045 0.255786 15.3038 0 14.8486 0H1.15154C0.696153 0 0.295618 0.255786 0.106112 0.667367C-0.0818706 1.07552 -0.0169242 1.54138 0.275811 1.88344C0.276001 1.88364 0.276382 1.88402 0.276572 1.88421L5.71455 8.21105V13.1416C5.71455 13.3523 5.83053 13.546 6.01642 13.6456C6.1006 13.6907 6.19355 13.713 6.28592 13.713C6.39677 13.713 6.50723 13.6806 6.60284 13.617L10.0311 11.3315C10.1901 11.2254 10.2856 11.0472 10.2856 10.8561V8.21105L15.7243 1.88344C16.0168 1.54138 16.082 1.07552 15.8938 0.667367Z"
+                  fill="#C2C2C2"/>
+              </svg>
+              <span>Select display order</span>
+            </div>
             <svg id="selector-arrow" class="arrow"
                  width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 6.55053L5.8495 1.40002L1 6.55053" stroke="#A6A6A6" stroke-linejoin="round"/>
@@ -2198,91 +2200,93 @@
           </div>
         </div>
       </div>
-      <div class="sessions-item">
-        <div class="sessions-time">
-          <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
-              fill="#C2C2C2"/>
-          </svg>
-          <span class="time">2:10 AM -2:35 AM</span>
-          <span class="date">28 July</span>
+      <div class="sessions-wrapper">
+        <div class="sessions-item">
+          <div class="sessions-time">
+            <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
+                fill="#C2C2C2"/>
+            </svg>
+            <span class="time">2:10 AM -2:35 AM</span>
+            <span class="date">28 July</span>
+          </div>
+          <div class="sessions-information">
+            <h3>General Sessesion</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+          <button>Join Session</button>
         </div>
-        <div class="sessions-information">
-          <h3>General Sessesion</h3>
-          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <div class="sessions-item">
+          <div class="sessions-time">
+            <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
+                fill="#C2C2C2"/>
+            </svg>
+            <span class="time">2:10 AM -2:35 AM</span>
+            <span class="date">28 July</span>
+          </div>
+          <div class="sessions-information">
+            <h3>General Sessesion</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+          <button>Join Session</button>
         </div>
-        <button>Join Session</button>
-      </div>
-      <div class="sessions-item">
-        <div class="sessions-time">
-          <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
-              fill="#C2C2C2"/>
-          </svg>
-          <span class="time">2:10 AM -2:35 AM</span>
-          <span class="date">28 July</span>
+        <div class="sessions-item">
+          <div class="sessions-time">
+            <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
+                fill="#C2C2C2"/>
+            </svg>
+            <span class="time">2:10 AM -2:35 AM</span>
+            <span class="date">28 July</span>
+          </div>
+          <div class="sessions-information">
+            <h3>General Sessesion</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+          <button>Join Session</button>
         </div>
-        <div class="sessions-information">
-          <h3>General Sessesion</h3>
-          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <div class="sessions-item">
+          <div class="sessions-time">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M40 6H38V2H34V6H14V2H10V6H8C5.8 6 4 7.8 4 10V42C4 44.2 5.8 46 8 46H40C42.2 46 44 44.2 44 42V10C44 7.8 42.2 6 40 6ZM40 42H8V16H40V42Z"
+                fill="#74BD43"/>
+              <path d="M28.59 23.58L22 30.17L18.41 26.59L17 28L22 33L30 25L28.59 23.58Z" fill="#74BD43"/>
+            </svg>
+            <span class="time">2:10 AM -2:35 AM</span>
+            <span class="date">28 July</span>
+          </div>
+          <div class="sessions-information">
+            <h3>General Sessesion</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+          <button style="visibility: hidden;">Join Session</button>
         </div>
-        <button>Join Session</button>
-      </div>
-      <div class="sessions-item">
-        <div class="sessions-time">
-          <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
-              fill="#C2C2C2"/>
-          </svg>
-          <span class="time">2:10 AM -2:35 AM</span>
-          <span class="date">28 July</span>
+        <div class="sessions-item">
+          <div class="sessions-time">
+            <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
+                fill="#C2C2C2"/>
+            </svg>
+            <span class="time">2:10 AM -2:35 AM</span>
+            <span class="date">28 July</span>
+          </div>
+          <div class="sessions-information">
+            <h3>General Sessesion</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+          <button>Join Session</button>
         </div>
-        <div class="sessions-information">
-          <h3>General Sessesion</h3>
-          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <button>Join Session</button>
-      </div>
-      <div class="sessions-item">
-        <div class="sessions-time">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M40 6H38V2H34V6H14V2H10V6H8C5.8 6 4 7.8 4 10V42C4 44.2 5.8 46 8 46H40C42.2 46 44 44.2 44 42V10C44 7.8 42.2 6 40 6ZM40 42H8V16H40V42Z"
-              fill="#74BD43"/>
-            <path d="M28.59 23.58L22 30.17L18.41 26.59L17 28L22 33L30 25L28.59 23.58Z" fill="#74BD43"/>
-          </svg>
-          <span class="time">2:10 AM -2:35 AM</span>
-          <span class="date">28 July</span>
-        </div>
-        <div class="sessions-information">
-          <h3>General Sessesion</h3>
-          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <button style="visibility: hidden;">Join Session</button>
-      </div>
-      <div class="sessions-item">
-        <div class="sessions-time">
-          <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M36 4H34V0H30V4H10V0H6V4H4C1.8 4 0 5.8 0 8V40C0 42.2 1.8 44 4 44H36C38.2 44 40 42.2 40 40V8C40 5.8 38.2 4 36 4ZM36 40H4V14H36V40Z"
-              fill="#C2C2C2"/>
-          </svg>
-          <span class="time">2:10 AM -2:35 AM</span>
-          <span class="date">28 July</span>
-        </div>
-        <div class="sessions-information">
-          <h3>General Sessesion</h3>
-          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <button>Join Session</button>
       </div>
     </div>
     <div class="video">
@@ -3184,7 +3188,7 @@
       </div>
     </div>
   </main>
-  <div id="presenters-page" class="presenters-page" style="display:none">
+  <!--<div id="presenters-page" class="presenters-page">
     <div class="presenters-page-left">
       <div class="name">Nicole Batestute</div>
       <div class="avatar-wrapper">
@@ -3224,7 +3228,7 @@
           pain of itself, because it is pain, but because occasionally circumstances occur in which toil.</p>
       </div>
     </div>
-  </div>
+  </div>-->
 </div>
 
 <footer id="footer">
@@ -3232,7 +3236,7 @@
     <h3>Microsoft Stream</h3>
     <img src="./assets/img/microsoft-stream-icons/stream-icon.jpg" alt="stream">
   </div>
-</footer>-->
+</footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="script.js"></script>

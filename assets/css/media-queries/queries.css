@@ -185,7 +185,7 @@
     display: none; }
 
   .wrapper {
-    overflow: auto;
+    /*overflow-x: hidden;*/
     margin-left: 0 !important; }
     .wrapper main .events-time .date .time .number {
       font-weight: 900;
@@ -200,8 +200,6 @@
       font-weight: 500;
       font-size: 32px;
       line-height: 37px; }
-    .wrapper main .sessions-selector {
-      display: none; }
     .wrapper main .sessions-time {
       max-width: 185px; }
       .wrapper main .sessions-time svg {
@@ -244,6 +242,8 @@
         .wrapper main .video .posts-item-image {
           display: flex;
           justify-content: center; }
+          .wrapper main .video .posts-item-image img {
+            width: 100%; }
         .wrapper main .video .posts-item .header {
           display: flex; }
           .wrapper main .video .posts-item .header-avatar svg {
@@ -988,55 +988,81 @@
           font-size: 8.53257px;
           line-height: 10px;
           letter-spacing: 0.213314px; }
-    .wrapper main .sessions-header h3 {
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 37px; }
-    .wrapper main .sessions-item {
-      padding: 0 16px;
-      flex-direction: column;
-      align-items: center;
-      pointer-events: none; }
-      .wrapper main .sessions-item button {
-        max-width: 311px;
-        width: 100%;
-        margin: 24px 0 24px 0; }
-    .wrapper main .sessions-time {
-      margin: 0;
-      max-width: 100%;
-      min-height: 126px;
-      border: none;
-      border-bottom: 1px solid #CFCFCF; }
-      .wrapper main .sessions-time svg {
-        margin-bottom: 9.67px; }
-      .wrapper main .sessions-time .time {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        letter-spacing: -1px; }
-      .wrapper main .sessions-time .date {
-        font-size: 14px;
-        line-height: 19px;
-        letter-spacing: 0.4px; }
-    .wrapper main .sessions-information {
-      padding: 30px 8px 27px 8px;
-      max-width: 100%;
-      border-bottom: 1px solid #CFCFCF;
-      display: flex;
+    .wrapper main .sessions {
       align-items: center; }
-      .wrapper main .sessions-information h3 {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 1px; }
-      .wrapper main .sessions-information p {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        letter-spacing: 0.7px; }
+      .wrapper main .sessions-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .wrapper main .sessions-header h3 {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 37px;
+          white-space: nowrap; }
+      .wrapper main .sessions-selector {
+        position: relative;
+        max-width: 271px;
+        width: 100%; }
+        .wrapper main .sessions-selector .dropdown {
+          max-width: 271px;
+          width: 100%;
+          top: 50px; }
+        .wrapper main .sessions-selector .selector span {
+          white-space: nowrap; }
+        .wrapper main .sessions-selector .selector .arrow {
+          margin-left: 60px; }
+      .wrapper main .sessions-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px; }
+      .wrapper main .sessions-item {
+        max-width: 271px;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        pointer-events: none; }
+        .wrapper main .sessions-item button {
+          max-width: 311px;
+          width: 100%;
+          margin: 24px 0 24px 0; }
+        .wrapper main .sessions-item:last-child {
+          display: none; }
+      .wrapper main .sessions-time {
+        margin: 0;
+        max-width: 100%;
+        min-height: 126px;
+        border: none;
+        border-bottom: 1px solid #CFCFCF; }
+        .wrapper main .sessions-time svg {
+          margin-bottom: 9.67px; }
+        .wrapper main .sessions-time .time {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: -1px; }
+        .wrapper main .sessions-time .date {
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.4px; }
+      .wrapper main .sessions-information {
+        padding: 30px 8px 27px 8px;
+        max-width: 100%;
+        border-bottom: 1px solid #CFCFCF;
+        display: flex;
+        align-items: center; }
+        .wrapper main .sessions-information h3 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 1px; }
+        .wrapper main .sessions-information p {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: 0.7px; }
     .wrapper main .video h3 {
       font-weight: 500;
       font-size: 32px;
@@ -1284,6 +1310,20 @@
   header .chat {
     width: calc(100% - 32px);
     left: 16px; } }
+@media screen and (max-width: 570px) {
+  .wrapper main .sessions-header {
+    flex-direction: column; }
+    .wrapper main .sessions-header h3 {
+      margin-bottom: 24px; }
+  .wrapper main .sessions-selector {
+    max-width: 100%; }
+    .wrapper main .sessions-selector .dropdown {
+      max-width: 100%; }
+  .wrapper main .sessions-wrapper {
+    display: flex;
+    flex-direction: column; }
+  .wrapper main .sessions-item {
+    max-width: 100%; } }
 @media screen and (max-width: 502px) {
   header .chat-footer-wrapper > form label input {
     width: 100%; }

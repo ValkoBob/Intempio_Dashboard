@@ -151,8 +151,15 @@ main {
       cursor: pointer;
 
       & .selector {
+        width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+
+        &-wrapper {
+          display: flex;
+          align-items: center;
+        }
       }
 
       & .filter {
@@ -161,7 +168,7 @@ main {
 
       & .arrow {
         transform: rotate(180deg);
-        margin: 18.4px 20px 18.4px 120px;
+        margin: 18.4px 20px 18.4px 0;
       }
 
       & .dropdown {
